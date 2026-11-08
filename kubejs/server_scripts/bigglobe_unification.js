@@ -1,4 +1,4 @@
-﻿// =============================================================================
+// =============================================================================
 // Big Globe Ore Unification & Exclusive TFMG Metallurgy
 // Enforces:
 // 1. All Aluminum spawns/drops as Bauxite (tfmg:bauxite) -> Crushed to Bauxite Powder

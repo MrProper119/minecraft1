@@ -86,19 +86,23 @@ hash = "ce7c88df02b193f9844081496f8e4bc81abb6ae79531ad0d8ff164e8a1aa2778"
 
 [[files]]
 file = ".mixin.out/class/com/simibubi/create/content/contraptions/glue/SuperGlueSelectionHandler.class"
-hash = "604e9a043d3d9fc0239e9b1db5460b85d717f1e36d3c2e5bf9e7d50329d05d00"
+hash = "008403ee9889f78eadeab7e3f87ec34aa908b90b89c0edb1a55c42d781dad0c6"
 
 [[files]]
-file = ".mixin.out/class/dev/engine_room/flywheel/backend/engine/indirect/MatrixBuffer.class"
-hash = "4440bb519183d8acd8787a871d2633b61dc3c1252ebeb128d8f7bf7aafea7f44"
+file = ".mixin.out/class/net/minecraft/client/particle/ParticleEngine.class"
+hash = "d756cc5a8b6f44e07dc8d515d98ab7b9d28f226ef91b2257c6619cf68410cfa1"
+
+[[files]]
+file = ".mixin.out/class/net/minecraft/client/particle/SingleQuadParticle.class"
+hash = "e175e30f67f77a1d3af541a00adc4c3752b46376834458d51cc3874c015c29e5"
 
 [[files]]
 file = ".mixin.out/class/net/minecraft/world/level/block/ShulkerBoxBlock.class"
-hash = "85d658bb900090a629643d0fd778bc00203a713e3d5ac0c303c2cff4773ae0be"
+hash = "1bc9788f882452b1bc582c05c9b714822f7840a030305e3f51954cbc90477a74"
 
 [[files]]
 file = ".mixin.out/class/noobanidus/mods/lootr/common/impl/LootrServiceRegistry.class"
-hash = "08b1d812629ff4a3fbf499fe6c41495c1ba73974a085ef7d1e49d71ee3efe74c"
+hash = "2143976e930573967dbf8658ece5ddd34acd0ea6e37a248fdaa60732eaa71828"
 
 [[files]]
 file = ".pg-native/libpowergridNative7.dll"
@@ -114,7 +118,7 @@ hash = "4ddc550f91a5d9e842a3777c2eea25750db6e56057b80b4c5414e08950a2e76f"
 
 [[files]]
 file = "TLauncherAdditional.json"
-hash = "1ec25a4062627d49f4b1d8dfce0fb3ce508133a18d24a5b4cbabc2fcad0cce22"
+hash = "01eac7332b8b71ab8ee4500dd32c4a52d4d1a5dbe250d03c01d4e8aab06d6518"
 
 [[files]]
 file = "Test.jar"
@@ -546,7 +550,7 @@ hash = "9ddc626d65c34343128e5d5faa50931e11bd0c45324f77888c4a47424ec92a8f"
 
 [[files]]
 file = "config/bettervillage_1.properties"
-hash = "eed90dcbb3a74c675cc204d59d8b8e87dddd6933e31b90af9197d743ba3643e9"
+hash = "4a1c719050be1e9de36a902378e1ba2710ed62a25623b1f51f71180c48389f15"
 
 [[files]]
 file = "config/betterwitchhuts-neoforge-1_21.toml"
@@ -1050,7 +1054,7 @@ hash = "e668100237391e983eff39251b41d57fd35ea5f3b3f0b7a6a14f07ab863b1bfe"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "9b9d7f41574899920edf4a11e95ee680c80df23550a30dedef447a702d199321"
+hash = "31906661dc6ccb403262b007d78c421c6a955c3e7043a13b736e5275c0e33b98"
 
 [[files]]
 file = "config/farmersdelight-client.toml"
@@ -1091,6 +1095,10 @@ hash = "79f89ecd4e675232662b495ccc4331c207b6489ad3c14fc1452f10b29bb3e482"
 [[files]]
 file = "config/ftbteams-server.snbt"
 hash = "2ef5e2dca3a653ced3f3981a85a32832fb3716caa5fa05e233f50ab16044a2c4"
+
+[[files]]
+file = "config/fzzy_config/keybinds.toml"
+hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/immediatelyfast.json"
@@ -1322,7 +1330,7 @@ hash = "90314f94a26e8dbd8910021a76891563c0680bf998d5e806781cb5a6ea3a59e6"
 
 [[files]]
 file = "config/libraryferret_1.properties"
-hash = "717f0996edf78b0aabe6e4f982b8f89646babd7991f528e67fc1e3e22dd6692f"
+hash = "efed636a91680c909a64a4adbf85afaff9c8f6b5f0b60dc253efa7ed46b61458"
 
 [[files]]
 file = "config/lithium.properties"
@@ -1381,6 +1389,10 @@ file = "config/moonlight-common.toml"
 hash = "a6d5e783dc1469e925d4cf62f17a94ee2dff4ff025d9ed9e61b129581019cdf3"
 
 [[files]]
+file = "config/moreculling.toml"
+hash = "db63bd41fae1b92828f13b34b93215549ca167ccf44a4c09d050fe559fa203a5"
+
+[[files]]
 file = "config/moremekanismprocessing-client.toml"
 hash = "5d57eafbb7c01af8a8bee0c4cf1a7e81e0dab1f69a5ee9365c9ec879576d6a2d"
 
@@ -1419,6 +1431,14 @@ hash = "d5f0ed8390618c769d9cb40a77df04779b7bbe636343b753c1ed6f92d325ae2b"
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "bf8a08f8780357a344b76ad780e231644341f5a2890becbae4edf8a52d804544"
+
+[[files]]
+file = "config/particle_core_config.toml"
+hash = "9f21aae26ba31a4fd9bab85c4bb4e37d10ac408aff9feed91ad6acdf1e269634"
+
+[[files]]
+file = "config/particle_core_disabled_optimizations_v2.json"
+hash = "7189bb61c58cb1030b8ee486e66abf694d257192248b9b3ac4978df2b1366f7d"
 
 [[files]]
 file = "config/patchouli-client.toml"
@@ -1527,6 +1547,14 @@ hash = "1b02af673b3f0d65a5d70b8c1c531d07c3663dab7fbd87066287b78d91b36aed"
 [[files]]
 file = "config/sablecollisiondamage-common.toml"
 hash = "131169b5877e8b9b58634fade8a6cc23fed8e470249baf0e9d3d5ed1c9a2d60d"
+
+[[files]]
+file = "config/servercore/config.yml"
+hash = "22b7045bf8c8883aaa4067352ef678c09e4ea246ede79af601714bd0853b9912"
+
+[[files]]
+file = "config/servercore/optimizations.yml"
+hash = "63ba7034fdf1f45f1b40798d3212f8d838f7c299fbe5795075fbafe1e2265192"
 
 [[files]]
 file = "config/simulated-client.toml"
@@ -1785,6 +1813,18 @@ file = "crash-reports/crash-2026-11-08_20.19.52-fml.txt"
 hash = "0b425b4b411f62c3b7d884f47ec30e5dc1881413b7a1ac283de0e8619035894e"
 
 [[files]]
+file = "crash-reports/crash-2026-11-08_21.18.31-fml.txt"
+hash = "0862aec647fbf76a1699afbd60b951d2c80fb7802d38ecc0ffa8d3cf5e3ef140"
+
+[[files]]
+file = "crash-reports/crash-2026-11-08_21.19.38-fml.txt"
+hash = "c479ec418dc77adc97c24ec6950073853d7c18ae916e9344fa17ad5c4ca2ccd3"
+
+[[files]]
+file = "crash-reports/crash-2026-11-08_21.20.28-client.txt"
+hash = "6394a2512cc484f2bde6fd48b86444d4f1add3a74a9780b092c6e8e95aa1de6c"
+
+[[files]]
 file = "data/fabricDefaultResourcePacks.dat"
 hash = "814c30fbcba77fd0fec289d9b4ece8738433f5ef34a954efb4febf8ad3ddb815"
 
@@ -1802,7 +1842,7 @@ hash = "8e255f25e701f19634498cd739806e94bce2c3cba8f60e94e36bfd1ec56147b2"
 
 [[files]]
 file = "fabricloader.log"
-hash = "bb6f0814f2ebb3d463c67f4056d06429979167cfff60e010b06edf1cbefabce2"
+hash = "25b41851e7acab138ce627e96dd39fb2ad0f9dc8feeeb2513bda9f8ad19d9f5d"
 
 [[files]]
 file = "generated/assets/minecraft/atlases/blocks.json"
@@ -5122,7 +5162,7 @@ hash = "32aaefb49d1380f3df79ea47db798e1bbec775a230daa1eb61b6ab055d665cd1"
 
 [[files]]
 file = "kubejs/data/bigglobe/tags/worldgen/configured_feature/overworld/ores.json"
-hash = "ed28359d4a3815528074723c00410e176047c2802de82fe0537192b66f29eae0"
+hash = "99408b50b91ddf39351ee7b17ae1731833adb31cb7d2789ad752bdcaaa50f944"
 
 [[files]]
 file = "kubejs/data/bigglobe/tags/worldgen/configured_feature/overworld/rock_layers.json"
@@ -5130,7 +5170,7 @@ hash = "08ecf0e713e7957112e49e24a29f17b8ebd2e952c4a61e977c97653316d8e50d"
 
 [[files]]
 file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/bauxite.json"
-hash = "e5cdb6ccb108d7493e4029dac1556158515084cabeba359a0fd5152f69052c54"
+hash = "026608f5235e392813705dbf81637683ca26a230f84561c5cc8ac9284bdb318c"
 
 [[files]]
 file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/fluorite.json"
@@ -5138,11 +5178,11 @@ hash = "d5847be61d132a27ab08ef422602a3b3e827c87b21b63ffa5630d8b32f0de01b"
 
 [[files]]
 file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/galena.json"
-hash = "cee6c790a6a3f13658d99ffff57111546e5213c8eadf7b1495df7d73981bd62d"
+hash = "5d17b669a6e763cff0523c845eff781fc64a2ea07c2e7452b59eefd39073e13d"
 
 [[files]]
 file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/lead.json"
-hash = "404b78ef3bd0b72cbb194b2cfcafc4e4aebb90f464007dbb5f81bea979b91f0f"
+hash = "33853884772505ae69ccd2f36f22c5658a8fc216bde3f945c6020f1a489d1eb8"
 
 [[files]]
 file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/lithium.json"
@@ -5150,7 +5190,7 @@ hash = "266433fadfb5f280e8e556d3f3cd3761e471ba8cec5c0ef80d9cecd4b2bd90a1"
 
 [[files]]
 file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/naquadah.json"
-hash = "b5ecf31eb2fb21a4a16a6a092fa5f0734a1d15388e4b2711c3ad39cd28bcc7cd"
+hash = "9dcb3f512cd9819080bc96af56fe1370c2033e03c0f7e565d8761f8be2f8ed6c"
 
 [[files]]
 file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/nickel.json"
@@ -5174,7 +5214,7 @@ hash = "c46fc4cb9e13683d740a3354c98e6c78c7139fdee31d212e215cfeaa45988767"
 
 [[files]]
 file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/rock_layers/create_rocks.json"
-hash = "7446c17e8e3cf20c1ed227f2c873d85222a0cf5b17a90b09328d832769578d8c"
+hash = "9cac16082b6c5bac022d4d2e6843780e466954f7ba52e9befe8515061262d266"
 
 [[files]]
 file = "kubejs/data/c/tags/worldgen/biome/is_end.json"
@@ -5214,7 +5254,7 @@ hash = "bf7dc13e357c65e72c85b3c796b55cdbc7118b9b668ce52ced791ce6922fa659"
 
 [[files]]
 file = "kubejs/server_scripts/bigglobe_unification.js"
-hash = "a5a3b413102ad32b5ce48d6455b0d9451fbc29f5961693e033ec00a070789862"
+hash = "8ef3de417b89fa80f0b66fe8475f69b1907b5305afa85123b035e0a151bc2040"
 
 [[files]]
 file = "kubejs/server_scripts/realistic_mechanics.js"
@@ -5330,63 +5370,63 @@ hash = "966c9af7dd5ff36e0e1b7967b2b61bf04424140aa83025c5731fc7ad1b5fbf8b"
 
 [[files]]
 file = "logs/2026-11-08-1.log.gz"
-hash = "aba26c111f2fcbf42234a4ef4e55735cac4486e8506dda8bd3c4e33030b8ce9c"
-
-[[files]]
-file = "logs/2026-11-08-2.log.gz"
-hash = "2cf0ca7ce9e7caa4835ea0da7fffee275d1d3affc7936c5b985137d942c440e7"
-
-[[files]]
-file = "logs/2026-11-08-3.log.gz"
-hash = "e1bd3a5193ce578cfd419780f9ad1b32b7f1e30b34cb15465e10445d5322945b"
-
-[[files]]
-file = "logs/2026-11-08-4.log.gz"
 hash = "44c68e0ab30f00d9bbedaa2d8f36e4a13067a420063b8c98a93be253425032bf"
 
 [[files]]
-file = "logs/2026-11-08-5.log.gz"
+file = "logs/2026-11-08-2.log.gz"
 hash = "796641abc4a06f022b8adbc6e65ab3006f800dbd214d4eb2ff22321f0808171a"
 
 [[files]]
-file = "logs/2026-11-08-6.log.gz"
+file = "logs/2026-11-08-3.log.gz"
 hash = "2241de73a5df3816833793ef4d312826995291574d46a6262a78bd22debaf636"
 
 [[files]]
-file = "logs/2026-11-08-7.log.gz"
+file = "logs/2026-11-08-4.log.gz"
 hash = "5fefd122ff6ba730db8b12a7386cc4e90f211554908e72e3d440e81d2fcffe7c"
 
 [[files]]
+file = "logs/2026-11-08-5.log.gz"
+hash = "38956fbdfe802a0c27b8db629106c90e312a37b321977c6877ba7d1b38e83973"
+
+[[files]]
+file = "logs/2026-11-08-6.log.gz"
+hash = "bf5d9c4cf6d5698085f7f900c88deeefa5a39cbe256408359d5474e95f5b951b"
+
+[[files]]
+file = "logs/2026-11-08-7.log.gz"
+hash = "e2a839902e1a46a7f2c10a22752896eb21cad447d338fd8eb59d8b57abc7410b"
+
+[[files]]
 file = "logs/almostunified/almostunified.log"
-hash = "f9c0f38c0551454ad8c872e9eddd9c58d3d8a79524fbc734d7bcf7d0691e8efc"
+hash = "5b169884298a40f4b8f79c96b7fe7d8be698e1e1f82804c28d591e8d9df6c3db"
 
 [[files]]
 file = "logs/debug-1.log.gz"
-hash = "c54692ff341a0cbff8b525cb6e9d13c56f44e9a4ab1e64a31d1d652464af6326"
+hash = "fc48c4e8c9fc60321b4a8db75b51fca56f88dfaa85bcee853688a0c88bb8d578"
 
 [[files]]
 file = "logs/debug-2.log.gz"
-hash = "d88c72ec3fdbaa272c6e562f813d9d6b0dfe09e9b72890d9a6999333885d2507"
+hash = "9bb049491879e73c7ca871a443cb7e8ca3d8a5ebe5c9b3c98def9a5c726966c3"
 
 [[files]]
 file = "logs/debug-3.log.gz"
-hash = "8740a199c978c2bb7bb5b65f080829521ff63c213d16cf6d0ad613be82e9f27d"
+hash = "abadf63e8119c26565b197e0376d0196331cac6d1995dafac2edd591f15df1b3"
 
 [[files]]
 file = "logs/debug-4.log.gz"
-hash = "01e606a73915f032a0d23d9792ac9afbcb98681c03e5cf185fe4b2fbfd7d6ea9"
+hash = "c54692ff341a0cbff8b525cb6e9d13c56f44e9a4ab1e64a31d1d652464af6326"
 
 [[files]]
 file = "logs/debug-5.log.gz"
-hash = "522d4d1ea8c9a9ee9a8e0cdbbfc795d6c3813320e9e515486bddcef0f8cf1690"
+hash = "d88c72ec3fdbaa272c6e562f813d9d6b0dfe09e9b72890d9a6999333885d2507"
 
 [[files]]
 file = "logs/debug.log"
-hash = "5c985e931a3a13e5bf5c6d134e66b7b8a4843aff2c51b24eeb11d1551c1bda1b"
+hash = "1bb774ed89c6b5ee7b3bc0397dde72993ea8cbf650755a403ee2653ed57c4f0d"
 
 [[files]]
 file = "logs/kubejs/client.log"
-hash = "e7a1fa0fd3bbf4a109d844af695c2edd788e9f2567a53714ee679a8bf03f3ed3"
+hash = "97e70a50fc3a9bd65981c3363d4eb0ba2e021a147c1cd497928950704b0c7f9d"
 
 [[files]]
 file = "logs/kubejs/server.log"
@@ -5394,11 +5434,11 @@ hash = "d2e14986d3f201890cccac6216511e62093fd7e5401a22666c08a399167f720b"
 
 [[files]]
 file = "logs/kubejs/startup.log"
-hash = "0b18e36f19ec20ca522d03bb28024ca6630f6b003f0b65883c9186501a556541"
+hash = "f28b5455ee9bb6cf71a3f0a298feb18e74ab4caaab85a7665f8887a1dd049e4b"
 
 [[files]]
 file = "logs/latest.log"
-hash = "4ecc96f751e9d4b5b910bb1504189950826dc54ed62e661a6de103b20c70c29e"
+hash = "c800fcbbbbd49d95fa7be99d457af088ce9b404a1f65fca8339ec01fe3f85937"
 
 [[files]]
 file = "mods/1786342327722-createtnt-1.21.1-neoforge-CreateTNT1.0.0.jar"
@@ -5559,10 +5599,6 @@ hash = "e1b77ed9921739ce0d890eb3fae2e60fe000719764323c0a34961c9fbe5f4b1f"
 [[files]]
 file = "mods/Quark-4.1-476.jar"
 hash = "ce4b200f7eff30ffad9a6fdfbc4e61f57264dbbfd6180f18c2a37230150c41d7"
-
-[[files]]
-file = "mods/ScalableLux-neoforge-0.3.0-alpha.0.8-all.jar"
-hash = "f2bbe8646a6b813e9af10a9a381550e71412c7df2ea9dbcdfd77bc66c669a92a"
 
 [[files]]
 file = "mods/SkniroNetherAndEndOres-1.1.0-1.21.1-NeoForge.jar"
@@ -5733,7 +5769,7 @@ metafile = true
 
 [[files]]
 file = "mods/azimuth-1.4.0.jar"
-hash = "aba0bd458ddffd024ad26381089861cd033e624c46566e63aeb41ee50db202fc"
+hash = "98d7422c316017dc58b928c9a835984ec7dbab8fbac0cbbec37f73ceef80454c"
 
 [[files]]
 file = "mods/azimuth-api.pw.toml"
@@ -6578,6 +6614,10 @@ metafile = true
 file = "mods/just-enough-resources-jer.pw.toml"
 hash = "382d66764da41f9080240a73836f294c38a656e7e7867c80be9c281a5e02d14e"
 metafile = true
+
+[[files]]
+file = "mods/kotlinforforge-5.12.0-all.jar"
+hash = "095aed94f21b4e55895b21ea957750ae3ab829fbcfc6d3c66a3489f5f1128d46"
 
 [[files]]
 file = "mods/kubejs-create-neoforge-2101-3-1-build-18.pw.toml"
@@ -7584,11 +7624,11 @@ file = "natives/jemalloc.dll"
 hash = "9abf0095066ebab37b78968e11370a8078313e48cb5be8eda01f67623c6a6248"
 
 [[files]]
-file = "natives/jna10531177849471887685.dll"
+file = "natives/jna8487420265200171821.dll"
 hash = "69c45175ecfd25af023f96ac0bb2c45e6a95e3ba8a5a50ee7969ccab14825c44"
 
 [[files]]
-file = "natives/jna10531177849471887685.dll.x"
+file = "natives/jna8487420265200171821.dll.x"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
