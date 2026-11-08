@@ -1,0 +1,58 @@
+#Settings for configuring Better Fusion Reactors
+[better_fusion_reactor]
+	#List of fluids that can be used as coolants in the fusion reactor (; separated)
+	fusion_coolants = ["water;mekanism:steam", "mekanism:sodium;mekanism:superheated_sodium"]
+	#How often Reactivity changes and error level change speed. default 10
+	# Default: 10
+	# Range: 1 ~ 20
+	reaction_difficulty = 10
+	#Hide original Mekanism Fusion Reactor recipes
+	hide_original_mek_recipes = true
+	#Explosion when reactor reaches 100% error level
+	reactor_meltdown = false
+	#Radius of Explosion (default 4 - TNT size)
+	reactor_explosion_radius = 4.0
+	#Affects the Injection Rate, Max Temp, and Ignition Temp.
+	# Default: 10000000
+	# Range: 0 ~ 9223372036854775807
+	fuelEnergy = 10000000
+	#The fraction of the heat dissipated from the case that is converted to Joules.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	thermocoupleEfficiency = 0.05
+	#The fraction of heat from the casing that can be transferred to all sources that are not water. Will impact max heat, heat transfer to thermodynamic conductors, and power generation.
+	# Default: 0.1
+	# Range: 0.001 ~ 1.0
+	casingThermalConductivity = 0.1
+	#The fraction of the heat from the casing that is dissipated to water when water cooling is in use. Will impact max heat, and steam generation.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	waterHeatingRatio = 0.3
+	#Amount of fuel (mB) that the fusion reactor can store.
+	# Default: 1000
+	# Range: 2 ~ 1000000
+	fuelCapacity = 1000
+	#Amount of energy (Joules) the fusion reactor can store.
+	# Default: 1000000000
+	# Range: 1 ~ 9223372036854775807
+	energyCapacity = 1000000000
+	#Amount of water (mB) per injection rate that the fusion reactor can store. Max = injectionRate * waterPerInjection
+	# Default: 1000000
+	# Range: 1 ~ 4294967
+	waterPerInjection = 1000000
+	#Amount of steam (mB) per injection rate that the fusion reactor can store. Max = injectionRate * steamPerInjection
+	# Default: 100000000
+	# Range: 1 ~ 18446744073709551
+	steamPerInjection = 100000000
+
+#Settings for configuring Irradiator
+[irradiator]
+	#Default process time in ticks
+	#Recipe can override this value
+	# Default: 200
+	# Range: 1 ~ 10000
+	base_process_time = 200
+	#How much temperature production by reactor will be suppressed by Irradiator
+	# Default: 5
+	# Range: 1 ~ 10
+	reactor_cooling = 5

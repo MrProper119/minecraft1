@@ -257,58 +257,6 @@
     "maxWaterDepth": 1,
     "implosionChance": 0.85
   },
-  "bfr:fusion_reactor_controller": {
-    "maxWaterDepth": 117,
-    "implosionChance": 0.30333334
-  },
-  "bfr:fusion_reactor_frame": {
-    "maxWaterDepth": 117,
-    "implosionChance": 0.30333334
-  },
-  "bfr:fusion_reactor_logic_adapter": {
-    "maxWaterDepth": 117,
-    "implosionChance": 0.30333334
-  },
-  "bfr:fusion_reactor_port": {
-    "maxWaterDepth": 117,
-    "implosionChance": 0.30333334
-  },
-  "bfr:irradiated_copper_ore": {
-    "maxWaterDepth": 36,
-    "implosionChance": 0.78
-  },
-  "bfr:irradiated_gold_ore": {
-    "maxWaterDepth": 36,
-    "implosionChance": 0.78
-  },
-  "bfr:irradiated_iron_ore": {
-    "maxWaterDepth": 36,
-    "implosionChance": 0.78
-  },
-  "bfr:irradiated_lead_ore": {
-    "maxWaterDepth": 36,
-    "implosionChance": 0.78
-  },
-  "bfr:irradiated_osmium_ore": {
-    "maxWaterDepth": 36,
-    "implosionChance": 0.78
-  },
-  "bfr:irradiated_tin_ore": {
-    "maxWaterDepth": 36,
-    "implosionChance": 0.78
-  },
-  "bfr:irradiated_uranium_ore": {
-    "maxWaterDepth": 36,
-    "implosionChance": 0.78
-  },
-  "bfr:irradiator": {
-    "maxWaterDepth": 141,
-    "implosionChance": 0.15666667
-  },
-  "bfr:laser_focus_matrix": {
-    "maxWaterDepth": 19,
-    "implosionChance": 0.85
-  },
   "bigglobe:ancient_automata": {
     "maxWaterDepth": 55,
     "implosionChance": 0.67
@@ -11901,6 +11849,10 @@
     "maxWaterDepth": 73,
     "implosionChance": 0.56
   },
+  "mekanism:deepslate_silver_ore": {
+    "maxWaterDepth": 73,
+    "implosionChance": 0.56
+  },
   "mekanism:deepslate_tin_ore": {
     "maxWaterDepth": 73,
     "implosionChance": 0.56
@@ -12217,6 +12169,10 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism:silver_ore": {
+    "maxWaterDepth": 55,
+    "implosionChance": 0.67
+  },
   "mekanism:sodium": {
     "maxWaterDepth": 300,
     "implosionChance": 0.05
@@ -12389,6 +12345,10 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:absolute_centrifuging_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:absolute_chemical_tank": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
@@ -12402,6 +12362,14 @@
     "implosionChance": 0.15666667
   },
   "mekanism_extras:absolute_crushing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_crystallizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_dissolving_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12433,6 +12401,14 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:absolute_lathing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_liquifying_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:absolute_logistical_transporter": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
@@ -12440,6 +12416,30 @@
   "mekanism_extras:absolute_mechanical_pipe": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
+  },
+  "mekanism_extras:absolute_oxidizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_painting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_pigment_extracting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_planting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_pressing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_pressurised_reacting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
   "mekanism_extras:absolute_pressurized_tube": {
     "maxWaterDepth": 49,
@@ -12453,11 +12453,27 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:absolute_recycling_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_replicating_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_rolling_mill_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:absolute_sawing_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
   "mekanism_extras:absolute_smelting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:absolute_stamping_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12468,6 +12484,10 @@
   "mekanism_extras:absolute_universal_cable": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
+  },
+  "mekanism_extras:absolute_washing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
   "mekanism_extras:advanced_electric_pump": {
     "maxWaterDepth": 141,
@@ -12485,6 +12505,10 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:cosmic_centrifuging_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:cosmic_chemical_tank": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
@@ -12498,6 +12522,14 @@
     "implosionChance": 0.15666667
   },
   "mekanism_extras:cosmic_crushing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_crystallizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_dissolving_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12529,6 +12561,14 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:cosmic_lathing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_liquifying_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:cosmic_logistical_transporter": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
@@ -12536,6 +12576,30 @@
   "mekanism_extras:cosmic_mechanical_pipe": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
+  },
+  "mekanism_extras:cosmic_oxidizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_painting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_pigment_extracting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_planting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_pressing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_pressurised_reacting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
   "mekanism_extras:cosmic_pressurized_tube": {
     "maxWaterDepth": 49,
@@ -12549,11 +12613,27 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:cosmic_recycling_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_replicating_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_rolling_mill_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:cosmic_sawing_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
   "mekanism_extras:cosmic_smelting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:cosmic_stamping_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12565,6 +12645,10 @@
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
   },
+  "mekanism_extras:cosmic_washing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:end_naquadah_ore": {
     "maxWaterDepth": 92,
     "implosionChance": 0.45
@@ -12574,6 +12658,10 @@
     "implosionChance": 0.05
   },
   "mekanism_extras:infinite_bin": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_centrifuging_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12590,6 +12678,14 @@
     "implosionChance": 0.15666667
   },
   "mekanism_extras:infinite_crushing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_crystallizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_dissolving_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12621,6 +12717,14 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:infinite_lathing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_liquifying_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:infinite_logistical_transporter": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
@@ -12628,6 +12732,30 @@
   "mekanism_extras:infinite_mechanical_pipe": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
+  },
+  "mekanism_extras:infinite_oxidizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_painting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_pigment_extracting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_planting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_pressing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_pressurised_reacting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
   "mekanism_extras:infinite_pressurized_tube": {
     "maxWaterDepth": 49,
@@ -12641,11 +12769,27 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:infinite_recycling_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_replicating_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_rolling_mill_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:infinite_sawing_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
   "mekanism_extras:infinite_smelting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:infinite_stamping_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12656,6 +12800,10 @@
   "mekanism_extras:infinite_universal_cable": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
+  },
+  "mekanism_extras:infinite_washing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
   "mekanism_extras:lead_coated_laser_focus_matrix": {
     "maxWaterDepth": 19,
@@ -12713,6 +12861,10 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:supreme_centrifuging_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:supreme_chemical_tank": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
@@ -12726,6 +12878,14 @@
     "implosionChance": 0.15666667
   },
   "mekanism_extras:supreme_crushing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_crystallizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_dissolving_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12757,6 +12917,14 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:supreme_lathing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_liquifying_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:supreme_logistical_transporter": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
@@ -12764,6 +12932,30 @@
   "mekanism_extras:supreme_mechanical_pipe": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
+  },
+  "mekanism_extras:supreme_oxidizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_painting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_pigment_extracting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_planting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_pressing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_pressurised_reacting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
   "mekanism_extras:supreme_pressurized_tube": {
     "maxWaterDepth": 49,
@@ -12777,11 +12969,27 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
+  "mekanism_extras:supreme_recycling_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_replicating_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_rolling_mill_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
   "mekanism_extras:supreme_sawing_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
   "mekanism_extras:supreme_smelting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_extras:supreme_stamping_factory": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -12792,6 +13000,10 @@
   "mekanism_extras:supreme_universal_cable": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
+  },
+  "mekanism_extras:supreme_washing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
   "mekanism_lasers:advanced_laser": {
     "maxWaterDepth": 141,
@@ -12873,1089 +13085,129 @@
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
-  "mekanismadditions:aqua_glow_panel": {
+  "mekanism_turrets:advanced_laser_turret": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_turrets:basic_laser_turret": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_turrets:electric_fence": {
+    "maxWaterDepth": 161,
+    "implosionChance": 0.05
+  },
+  "mekanism_turrets:elite_laser_turret": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanism_turrets:ultimate_laser_turret": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:advanced_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_advanced_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_creative_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_hybrid_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_light_absorbing_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_photonic_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_quantum_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_singular_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_spectral_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:big_ultimate_solar_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekanismadvancedgenerators:cosmic_energy_cube": {
+    "maxWaterDepth": 39,
+    "implosionChance": 0.76533335
+  },
+  "mekanismadvancedgenerators:cosmic_universal_cable": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
   },
-  "mekanismadditions:aqua_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:creative_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
-  "mekanismadditions:aqua_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:galactic_energy_cube": {
+    "maxWaterDepth": 39,
+    "implosionChance": 0.76533335
   },
-  "mekanismadditions:aqua_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:aqua_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:aqua_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_glow_panel": {
+  "mekanismadvancedgenerators:galactic_universal_cable": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
   },
-  "mekanismadditions:black_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:hybrid_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
-  "mekanismadditions:black_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:infinity_energy_cube": {
+    "maxWaterDepth": 39,
+    "implosionChance": 0.76533335
   },
-  "mekanismadditions:black_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:black_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:black_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:blue_glow_panel": {
+  "mekanismadvancedgenerators:infinity_universal_cable": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
   },
-  "mekanismadditions:blue_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:light_absorbing_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
-  "mekanismadditions:blue_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:photonic_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
-  "mekanismadditions:blue_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:quantum_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
-  "mekanismadditions:blue_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:singular_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
-  "mekanismadditions:blue_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:spectral_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
-  "mekanismadditions:blue_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:supreme_energy_cube": {
+    "maxWaterDepth": 39,
+    "implosionChance": 0.76533335
   },
-  "mekanismadditions:blue_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:blue_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:blue_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:blue_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:blue_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:blue_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:blue_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:blue_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_glow_panel": {
+  "mekanismadvancedgenerators:supreme_universal_cable": {
     "maxWaterDepth": 49,
     "implosionChance": 0.70666665
   },
-  "mekanismadditions:brown_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:brown_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:brown_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:cyan_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:cyan_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:cyan_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:dark_red_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:dark_red_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:dark_red_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:gray_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:gray_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:gray_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:green_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:green_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:green_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:light_blue_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_blue_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:light_blue_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:light_gray_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:light_gray_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:light_gray_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:lime_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:lime_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:lime_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:magenta_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:magenta_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:magenta_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:obsidian_tnt": {
-    "maxWaterDepth": 1,
-    "implosionChance": 0.85
-  },
-  "mekanismadditions:orange_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:orange_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:orange_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:orange_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:pink_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:pink_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:pink_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:purple_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:purple_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:purple_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:red_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:red_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:red_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:white_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:white_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:white_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_glow_panel": {
-    "maxWaterDepth": 49,
-    "implosionChance": 0.70666665
-  },
-  "mekanismadditions:yellow_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_fence": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_fence_gate": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_glow": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_glow_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_glow_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_road": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_transparent": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_transparent_slab": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_plastic_transparent_stairs": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
-  },
-  "mekanismadditions:yellow_reinforced_plastic": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "mekanismadditions:yellow_slick_plastic": {
-    "maxWaterDepth": 98,
-    "implosionChance": 0.41333333
+  "mekanismadvancedgenerators:ultimate_solar_panel": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
   },
   "mekanismgenerators:advanced_solar_generator": {
     "maxWaterDepth": 141,
@@ -14066,6 +13318,406 @@
     "implosionChance": 0.30333334
   },
   "mekanismgenerators:wind_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_centrifuging_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_crystallizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_dissolving_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_lathing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_liquifying_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_max_chemical_tank": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_mid_chemical_tank": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_oxidizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_painting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_pigment_extracting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_planting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_pressing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_pressurised_reacting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_recycling_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_replicating_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_rolling_mill_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_stamping_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:advanced_washing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ambient_gas_collector": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:author_doll": {
+    "maxWaterDepth": 128,
+    "implosionChance": 0.23333333
+  },
+  "mekmm:basic_centrifuging_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_crystallizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_dissolving_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_lathing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_liquifying_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_max_chemical_tank": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_mid_chemical_tank": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_oxidizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_painting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_pigment_extracting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_planting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_pressing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_pressurised_reacting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_recycling_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_replicating_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_rolling_mill_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_stamping_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:basic_washing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:block_raw_silver": {
+    "maxWaterDepth": 104,
+    "implosionChance": 0.37666667
+  },
+  "mekmm:block_silver": {
+    "maxWaterDepth": 104,
+    "implosionChance": 0.37666667
+  },
+  "mekmm:chemical_replicator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:cnc_lathe": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:cnc_rolling_mill": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:cnc_stamper": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:deepslate_silver_ore": {
+    "maxWaterDepth": 73,
+    "implosionChance": 0.56
+  },
+  "mekmm:elite_centrifuging_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_crystallizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_dissolving_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_lathing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_liquifying_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_max_chemical_tank": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_mid_chemical_tank": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_oxidizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_painting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_pigment_extracting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_planting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_pressing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_pressurised_reacting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_recycling_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_replicating_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_rolling_mill_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_stamping_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:elite_washing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:fluid_replicator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_antiprotonic_nucleosynthesizer": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_chemical_infuser": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_electrolytic_separator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_gas_burning_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_heat_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_pigment_mixer": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_rotary_condensentrator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_solar_neutron_activator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:large_wind_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:modeler_doll": {
+    "maxWaterDepth": 128,
+    "implosionChance": 0.23333333
+  },
+  "mekmm:planting_station": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:presser": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:recycler": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:replicator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:silver_ore": {
+    "maxWaterDepth": 55,
+    "implosionChance": 0.67
+  },
+  "mekmm:solar_heat_generator": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_centrifuging_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_crystallizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_dissolving_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_lathing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_liquifying_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_max_chemical_tank": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_mid_chemical_tank": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_oxidizing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_painting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_pigment_extracting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_planting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_pressing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_pressurised_reacting_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_recycling_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_replicating_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_rolling_mill_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_stamping_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:ultimate_washing_factory": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:wireless_charging_station": {
+    "maxWaterDepth": 141,
+    "implosionChance": 0.15666667
+  },
+  "mekmm:wireless_transmission_station": {
     "maxWaterDepth": 141,
     "implosionChance": 0.15666667
   },
@@ -23309,6 +22961,10 @@
     "maxWaterDepth": 61,
     "implosionChance": 0.6333333
   },
+  "tfmg:compressor": {
+    "maxWaterDepth": 120,
+    "implosionChance": 0.28
+  },
   "tfmg:concrete": {
     "maxWaterDepth": 64,
     "implosionChance": 0.615
@@ -23360,10 +23016,6 @@
   "tfmg:constantan_truss": {
     "maxWaterDepth": 89,
     "implosionChance": 0.46666667
-  },
-  "tfmg:converter": {
-    "maxWaterDepth": 120,
-    "implosionChance": 0.28
   },
   "tfmg:cooling_fluid": {
     "maxWaterDepth": 300,
@@ -23525,6 +23177,10 @@
     "maxWaterDepth": 120,
     "implosionChance": 0.28
   },
+  "tfmg:electric_measurement_block": {
+    "maxWaterDepth": 120,
+    "implosionChance": 0.28
+  },
   "tfmg:electric_motor": {
     "maxWaterDepth": 120,
     "implosionChance": 0.28
@@ -23616,6 +23272,10 @@
   "tfmg:fossilstone": {
     "maxWaterDepth": 300,
     "implosionChance": 0.05
+  },
+  "tfmg:freezer": {
+    "maxWaterDepth": 120,
+    "implosionChance": 0.28
   },
   "tfmg:galena": {
     "maxWaterDepth": 18,

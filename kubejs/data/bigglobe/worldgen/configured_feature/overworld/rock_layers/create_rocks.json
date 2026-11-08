@@ -27,7 +27,10 @@
 				{ "blocks": { "minecraft:stone": "create:ochrum",    "minecraft:cobblestone": "create:ochrum"    } },
 				{ "blocks": { "minecraft:stone": "create:veridium",  "minecraft:cobblestone": "create:veridium"  } },
 				{ "blocks": { "minecraft:stone": "create:asurine",   "minecraft:cobblestone": "create:asurine"   } },
-				{ "blocks": { "minecraft:stone": "create:scoria",    "minecraft:cobblestone": "create:scoria"    } }
+				{ "blocks": { "minecraft:stone": "create:scoria",    "minecraft:cobblestone": "create:scoria"    } },
+				{ "blocks": { "minecraft:stone": "tfmg:bauxite",     "minecraft:cobblestone": "tfmg:bauxite"     } },
+				{ "blocks": { "minecraft:stone": "tfmg:galena",      "minecraft:cobblestone": "tfmg:galena"      } },
+				{ "blocks": { "minecraft:stone": "tfmg:lignite",     "minecraft:cobblestone": "tfmg:lignite"     } }
 			]
 		}
 	}

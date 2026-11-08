@@ -1,0 +1,77 @@
+#Peak energy generation of the solar panels
+[solar_generators]
+	#Peak energy generation in Joules/t of the Advanced Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 150
+	# Range: 0 ~ 9223372036854775807
+	advancedSolarGeneration = 150
+	#Peak energy generation in Joules/t of the Hybrid Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 450
+	# Range: 0 ~ 9223372036854775807
+	hybridSolarGeneration = 450
+	#Peak energy generation in Joules/t of the Ultimate Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 1350
+	# Range: 0 ~ 9223372036854775807
+	ultimateSolarGeneration = 1350
+	#Peak energy generation in Joules/t of the Quantum Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 4050
+	# Range: 0 ~ 9223372036854775807
+	quantumSolarGeneration = 4050
+	#Peak energy generation in Joules/t of the Spectral Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 12150
+	# Range: 0 ~ 9223372036854775807
+	spectralSolarGeneration = 12150
+	#Peak energy generation in Joules/t of the Singular Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 36450
+	# Range: 0 ~ 9223372036854775807
+	singularSolarGeneration = 36450
+	#Peak energy generation in Joules/t of the Light Absorbing Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 109350
+	# Range: 0 ~ 9223372036854775807
+	lightAbsorbingSolarGeneration = 109350
+	#Peak energy generation in Joules/t of the Photonic Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 328050
+	# Range: 0 ~ 9223372036854775807
+	photonicSolarGeneration = 328050
+	#Peak energy generation in Joules/t of the Creative Solar Panel at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 10000000
+	# Range: 0 ~ 9223372036854775807
+	creativeSolarGeneration = 10000000
+
+#Peak energy generation of the big solar generators
+[big_solar_generators]
+	#Peak energy generation in Joules/t of the Big Advanced Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 900
+	# Range: 0 ~ 9223372036854775807
+	bigAdvancedSolarGeneration = 900
+	#Peak energy generation in Joules/t of the Big Hybrid Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 2700
+	# Range: 0 ~ 9223372036854775807
+	bigHybridSolarGeneration = 2700
+	#Peak energy generation in Joules/t of the Big Ultimate Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 8100
+	# Range: 0 ~ 9223372036854775807
+	bigUltimateSolarGeneration = 8100
+	#Peak energy generation in Joules/t of the Big Quantum Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 24300
+	# Range: 0 ~ 9223372036854775807
+	bigQuantumSolarGeneration = 24300
+	#Peak energy generation in Joules/t of the Big Spectral Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 72900
+	# Range: 0 ~ 9223372036854775807
+	bigSpectralSolarGeneration = 72900
+	#Peak energy generation in Joules/t of the Big Singular Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 218700
+	# Range: 0 ~ 9223372036854775807
+	bigSingularSolarGeneration = 218700
+	#Peak energy generation in Joules/t of the Big Light Absorbing Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 656100
+	# Range: 0 ~ 9223372036854775807
+	bigLightAbsorbingSolarGeneration = 656100
+	#Peak energy generation in Joules/t of the Big Photonic Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 1968300
+	# Range: 0 ~ 9223372036854775807
+	bigPhotonicSolarGeneration = 1968300
+	#Peak energy generation in Joules/t of the Big Creative Solar Generator at noon in a temperate biome. Hot, dry biomes give more, cold and rainy ones less.
+	# Default: 60000000
+	# Range: 0 ~ 9223372036854775807
+	bigCreativeSolarGeneration = 60000000
