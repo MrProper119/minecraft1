@@ -31,7 +31,6 @@ if (Test-Path (Join-Path $repoRoot "options.txt")) {
         $targetGameDir = $inputPath
     } else {
         Write-Host "[-] Вказаний шлях не знайдено. Зупинка." -ForegroundColor Red
-        Pause
         exit 1
     }
 }
@@ -62,7 +61,6 @@ if (-not (Test-Path $targetMods)) { New-Item -ItemType Directory -Path $targetMo
 $pwFiles = Get-ChildItem -Path $modsDir -Filter "*.pw.toml"
 $totalMods = $pwFiles.Count
 $currentMod = 0
-$validHashes = @{}
 $validFilenames = @{}
 
 $wc = New-Object System.Net.WebClient
@@ -82,7 +80,6 @@ foreach ($pw in $pwFiles) {
     if ($urlMatch.Success) {
         $modUrl = $urlMatch.Groups[1].Value
     } else {
-        # Шукаємо CurseForge file-id
         $fileIdMatch = [regex]::Match($content, 'file-id\s*=\s*(\d+)')
         if ($fileIdMatch.Success) {
             $fileId = [int64]$fileIdMatch.Groups[1].Value
@@ -102,40 +99,17 @@ foreach ($pw in $pwFiles) {
     if ($hashFormat -eq "SHA-512") { $hashFormat = "SHA512" }
     if ($hashFormat -eq "SHA-256") { $hashFormat = "SHA256" }
 
-    if ($expectedHash) {
-        $validHashes[$expectedHash] = $modFilename
-    }
     $validFilenames[$modFilename.ToLower()] = $true
 
     $destPath = Join-Path $targetMods $modFilename
     $needDownload = $false
 
     if (-not (Test-Path $destPath)) {
-        # Перевіримо, чи немає файлу з іншою назвою або кодуванням
-        $foundExisting = $false
-        if ($expectedHash) {
-            # Швидка перевірка серед наявних jar
-            $existingJars = Get-ChildItem -Path $targetMods -Filter "*.jar"
-            foreach ($ex in $existingJars) {
-                $h = (Get-FileHash -Path $ex.FullName -Algorithm $hashFormat).Hash.ToLower()
-                if ($h -eq $expectedHash) {
-                    $foundExisting = $true
-                    if ($ex.Name -ne $modFilename) {
-                        Rename-Item -Path $ex.FullName -NewName $modFilename -Force
-                    }
-                    break
-                }
-            }
-        }
-        if (-not $foundExisting) {
+        $needDownload = $true
+    } elseif ($expectedHash) {
+        $actualHash = (Get-FileHash -Path $destPath -Algorithm $hashFormat).Hash.ToLower()
+        if ($actualHash -ne $expectedHash) {
             $needDownload = $true
-        }
-    } else {
-        if ($expectedHash) {
-            $actualHash = (Get-FileHash -Path $destPath -Algorithm $hashFormat).Hash.ToLower()
-            if ($actualHash -ne $expectedHash) {
-                $needDownload = $true
-            }
         }
     }
 
@@ -144,7 +118,6 @@ foreach ($pw in $pwFiles) {
         try {
             $wc.DownloadFile($modUrl, $destPath)
         } catch {
-            Write-Host "    [!] Повторна спроба через curl..." -ForegroundColor Yellow
             curl.exe -fSL -s "$modUrl" -o "$destPath"
         }
     }
@@ -156,23 +129,12 @@ Write-Host ""
 Write-Host "[3/3] Перевірка застарілих модів..." -ForegroundColor Yellow
 $installedJars = Get-ChildItem -Path $targetMods -Filter "*.jar"
 $removedCount = 0
-$backupDir = Join-Path $targetGameDir "mods_disabled_by_sync"
+$backupDir = Join-Path $targetGameDir "mods_backup"
 
 foreach ($jar in $installedJars) {
-    $jarNameLower = $jar.Name.ToLower()
-    $isKnown = $validFilenames.ContainsKey($jarNameLower)
-
-    if (-not $isKnown) {
-        # Перевіримо за хешем
-        $jarSha1 = (Get-FileHash -Path $jar.FullName -Algorithm SHA1).Hash.ToLower()
-        if ($validHashes.ContainsKey($jarSha1)) {
-            $isKnown = $true
-        }
-    }
-
-    if (-not $isKnown) {
+    if (-not $validFilenames.ContainsKey($jar.Name.ToLower())) {
         if (-not (Test-Path $backupDir)) { New-Item -ItemType Directory -Path $backupDir -Force | Out-Null }
-        Write-Host "  [-] Переміщено застарілий мод у backup: $($jar.Name)" -ForegroundColor Magenta
+        Write-Host "  [-] Переміщено у backup: $($jar.Name)" -ForegroundColor Magenta
         Move-Item -Path $jar.FullName -Destination (Join-Path $backupDir $jar.Name) -Force
         $removedCount++
     }
@@ -181,13 +143,10 @@ foreach ($jar in $installedJars) {
 Write-Host ""
 Write-Host "======================================================" -ForegroundColor Green
 Write-Host "  Синхронізацію успішно завершено!" -ForegroundColor Green
-Write-Host "  Активних модів: $totalMods" -ForegroundColor Green
+Write-Host "  Активних модів у збірці: $totalMods" -ForegroundColor Green
 if ($removedCount -gt 0) {
-    Write-Host "  Переміщено старих/сторонніх модів у backup: $removedCount" -ForegroundColor Yellow
+    Write-Host "  Застарілих/зайвих модів переміщено в backup: $removedCount" -ForegroundColor Yellow
 }
 Write-Host "  Тепер можна запускати Minecraft у TLauncher!" -ForegroundColor Green
 Write-Host "======================================================" -ForegroundColor Green
 Write-Host ""
-if ([Environment]::UserInteractive) {
-    Pause
-}
