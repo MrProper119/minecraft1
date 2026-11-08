@@ -3,8 +3,8 @@
 	"config": {
 		"seed": "lead",
 		"blocks": {
-			"#bigglobe:stone_ore_replaceables": "mekanism:lead_ore",
-			"#bigglobe:deepslate_ore_replaceables": "mekanism:deepslate_lead_ore"
+			"#bigglobe:stone_ore_replaceables": "tfmg:lead_ore",
+			"#bigglobe:deepslate_ore_replaceables": "tfmg:deepslate_lead_ore"
 		},
 		"chance": {
 			"template": "bigglobe:ores/exponential",

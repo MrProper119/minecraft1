@@ -1,6 +1,6 @@
 ﻿// =============================================================================
 // Realistic Industrial Mechanics & Metallurgy Overhaul
-// Integrates: Create, The Factory Must Grow (TFMG), Mekanism & Custom KubeJS items
+// Integrates: Create, The Factory Must Grow (TFMG) & Custom KubeJS items
 // =============================================================================
 
 ServerEvents.recipes(event => {
@@ -38,14 +38,13 @@ ServerEvents.recipes(event => {
     // 2. ELECTRONICS & SOLDERING (Радіоелектроніка та паяння)
     // -------------------------------------------------------------------------
 
-    // Solder Wire (Олов'яно-свинцевий припій 60/40)
-    // Crafting table fallback
+    // Solder Wire (Припій)
     event.shaped('4x kubejs:solder_wire', [
-        ' T ',
+        ' Z ',
         'LIL',
-        ' T '
+        ' Z '
     ], {
-        T: '#c:nuggets/tin',
+        Z: '#c:nuggets/zinc',
         L: '#c:nuggets/lead',
         I: 'minecraft:iron_nugget'
     });
@@ -53,7 +52,7 @@ ServerEvents.recipes(event => {
     // Create mixing for Solder
     if (event.recipes.create && event.recipes.create.compacting) {
         event.recipes.create.compacting('8x kubejs:solder_wire', [
-            '#c:ingots/tin',
+            '#c:ingots/zinc',
             '#c:ingots/lead'
         ]).heated();
     }
@@ -151,39 +150,7 @@ ServerEvents.recipes(event => {
 
 
     // -------------------------------------------------------------------------
-    // 3. MEKANISM BASIC CONTROL CIRCUIT (Мікропроцесорна плата управління)
-    // -------------------------------------------------------------------------
-    // Remove trivial old recipe
-    event.remove({ output: 'mekanism:basic_control_circuit' });
-
-    // Realistic Shaped Crafting
-    event.shaped('mekanism:basic_control_circuit', [
-        ' C ',
-        'ESE',
-        ' W '
-    ], {
-        C: 'create:electron_tube',
-        E: 'kubejs:electronic_components',
-        S: 'kubejs:crude_semiconductor',
-        W: 'kubejs:solder_wire'
-    });
-
-    // Advanced Create Sequenced Assembly for Industrial Production
-    if (event.recipes.create && event.recipes.create.sequenced_assembly) {
-        event.recipes.create.sequenced_assembly([
-            'mekanism:basic_control_circuit'
-        ], 'kubejs:etched_pcb', [
-            event.recipes.create.deploying('kubejs:etched_pcb', ['kubejs:etched_pcb', 'kubejs:crude_semiconductor']),
-            event.recipes.create.deploying('kubejs:etched_pcb', ['kubejs:etched_pcb', 'kubejs:electronic_components']),
-            event.recipes.create.deploying('kubejs:etched_pcb', ['kubejs:etched_pcb', 'kubejs:solder_wire']),
-            event.recipes.create.deploying('kubejs:etched_pcb', ['kubejs:etched_pcb', 'create:electron_tube']),
-            event.recipes.create.pressing('kubejs:etched_pcb', 'kubejs:etched_pcb')
-        ]).transitionalItem('kubejs:etched_pcb').loops(1);
-    }
-
-
-    // -------------------------------------------------------------------------
-    // 4. INDUSTRIAL MACHINE FRAMES & STEEL CASING (Важке машинобудування)
+    // 3. INDUSTRIAL MACHINE FRAMES (Важке машинобудування)
     // -------------------------------------------------------------------------
     
     // Industrial Machine Frame
@@ -195,7 +162,7 @@ ServerEvents.recipes(event => {
         H: 'tfmg:heavy_plate',
         T: 'tfmg:steel_truss'
     });
-    // Fallback without trusses (using steel ingots and brass)
+    // Fallback without trusses (using steel ingots and plates)
     event.shaped('kubejs:industrial_machine_frame', [
         'SIS',
         'I I',
@@ -205,124 +172,9 @@ ServerEvents.recipes(event => {
         I: '#c:plates/steel'
     });
 
-    // Overhaul Mekanism Steel Casing (Корпус механізмів Mekanism)
-    event.remove({ output: 'mekanism:steel_casing' });
-
-    event.shaped('mekanism:steel_casing', [
-        'PMP',
-        'GFG',
-        'PMP'
-    ], {
-        F: 'kubejs:industrial_machine_frame',
-        M: 'tfmg:steel_mechanism',
-        P: 'tfmg:heavy_plate',
-        G: 'mekanism:structural_glass'
-    });
-    // Fallback if structural glass not crafted yet
-    event.shaped('mekanism:steel_casing', [
-        'PMP',
-        'GFG',
-        'PMP'
-    ], {
-        F: 'kubejs:industrial_machine_frame',
-        M: 'create:precision_mechanism',
-        P: '#c:ingots/steel',
-        G: 'minecraft:tinted_glass'
-    });
-
 
     // -------------------------------------------------------------------------
-    // 5. MEKANISM CORE MACHINES OVERHAUL (Складні промислові машини)
-    // -------------------------------------------------------------------------
-
-    // 5.1 Metallurgic Infuser (Металургійний інфузер)
-    event.remove({ output: 'mekanism:metallurgic_infuser' });
-    event.shaped('mekanism:metallurgic_infuser', [
-        'RBR',
-        'CSC',
-        'RBR'
-    ], {
-        S: 'mekanism:steel_casing',
-        B: 'kubejs:refractory_brick',
-        C: 'mekanism:basic_control_circuit',
-        R: 'tfmg:copper_spool'
-    });
-    // Fallback if no copper spool yet
-    event.shaped('mekanism:metallurgic_infuser', [
-        'RBR',
-        'CSC',
-        'RBR'
-    ], {
-        S: 'mekanism:steel_casing',
-        B: 'kubejs:refractory_brick',
-        C: 'mekanism:basic_control_circuit',
-        R: 'kubejs:insulated_cable'
-    });
-
-    // 5.2 Enrichment Chamber (Камера збагачення руд)
-    event.remove({ output: 'mekanism:enrichment_chamber' });
-    event.shaped('mekanism:enrichment_chamber', [
-        'CWC',
-        'PSP',
-        'CWC'
-    ], {
-        S: 'mekanism:steel_casing',
-        W: 'create:crushing_wheel',
-        C: 'mekanism:basic_control_circuit',
-        P: 'create:mechanical_piston'
-    });
-
-    // 5.3 Crusher (Промисловий подрібнювач)
-    event.remove({ output: 'mekanism:crusher' });
-    event.shaped('mekanism:crusher', [
-        'CMC',
-        'W S W',
-        'CMC'
-    ], {
-        S: 'mekanism:steel_casing',
-        W: 'create:crushing_wheel',
-        C: 'mekanism:basic_control_circuit',
-        M: 'tfmg:steel_mechanism'
-    });
-
-    // 5.4 Energized Smelter (Електрична плавильня)
-    event.remove({ output: 'mekanism:energized_smelter' });
-    event.shaped('mekanism:energized_smelter', [
-        'RBR',
-        'CSC',
-        'RBR'
-    ], {
-        S: 'mekanism:steel_casing',
-        B: 'kubejs:refractory_brick',
-        C: 'mekanism:basic_control_circuit',
-        R: 'tfmg:constantan_wire'
-    });
-
-    // 5.5 Basic Energy Cube (Базовий накопичувач енергії)
-    event.remove({ output: 'mekanism:basic_energy_cube' });
-    event.shaped('mekanism:basic_energy_cube', [
-        'CAC',
-        'ASA',
-        'CAC'
-    ], {
-        S: 'mekanism:steel_casing',
-        A: 'tfmg:accumulator',
-        C: 'kubejs:insulated_cable'
-    });
-    // Fallback if accumulator not ready
-    event.shaped('mekanism:basic_energy_cube', [
-        'CL C',
-        'LSL',
-        'CL C'
-    ], {
-        S: 'mekanism:steel_casing',
-        L: '#c:ingots/lead',
-        C: 'kubejs:insulated_cable'
-    });
-
-
-    // -------------------------------------------------------------------------
-    // 6. CREATE REALISTIC PRECISION MECHANISM OVERHAUL (Прецизійний механізм)
+    // 4. CREATE REALISTIC PRECISION MECHANISM OVERHAUL (Прецизійний механізм)
     // -------------------------------------------------------------------------
     if (event.recipes.create && event.recipes.create.sequenced_assembly) {
         event.remove({ output: 'create:precision_mechanism' });

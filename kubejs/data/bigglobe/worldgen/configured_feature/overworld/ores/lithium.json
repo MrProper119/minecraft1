@@ -1,0 +1,24 @@
+{
+	"type": "bigglobe:ore",
+	"config": {
+		"seed": "lithium",
+		"blocks": {
+			"#bigglobe:stone_ore_replaceables": "tfmg:lithium_ore",
+			"#bigglobe:deepslate_ore_replaceables": "tfmg:deepslate_lithium_ore"
+		},
+		"chance": {
+			"template": "bigglobe:ores/exponential",
+			"inputs": {
+				"delay": "500.0L",
+				"peak": "0.7L",
+				"limit": "0.2L"
+			}
+		},
+		"radius": {
+			"type": "average",
+			"min": 2.0,
+			"max": 6.0,
+			"average": 3.0
+		}
+	}
+}

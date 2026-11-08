@@ -5393,6 +5393,414 @@
           "parser": false,
           "notExists": false,
           "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687624149100,
+          "name": "anvilcore-10.1 Release-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687625686200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d807fa23228c5260aa85413c4eab03a577cdd255",
+              "size": 104557,
+              "path": "mods/anvilcore-10.1 Release-neoforge-1.21.1.jar",
+              "url": "mods/anvilcore-10.1 Release-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687625748700,
+          "name": "ATi Structures V1.4.4 (1.21+)",
+          "favorite": false,
+          "version": {
+            "id": -2086687632975300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f0c645784c43fb41ba48b032a2cfdbdc19f11727",
+              "size": 3156978,
+              "path": "mods/ATi Structures V1.4.4 (1.21+).jar",
+              "url": "mods/ATi Structures V1.4.4 (1.21+).jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687633311000,
+          "name": "connector-2.0.0-beta.17+1.21.1-full",
+          "favorite": false,
+          "version": {
+            "id": -2086687643666000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ba08b534af7982d0bd25a25b45cb654c09ffec8f",
+              "size": 4573244,
+              "path": "mods/connector-2.0.0-beta.17+1.21.1-full.jar",
+              "url": "mods/connector-2.0.0-beta.17+1.21.1-full.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687643713400,
+          "name": "copycats-3.0.4+mc.1.21.1-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2086687647645700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6a11d5806bcf521e08faba1ee6ef5f31af55ca0f",
+              "size": 1791747,
+              "path": "mods/copycats-3.0.4+mc.1.21.1-neoforge.jar",
+              "url": "mods/copycats-3.0.4+mc.1.21.1-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687647693100,
+          "name": "Create Encased-1.21.1-1.8-ht2",
+          "favorite": false,
+          "version": {
+            "id": -2086687652755100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "957a7ee1741c7a8536bedd401a923d7fb73a7092",
+              "size": 2410332,
+              "path": "mods/Create Encased-1.21.1-1.8-ht2.jar",
+              "url": "mods/Create Encased-1.21.1-1.8-ht2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687652959700,
+          "name": "create_structures_arise-174.47.46 Release-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687656012000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "53c5811a747c555fe70032f4712bc1e0903cb057",
+              "size": 1111819,
+              "path": "mods/create_structures_arise-174.47.46 Release-neoforge-1.21.1.jar",
+              "url": "mods/create_structures_arise-174.47.46 Release-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687656236600,
+          "name": "forgified-fabric-api-0.116.15+2.3.6+1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687667967700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "a6f0e7b7c277fab7174bca4943fba7bdf3f74ed7",
+              "size": 5613208,
+              "path": "mods/forgified-fabric-api-0.116.15+2.3.6+1.21.1.jar",
+              "url": "mods/forgified-fabric-api-0.116.15+2.3.6+1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687668474400,
+          "name": "L_Ender's Cataclysm 1.21.1-3.27",
+          "favorite": false,
+          "version": {
+            "id": -2086687813691100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f34a5e3994fff1953c631b87b3dfa89ed62c26dc",
+              "size": 73346519,
+              "path": "mods/L_Ender's Cataclysm 1.21.1-3.27.jar",
+              "url": "mods/L_Ender's Cataclysm 1.21.1-3.27.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687814138000,
+          "name": "noisium-neoforge-2.3.0+mc1.21-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687815060200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "1bea6b61378ba80f038256c4345d9ff3b67928c4",
+              "size": 60296,
+              "path": "mods/noisium-neoforge-2.3.0+mc1.21-1.21.1.jar",
+              "url": "mods/noisium-neoforge-2.3.0+mc1.21-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687815180300,
+          "name": "polymorph-neoforge-1.2.0+1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687816271200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "fa6c5fa8a21229c85d564b47c73df7160b3bd4df",
+              "size": 172671,
+              "path": "mods/polymorph-neoforge-1.2.0+1.21.1.jar",
+              "url": "mods/polymorph-neoforge-1.2.0+1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687816494800,
+          "name": "reeses-sodium-options-neoforge-2.2.4+mc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687817867900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e9e6d101b31acb51539141937ad5b069ff2ccc4d",
+              "size": 258894,
+              "path": "mods/reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar",
+              "url": "mods/reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687818020300,
+          "name": "sodium-extra-neoforge-0.9.5+mc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687820474800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6ca433df0ad08ce8413582e75dcae7619414a068",
+              "size": 483373,
+              "path": "mods/sodium-extra-neoforge-0.9.5+mc1.21.1.jar",
+              "url": "mods/sodium-extra-neoforge-0.9.5+mc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687820539100,
+          "name": "sodium-neoforge-0.8.13+mc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687823980500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
+              "size": 1292934,
+              "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar",
+              "url": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687824102200,
+          "name": "spark-1.10.124-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2086687832821100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6",
+              "size": 3642581,
+              "path": "mods/spark-1.10.124-neoforge.jar",
+              "url": "mods/spark-1.10.124-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687833017200,
+          "name": "twilight_forest_final_boss-2.1.0+4.7.3196+1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2086687840461600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "19d712b0003d64b5f1d3cd1ec80c705ac53fc047",
+              "size": 3364135,
+              "path": "mods/twilight_forest_final_boss-2.1.0+4.7.3196+1.21.1.jar",
+              "url": "mods/twilight_forest_final_boss-2.1.0+4.7.3196+1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687840530500,
+          "name": "xaerominimap-neoforge-1.21.1-26.6.0",
+          "favorite": false,
+          "version": {
+            "id": -2086687846115900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "551e8e2aa3498b506cc949a74606cdc0380e5e00",
+              "size": 2186351,
+              "path": "mods/xaerominimap-neoforge-1.21.1-26.6.0.jar",
+              "url": "mods/xaerominimap-neoforge-1.21.1-26.6.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2086687846175600,
+          "name": "xaeroworldmap-neoforge-1.21.1-1.47.0",
+          "favorite": false,
+          "version": {
+            "id": -2086687850064900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "2936c9cb9dfbdab145fe6f1e8ae2c68915246a5f",
+              "size": 1427078,
+              "path": "mods/xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+              "url": "mods/xaeroworldmap-neoforge-1.21.1-1.47.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
         }
       ],
       "resourcePacks": [],

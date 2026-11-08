@@ -26,7 +26,7 @@
   },
   "render_settings": {
     "fog_settings": {
-      "advanced": false,
+      "advanced": true,
       "multi_dimension_fog_control": false,
       "atmospheric": {
         "distance_chunks": 0,
@@ -58,8 +58,8 @@
   "extra_settings": {
     "overlay_corner": "TOP_LEFT",
     "text_contrast": "NONE",
-    "show_fps": false,
-    "show_f_p_s_extended": true,
+    "show_fps": true,
+    "show_f_p_s_extended": false,
     "show_coords": false,
     "reduce_resolution_on_mac": false,
     "wayland_fullscreen_resolution": false,

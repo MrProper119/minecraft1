@@ -1,0 +1,24 @@
+{
+	"type": "bigglobe:ore",
+	"config": {
+		"seed": "nickel",
+		"blocks": {
+			"#bigglobe:stone_ore_replaceables": "tfmg:nickel_ore",
+			"#bigglobe:deepslate_ore_replaceables": "tfmg:deepslate_nickel_ore"
+		},
+		"chance": {
+			"template": "bigglobe:ores/exponential",
+			"inputs": {
+				"delay": "480.0L",
+				"peak": "0.8L",
+				"limit": "0.22L"
+			}
+		},
+		"radius": {
+			"type": "average",
+			"min": 2.0,
+			"max": 6.5,
+			"average": 3.2
+		}
+	}
+}
