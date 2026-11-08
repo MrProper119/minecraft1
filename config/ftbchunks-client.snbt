@@ -138,39 +138,43 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"quark:forgotten": true
-			"minecraft:turtle": true
-			"minecraft:glow_squid": true
-			"minecraft:sheep": true
-			"minecraft:squid": true
-			"minecraft:villager": true
-			"minecraft:creeper": true
-			"mowziesmobs:naga": true
-			"minecraft:pig": true
-			"minecraft:horse": true
-			"quark:crab": true
-			"minecraft:chicken": true
-			"quark:toretoise": true
-			"minecraft:trader_llama": true
-			"minecraft:bee": true
-			"minecraft:bat": true
-			"minecraft:drowned": true
-			"minecraft:iron_golem": true
-			"minecraft:warden": true
-			"minecraft:cow": true
-			"minecraft:wandering_trader": true
-			"minecraft:slime": true
-			"minecraft:rabbit": true
-			"irons_spellbooks:priest": true
 			"irons_spellbooks:necromancer": true
-			"minecraft:zombie": true
-			"quark:stoneling": true
+			"minecraft:rabbit": true
+			"minecraft:iron_golem": true
+			"minecraft:frog": true
+			"minecraft:chicken": true
+			"minecraft:drowned": true
+			"minecraft:villager": true
 			"minecraft:pillager": true
-			"minecraft:spider": true
-			"minecraft:enderman": true
+			"minecraft:glow_squid": true
+			"minecraft:pig": true
+			"irons_spellbooks:pyromancer": true
+			"minecraft:parrot": true
+			"minecraft:ocelot": true
 			"minecraft:skeleton": true
+			"quark:stoneling": true
+			"mowziesmobs:naga": true
+			"minecraft:spider": true
+			"minecraft:sheep": true
+			"minecraft:creeper": true
+			"minecraft:enderman": true
+			"minecraft:warden": true
+			"minecraft:zombie": true
 			"artifacts:mimic": true
 			"minecraft:cat": true
+			"minecraft:bee": true
+			"minecraft:trader_llama": true
+			"minecraft:turtle": true
+			"minecraft:slime": true
+			"minecraft:wandering_trader": true
+			"minecraft:bat": true
+			"irons_spellbooks:priest": true
+			"quark:forgotten": true
+			"minecraft:horse": true
+			"quark:toretoise": true
+			"minecraft:squid": true
+			"quark:crab": true
+			"minecraft:cow": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

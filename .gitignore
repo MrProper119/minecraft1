@@ -28,3 +28,6 @@ command_history.txt
 # Системні файли
 .DS_Store
 Thumbs.db
+xaero/
+vista_ffmpeg_bin/
+usercache.json

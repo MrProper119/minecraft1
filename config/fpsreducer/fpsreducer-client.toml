@@ -17,7 +17,7 @@
 	#Max frame rate when the character is stationary. (0:OFF)
 	# Default: 0
 	# Range: 0 ~ 260
-	noActFps = 0
+	noActFps = 40
 	#Detect movement of player position. (0:OFF, 1:Riding/Flying, 2:Always)
 	# Default: 1
 	# Range: 0 ~ 2
