@@ -72,6 +72,13 @@
     "entity": true,
     "entity_variant": true
   },
+  "mekanism": {
+    "chemical": true,
+    "remove_builtin": true,
+    "fluid": true,
+    "energy": true,
+    "tooltip_renderer": true
+  },
   "jadeaddons.lootr": {
     "info": true
   },
@@ -93,9 +100,5 @@
     "registry_name": "OFF",
     "block_properties": false,
     "mod_name": true
-  },
-  "petrolpark": {
-    "drying_rack": true,
-    "contamination": true
   }
 }

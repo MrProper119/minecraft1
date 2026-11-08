@@ -1,0 +1,34 @@
+﻿{
+	"type": "bigglobe:rock_layer",
+	"config": {
+		"seed": "create_rocks",
+		"repeat": 32.0,
+		"entries": {
+			"defaults": {
+				"weight": 1.0,
+				"center": {
+					"type": "sum",
+					"layers": [
+						{ "type": "smooth", "scale":  64, "amplitude":  8.0 },
+						{ "type": "smooth", "scale":  32, "amplitude":  4.0 }
+					]
+				},
+				"thickness": {
+					"type": "sum",
+					"layers": [
+						{ "type": "smooth", "scale": 16, "amplitude": 2.0 },
+						{ "type": "smooth", "scale":  8, "amplitude": 1.0 }
+					]
+				}
+			},
+			"variations": [
+				{ "blocks": { "minecraft:stone": "create:limestone", "minecraft:cobblestone": "create:limestone" } },
+				{ "blocks": { "minecraft:stone": "create:crimsite",  "minecraft:cobblestone": "create:crimsite"  } },
+				{ "blocks": { "minecraft:stone": "create:ochrum",    "minecraft:cobblestone": "create:ochrum"    } },
+				{ "blocks": { "minecraft:stone": "create:veridium",  "minecraft:cobblestone": "create:veridium"  } },
+				{ "blocks": { "minecraft:stone": "create:asurine",   "minecraft:cobblestone": "create:asurine"   } },
+				{ "blocks": { "minecraft:stone": "create:scoria",    "minecraft:cobblestone": "create:scoria"    } }
+			]
+		}
+	}
+}

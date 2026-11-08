@@ -1,0 +1,24 @@
+﻿{
+	"type": "bigglobe:ore",
+	"config": {
+		"seed": "zinc",
+		"blocks": {
+			"#bigglobe:stone_ore_replaceables": "create:zinc_ore",
+			"#bigglobe:deepslate_ore_replaceables": "create:deepslate_zinc_ore"
+		},
+		"chance": {
+			"template": "bigglobe:ores/exponential",
+			"inputs": {
+				"delay": "512.0L",
+				"peak": "0.8L",
+				"limit": "0.25L"
+			}
+		},
+		"radius": {
+			"type": "average",
+			"min": 2.5,
+			"max": 8.0,
+			"average": 3.5
+		}
+	}
+}

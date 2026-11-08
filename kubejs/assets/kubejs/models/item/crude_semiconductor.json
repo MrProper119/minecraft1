@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "kubejs:item/crude_semiconductor"
+                 },
+    "parent":  "minecraft:item/generated"
+}

@@ -1,0 +1,10 @@
+{
+	"type": "structure",
+	"script": {
+		"template": "bigglobe_bettermineshafts:restrict_to_caves",
+		"inputs": {
+			"STRUCTURE": "'bettermineshafts:mineshaft_oak'",
+			"BIOMES":    "'#bigglobe:underground'"
+		}
+	}
+}

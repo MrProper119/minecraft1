@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "kubejs:item/unfired_refractory_brick"
+                 },
+    "parent":  "minecraft:item/generated"
+}

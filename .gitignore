@@ -1,38 +1,30 @@
-# Моди (їх завантажує packwiz)
-mods/*.jar
-*.jar
-!packwiz-installer-bootstrap.jar
-
-# Світи та дані гравця
+﻿# Світи та збереження гравця
 saves/
 world/
-servers.dat
-servers.dat_old
 
-# Логи та краші
+# Логи та звіти крашів
 logs/
 crash-reports/
 debug/
+*.log
+*.log.gz
 hs_err_pid*.log
 
-# Особисте
-screenshots/
-resourcepacks/
-shaderpacks/
-options.txt
-optionsof.txt
-optionsshaders.txt
-usercache.json
-usernamecache.json
-launcher_profiles.json
-
-# Кеші та тимчасове
+# Кеші та службові файли
 .cache/
 .fabric/
 .mixin.out/
+.pg-native/
+.sable/
+natives/
+dynamic-resource-pack-cache/
+vista_web_content_cache/
+downloads/
+local/
+command_history.txt
 *.bak
 *.tmp
 
-# Системне
+# Системні файли
 .DS_Store
 Thumbs.db

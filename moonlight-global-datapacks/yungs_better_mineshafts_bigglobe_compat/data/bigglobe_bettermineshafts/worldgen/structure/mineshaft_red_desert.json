@@ -1,0 +1,5 @@
+{
+  "type": "bigglobe:delegating",
+  "delegate": "bettermineshafts:mineshaft_red_desert",
+  "biomes": "#bigglobe:underground"
+}

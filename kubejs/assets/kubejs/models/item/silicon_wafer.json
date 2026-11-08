@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "kubejs:item/silicon_wafer"
+                 },
+    "parent":  "minecraft:item/generated"
+}

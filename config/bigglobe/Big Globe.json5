@@ -98,7 +98,7 @@
 		//OFF: Big Globe will not do that.
 		//AUTO: Big Globe will only do that when neither Distant Horizons nor Voxy are installed.
 		//If you're on multiplayer, the server and the client must both have this option enabled for LOD rendering to work.
-		"Enabled": "AUTO",
+		"Enabled": "OFF",
 
 		//This config option controls what openGL tricks Big Globe uses to render LODs.
 		//It is recommended to set this to AUTO to allow Big Globe to pick the best backend for your hardware and drivers.

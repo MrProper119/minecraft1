@@ -1,0 +1,12 @@
+﻿{
+    "item.kubejs.crude_semiconductor":  "Microchip Semiconductor",
+    "item.kubejs.silicon_wafer":  "Polycrystalline Silicon Wafer",
+    "item.kubejs.industrial_machine_frame":  "Industrial Machine Frame",
+    "item.kubejs.unfired_refractory_brick":  "Unfired Refractory Brick",
+    "item.kubejs.solder_wire":  "Tin-Lead Solder Wire",
+    "item.kubejs.insulated_cable":  "Insulated Copper Cable",
+    "item.kubejs.etched_pcb":  "Etched Circuit Board",
+    "item.kubejs.electronic_components":  "Electronic Components Package",
+    "item.kubejs.refractory_brick":  "Refractory Fireclay Brick",
+    "item.kubejs.empty_pcb":  "Empty Circuit Board"
+}

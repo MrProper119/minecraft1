@@ -1,0 +1,21 @@
+﻿{
+	"type": "bigglobe:ore",
+	"config": {
+		"seed": "fluorite",
+		"blocks": {
+			"#bigglobe:stone_ore_replaceables": "mekanism:fluorite_ore",
+			"#bigglobe:deepslate_ore_replaceables": "mekanism:deepslate_fluorite_ore"
+		},
+		"chance": [
+			"double depthLine = unmixLinear(96.0L, 300.0L, `bigglobe:approximate_distance_below_surface`)",
+			"double depthCurve = 1.0L - 1.0L / (max(depthLine, 0.0L) ^ 2 + 1.0L)",
+			"return(depthCurve * 0.6L)"
+		],
+		"radius": {
+			"type": "average",
+			"min": 2.0,
+			"max": 6.0,
+			"average": 3.0
+		}
+	}
+}
