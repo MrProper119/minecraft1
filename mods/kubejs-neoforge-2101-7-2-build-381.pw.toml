@@ -1,0 +1,7 @@
+﻿name = "kubejs-neoforge-2101.7.2-build.381"
+filename = "kubejs-neoforge-2101.7.2-build.381.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b282ba250cdd247f319c016df02ff9e600caadb1"

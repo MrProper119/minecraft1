@@ -1,0 +1,7 @@
+﻿name = "xaerominimap-neoforge-1.21.1-26.6.0"
+filename = "xaerominimap-neoforge-1.21.1-26.6.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "551e8e2aa3498b506cc949a74606cdc0380e5e00"

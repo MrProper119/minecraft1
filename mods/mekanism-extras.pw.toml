@@ -1,0 +1,7 @@
+﻿name = "mekanism_extras-1.21.1-1.4.2"
+filename = "mekanism_extras-1.21.1-1.4.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "aa4d6ddb0d25c596ccb7c369b3d2b6110a9867b1"

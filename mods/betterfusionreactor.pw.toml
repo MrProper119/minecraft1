@@ -1,0 +1,7 @@
+﻿name = "BetterFusionReactor-1.21.1-1.5.9rc1"
+filename = "BetterFusionReactor-1.21.1-1.5.9rc1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4c857bfb25ffb34de5997c7e4616562fba822707"

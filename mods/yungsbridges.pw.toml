@@ -1,0 +1,7 @@
+﻿name = "YungsBridges-1.21.1-NeoForge-5.1.1"
+filename = "YungsBridges-1.21.1-NeoForge-5.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "18099c2d54acd16bb8ab90a66f40fa16496d065e"

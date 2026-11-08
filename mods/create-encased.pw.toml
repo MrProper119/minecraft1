@@ -1,0 +1,7 @@
+﻿name = "Create Encased-1.21.1-1.8-ht2"
+filename = "Create Encased-1.21.1-1.8-ht2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "957a7ee1741c7a8536bedd401a923d7fb73a7092"

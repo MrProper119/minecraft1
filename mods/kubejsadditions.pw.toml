@@ -1,0 +1,7 @@
+﻿name = "kubejsadditions-neoforge-1.21.1-6.0.0"
+filename = "kubejsadditions-neoforge-1.21.1-6.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a7b90a34b8a56d187fbd957d4353fa80f93a3553"

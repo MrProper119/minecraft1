@@ -1,0 +1,7 @@
+﻿name = "sodium-extra-neoforge-0.9.5+mc1.21.1"
+filename = "sodium-extra-neoforge-0.9.5+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6ca433df0ad08ce8413582e75dcae7619414a068"

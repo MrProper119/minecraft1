@@ -1,0 +1,7 @@
+﻿name = "xaeroworldmap-neoforge-1.21.1-1.47.0"
+filename = "xaeroworldmap-neoforge-1.21.1-1.47.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2936c9cb9dfbdab145fe6f1e8ae2c68915246a5f"
