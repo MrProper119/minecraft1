@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "kubejs:item/industrial_machine_frame"
+                 },
+    "parent":  "minecraft:item/generated"
+}

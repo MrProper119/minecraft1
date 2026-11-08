@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "kubejs:item/insulated_cable"
+                 },
+    "parent":  "minecraft:item/generated"
+}

@@ -1,0 +1,12 @@
+﻿{
+    "item.kubejs.crude_semiconductor":  "Напівпровідниковий чип",
+    "item.kubejs.silicon_wafer":  "Кремнієва пластина",
+    "item.kubejs.industrial_machine_frame":  "Промисловий каркас механізму",
+    "item.kubejs.unfired_refractory_brick":  "Сира вогнетривка цегла",
+    "item.kubejs.solder_wire":  "Олов\u0027яно-свинцевий припій",
+    "item.kubejs.insulated_cable":  "Ізольований мідний кабель",
+    "item.kubejs.etched_pcb":  "Витравлена друкована плата",
+    "item.kubejs.electronic_components":  "Набір радіодеталей",
+    "item.kubejs.refractory_brick":  "Шамотна вогнетривка цегла",
+    "item.kubejs.empty_pcb":  "Текстолітова заготовка плати"
+}

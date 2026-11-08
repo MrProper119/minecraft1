@@ -1,0 +1,5430 @@
+{
+  "activateSkinCapeForUserVersion": false,
+  "skipHashsumValidation": false,
+  "additionalFiles": [
+    {
+      "sha1": "db5c59932751d66c2f57c1c2de41b48712620975",
+      "size": 12372293,
+      "path": "libraries/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-extra.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-extra.jar"
+    },
+    {
+      "sha1": "a4827225b3c07662ca68b03ea20d11433a0c0488",
+      "size": 18725656,
+      "path": "libraries/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-srg.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-srg.jar"
+    },
+    {
+      "sha1": "2244b6f072256667bcd9a73df124d6c58de77992",
+      "size": 9598610,
+      "path": "libraries/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-mappings.txt",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-mappings.txt"
+    },
+    {
+      "sha1": "b4fb33003ee0975bc4511ff09d5d4a268b33fc2b",
+      "size": 14464635,
+      "path": "libraries/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-slim.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-slim.jar"
+    },
+    {
+      "sha1": "78f59f89defcd032ed788b151ca6a0d40ace796a",
+      "size": 31807,
+      "path": "libraries/net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar"
+    },
+    {
+      "sha1": "5b2d33285ab5d1554e9798ad98c40d6ea3868bd5",
+      "size": 30340,
+      "path": "libraries/net/neoforged/bus/8.0.5/bus-8.0.5.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/bus/8.0.5/bus-8.0.5.jar"
+    },
+    {
+      "sha1": "f8da03683dc81694556dc3e177c5e3bb77ae6fcb",
+      "size": 15648,
+      "path": "libraries/net/neoforged/JarJarMetadata/0.4.1/JarJarMetadata-0.4.1.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/JarJarMetadata/0.4.1/JarJarMetadata-0.4.1.jar"
+    },
+    {
+      "sha1": "e5a3115eb9e299117472675946be8a72e4990ad6",
+      "size": 9379,
+      "path": "libraries/net/neoforged/installertools/cli-utils/2.1.2/cli-utils-2.1.2.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/installertools/cli-utils/2.1.2/cli-utils-2.1.2.jar"
+    },
+    {
+      "sha1": "759b63ef393ed80418ec1ea4d233cd6152d02637",
+      "size": 624217,
+      "path": "libraries/net/neoforged/installertools/binarypatcher/2.1.2/binarypatcher-2.1.2-fatjar.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/installertools/binarypatcher/2.1.2/binarypatcher-2.1.2-fatjar.jar"
+    },
+    {
+      "sha1": "72524c0362f812d8aa4cdb4c03e9b45e2b71ae3b",
+      "size": 83543,
+      "path": "libraries/net/neoforged/installertools/installertools/2.1.2/installertools-2.1.2.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/installertools/installertools/2.1.2/installertools-2.1.2.jar"
+    },
+    {
+      "sha1": "8a7916be0a0e589897beab7c839072631067e48e",
+      "size": 7790,
+      "path": "libraries/net/neoforged/installertools/jarsplitter/2.1.2/jarsplitter-2.1.2.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/installertools/jarsplitter/2.1.2/jarsplitter-2.1.2.jar"
+    },
+    {
+      "sha1": "4a0968c2ec6234d58e0a9ed97acafc08cc8f33b5",
+      "size": 505696,
+      "path": "libraries/net/neoforged/fancymodloader/loader/4.0.45/loader-4.0.45.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/fancymodloader/loader/4.0.45/loader-4.0.45.jar"
+    },
+    {
+      "sha1": "dc7a8b1370054dd0e2d70c1db4ddf4092793c115",
+      "size": 261719,
+      "path": "libraries/net/neoforged/fancymodloader/earlydisplay/4.0.45/earlydisplay-4.0.45.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/fancymodloader/earlydisplay/4.0.45/earlydisplay-4.0.45.jar"
+    },
+    {
+      "sha1": "fb3cc7a58af22ad2880adb98af6d518128c47dae",
+      "size": 17168,
+      "path": "libraries/net/neoforged/JarJarSelector/0.4.1/JarJarSelector-0.4.1.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/JarJarSelector/0.4.1/JarJarSelector-0.4.1.jar"
+    },
+    {
+      "sha1": "09147e6f638b4272b3bd5fc8f92ad37802512c6c",
+      "size": 22659,
+      "path": "libraries/net/neoforged/coremods/7.0.3/coremods-7.0.3.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/coremods/7.0.3/coremods-7.0.3.jar"
+    },
+    {
+      "sha1": "b9fe6cdab494983217cbc14cc6f92c8e6c616526",
+      "size": 71421,
+      "path": "libraries/net/neoforged/srgutils/1.0.0/srgutils-1.0.0.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/srgutils/1.0.0/srgutils-1.0.0.jar"
+    },
+    {
+      "sha1": "52fe1949be64e3303aabaaa21e315f551db9c9f4",
+      "size": 2550,
+      "path": "libraries/net/neoforged/mergetool/2.0.0/mergetool-2.0.0-api.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/mergetool/2.0.0/mergetool-2.0.0-api.jar"
+    },
+    {
+      "sha1": "811e2bd86fa2cda2812e5e8e51d718ea8bd6d3f4",
+      "size": 1683830,
+      "path": "libraries/net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430.zip"
+    },
+    {
+      "sha1": "8184d8b290627ae54ab0eb980801bfe011f70175",
+      "size": 5636727,
+      "path": "libraries/net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430-mappings-merged.txt",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430-mappings-merged.txt"
+    },
+    {
+      "sha1": "c9fe69b8e39fc9ae8a56e6666204505866006cce",
+      "size": 5601343,
+      "path": "libraries/net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430-mappings.txt",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/neoform/1.21.1-20240808.144430/neoform-1.21.1-20240808.144430-mappings.txt"
+    },
+    {
+      "sha1": "d9890c71b4366f886c2b1006782043a6a6816eb6",
+      "size": 746919,
+      "path": "libraries/net/neoforged/AutoRenamingTool/2.0.3/AutoRenamingTool-2.0.3-all.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/AutoRenamingTool/2.0.3/AutoRenamingTool-2.0.3-all.jar"
+    },
+    {
+      "sha1": "fd00dd19b597fbaf7ac14c9be1df1bdd1295660b",
+      "size": 3559126,
+      "path": "libraries/net/neoforged/neoforge/21.1.265/neoforge-21.1.265-universal.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/neoforge/21.1.265/neoforge-21.1.265-universal.jar"
+    },
+    {
+      "sha1": "7adba46f30253a947473434bc5aa8aa54fc00377",
+      "size": 5698522,
+      "path": "libraries/net/neoforged/neoforge/21.1.265/neoforge-21.1.265-client.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/neoforge/21.1.265/neoforge-21.1.265-client.jar"
+    },
+    {
+      "sha1": "fd83b5725f76eae9115e9355fa1c456a6a441400",
+      "size": 67234,
+      "path": "libraries/net/neoforged/accesstransformers/10.0.1/accesstransformers-10.0.1.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/accesstransformers/10.0.1/accesstransformers-10.0.1.jar"
+    },
+    {
+      "sha1": "5aba50202aceead086bc09fbc2751c9f05cb4890",
+      "size": 2347,
+      "path": "libraries/net/neoforged/accesstransformers/at-modlauncher/10.0.1/at-modlauncher-10.0.1.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/neoforged/accesstransformers/at-modlauncher/10.0.1/at-modlauncher-10.0.1.jar"
+    }
+  ],
+  "tlauncherVersion": 0,
+  "modpack": {
+    "modpackMemory": false,
+    "memory": 0,
+    "id": -2012535639465000,
+    "name": "Test",
+    "favorite": false,
+    "version": {
+      "mods": [
+        {
+          "stateGameElement": "active",
+          "id": -2013845223181100,
+          "name": "1786342327722-createtnt-1.21.1-neoforge-CreateTNT1.0.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845224670000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f30345460edb967754e5fe391f12f14762d673d5",
+              "size": 283217,
+              "path": "mods/1786342327722-createtnt-1.21.1-neoforge-CreateTNT1.0.0.jar",
+              "url": "mods/1786342327722-createtnt-1.21.1-neoforge-CreateTNT1.0.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845224686000,
+          "name": "advancednetherite-neoforge-2.3.1-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845225975500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "99003aafa635f316bdcf2db4a70989890a4d944d",
+              "size": 520611,
+              "path": "mods/advancednetherite-neoforge-2.3.1-1.21.1.jar",
+              "url": "mods/advancednetherite-neoforge-2.3.1-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845225983100,
+          "name": "aeroclaims-0.9.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845226570700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "2f0aa5ba6ac0af79b2a5cc9d6bf6fe8cf41c197a",
+              "size": 193059,
+              "path": "mods/aeroclaims-0.9.2.jar",
+              "url": "mods/aeroclaims-0.9.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845226577900,
+          "name": "aeroworks-1.3.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845227651600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "0767ffd7796b5adb0ebba6ebcebd729bdcdfa33a",
+              "size": 675196,
+              "path": "mods/aeroworks-1.3.0.jar",
+              "url": "mods/aeroworks-1.3.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845227659300,
+          "name": "aero_cam_sync-1.3.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845228503300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5a508ea08f8a83977223a516a3d30eae76001d38",
+              "size": 682932,
+              "path": "mods/aero_cam_sync-1.3.5.jar",
+              "url": "mods/aero_cam_sync-1.3.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845228511000,
+          "name": "almostunified-neoforge-1.21.1-1.4.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845228936100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f9a58fa95780f4b045d30559c1fdaedaa7f0fba3",
+              "size": 295093,
+              "path": "mods/almostunified-neoforge-1.21.1-1.4.2.jar",
+              "url": "mods/almostunified-neoforge-1.21.1-1.4.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845228942400,
+          "name": "anvilcore-10.1%20Release-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845229187600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d807fa23228c5260aa85413c4eab03a577cdd255",
+              "size": 104557,
+              "path": "mods/anvilcore-10.1%20Release-neoforge-1.21.1.jar",
+              "url": "mods/anvilcore-10.1%20Release-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845229201200,
+          "name": "ApothicAttributes-1.21.1-2.9.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845229545900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e7f669e1b45d75076200436f37c40a6dd3b6a6ff",
+              "size": 314269,
+              "path": "mods/ApothicAttributes-1.21.1-2.9.1.jar",
+              "url": "mods/ApothicAttributes-1.21.1-2.9.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845229551300,
+          "name": "appleskin-neoforge-mc1.21-3.0.9",
+          "favorite": false,
+          "version": {
+            "id": -2013845229699000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "81cf0e668f991f83ac8820c386fbd6c9c3602246",
+              "size": 75804,
+              "path": "mods/appleskin-neoforge-mc1.21-3.0.9.jar",
+              "url": "mods/appleskin-neoforge-mc1.21-3.0.9.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845229703100,
+          "name": "architectury-13.0.8-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2013845230362900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6ca11d3cc136bf69bb8f4d56982481eb85b5100b",
+              "size": 584004,
+              "path": "mods/architectury-13.0.8-neoforge.jar",
+              "url": "mods/architectury-13.0.8-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845230369900,
+          "name": "artifacts-neoforge-13.2.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845231337500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3fe4d52cc0b11d91c75005030e83e3f675e62383",
+              "size": 1030252,
+              "path": "mods/artifacts-neoforge-13.2.1.jar",
+              "url": "mods/artifacts-neoforge-13.2.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845231344900,
+          "name": "ATi%20Structures%20V1.4.4%20(1.21%2B)",
+          "favorite": false,
+          "version": {
+            "id": -2013845235132900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f0c645784c43fb41ba48b032a2cfdbdc19f11727",
+              "size": 3156978,
+              "path": "mods/ATi%20Structures%20V1.4.4%20(1.21%2B).jar",
+              "url": "mods/ATi%20Structures%20V1.4.4%20(1.21%2B).jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845235142000,
+          "name": "azimuth-1.4.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845235643100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3e45b5b4389247cffb61179ba33c2b9c45ad50a6",
+              "size": 141740,
+              "path": "mods/azimuth-1.4.0.jar",
+              "url": "mods/azimuth-1.4.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845235651000,
+          "name": "betterfpsdist-1.21-6.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845235782400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5377aae3a0f0eb65aa5dceca4985f53480a73db5",
+              "size": 22742,
+              "path": "mods/betterfpsdist-1.21-6.0.jar",
+              "url": "mods/betterfpsdist-1.21-6.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845235787400,
+          "name": "bettervillage-neoforge-1.21.1-3.3.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845237779900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "fbe35b530079ddbd60a7c2afac3e259768cbd400",
+              "size": 2429558,
+              "path": "mods/bettervillage-neoforge-1.21.1-3.3.1.jar",
+              "url": "mods/bettervillage-neoforge-1.21.1-3.3.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845237786400,
+          "name": "Big Globe-5.3.2-MC1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845243414000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b4d080df8236c1cf1b282888653df883b34b0b44",
+              "size": 7054104,
+              "path": "mods/Big Globe-5.3.2-MC1.21.1.jar",
+              "url": "mods/Big Globe-5.3.2-MC1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845243423300,
+          "name": "big_cannons_aeronautics_fix-0.1-Alpha",
+          "favorite": false,
+          "version": {
+            "id": -2013845244082000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "172c54c30d0e1ac2a208c59e1c59892202ec7f0e",
+              "size": 640145,
+              "path": "mods/big_cannons_aeronautics_fix-0.1-Alpha.jar",
+              "url": "mods/big_cannons_aeronautics_fix-0.1-Alpha.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845244088100,
+          "name": "bits_n_bobs-0.0.44",
+          "favorite": false,
+          "version": {
+            "id": -2013845245427500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "2d577eb7e47b860fc32e4ebd33405715252c5072",
+              "size": 1613264,
+              "path": "mods/bits_n_bobs-0.0.44.jar",
+              "url": "mods/bits_n_bobs-0.0.44.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845245433500,
+          "name": "bookshelf-neoforge-1.21.1-21.1.81",
+          "favorite": false,
+          "version": {
+            "id": -2013845245766900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "efc4cda6da4dd879f24d057ed0a6413764c9ba40",
+              "size": 328813,
+              "path": "mods/bookshelf-neoforge-1.21.1-21.1.81.jar",
+              "url": "mods/bookshelf-neoforge-1.21.1-21.1.81.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845245771400,
+          "name": "caelus-neoforge-7.0.1+1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845245890300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e4c2e1af4e3082d68f7df75f7c8ce30116d71515",
+              "size": 50235,
+              "path": "mods/caelus-neoforge-7.0.1+1.21.1.jar",
+              "url": "mods/caelus-neoforge-7.0.1+1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845245894000,
+          "name": "carryon-neoforge-1.21.1-2.2.4.4",
+          "favorite": false,
+          "version": {
+            "id": -2013845246241800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "774bf57a199784c35e74f2d619d6001c87185a11",
+              "size": 357489,
+              "path": "mods/carryon-neoforge-1.21.1-2.2.4.4.jar",
+              "url": "mods/carryon-neoforge-1.21.1-2.2.4.4.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845246246300,
+          "name": "cataclysmfortresses-1.21.1-NeoForge",
+          "favorite": false,
+          "version": {
+            "id": -2013845246347600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "2ed4b70cb80c47fd8b844711fa43abd3ffd14bcf",
+              "size": 19893,
+              "path": "mods/cataclysmfortresses-1.21.1-NeoForge.jar",
+              "url": "mods/cataclysmfortresses-1.21.1-NeoForge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845246351900,
+          "name": "CBCmoreshells-1.1.6",
+          "favorite": false,
+          "version": {
+            "id": -2013845247211300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b3f59c67050807f18884208487e1babab26e7fd5",
+              "size": 995033,
+              "path": "mods/CBCmoreshells-1.1.6.jar",
+              "url": "mods/CBCmoreshells-1.1.6.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845247221900,
+          "name": "cbc_equally_opposite-0.1.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845247432400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4ae8b803ea19ae155f31d86bc646993aac5a3fc8",
+              "size": 160112,
+              "path": "mods/cbc_equally_opposite-0.1.3.jar",
+              "url": "mods/cbc_equally_opposite-0.1.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845247437000,
+          "name": "CBMultipart-1.21.1-3.5.0.155",
+          "favorite": false,
+          "version": {
+            "id": -2013845247936500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "754cefc13802393862a05142f55d71669e76bc3d",
+              "size": 547450,
+              "path": "mods/CBMultipart-1.21.1-3.5.0.155.jar",
+              "url": "mods/CBMultipart-1.21.1-3.5.0.155.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845247941700,
+          "name": "cloth-config-15.0.140-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2013845248946300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c3e5733ba4503b102589a026000fd5ce0212f6f2",
+              "size": 1163890,
+              "path": "mods/cloth-config-15.0.140-neoforge.jar",
+              "url": "mods/cloth-config-15.0.140-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845248956700,
+          "name": "Clumps-neoforge-1.21.1-19.0.0.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845249060500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "fa2576297c7bd12b28aa7070e8141792bd66da4c",
+              "size": 18382,
+              "path": "mods/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+              "url": "mods/Clumps-neoforge-1.21.1-19.0.0.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845249065000,
+          "name": "CodeChickenLib-1.21.1-4.6.1.526",
+          "favorite": false,
+          "version": {
+            "id": -2013845250362400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6a278b5a2788c2fee7ae52d17f24187332d436b2",
+              "size": 1538347,
+              "path": "mods/CodeChickenLib-1.21.1-4.6.1.526.jar",
+              "url": "mods/CodeChickenLib-1.21.1-4.6.1.526.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845250369400,
+          "name": "collective-1.21.1-8.20",
+          "favorite": false,
+          "version": {
+            "id": -2013845251219100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "843bd92e270196c1b52eabc7ac54b0b6c521e395",
+              "size": 942780,
+              "path": "mods/collective-1.21.1-8.20.jar",
+              "url": "mods/collective-1.21.1-8.20.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845251226800,
+          "name": "colorfulhearts-neoforge-1.21.1-10.5.9",
+          "favorite": false,
+          "version": {
+            "id": -2013845251435100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ec63110d126cf95dabe220116bd394e701265de7",
+              "size": 156588,
+              "path": "mods/colorfulhearts-neoforge-1.21.1-10.5.9.jar",
+              "url": "mods/colorfulhearts-neoforge-1.21.1-10.5.9.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845251440000,
+          "name": "connector-2.0.0-beta.17%2B1.21.1-full",
+          "favorite": false,
+          "version": {
+            "id": -2013845256428100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ba08b534af7982d0bd25a25b45cb654c09ffec8f",
+              "size": 4573244,
+              "path": "mods/connector-2.0.0-beta.17%2B1.21.1-full.jar",
+              "url": "mods/connector-2.0.0-beta.17%2B1.21.1-full.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845256441500,
+          "name": "copycats-3.0.4%2Bmc.1.21.1-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2013845258862400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6a11d5806bcf521e08faba1ee6ef5f31af55ca0f",
+              "size": 1791747,
+              "path": "mods/copycats-3.0.4%2Bmc.1.21.1-neoforge.jar",
+              "url": "mods/copycats-3.0.4%2Bmc.1.21.1-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845258878400,
+          "name": "cratedelight-25.09.22-1.21-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2013845259474100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3cfe8feb1962e0b69d7a47e44458533489d62e4d",
+              "size": 166931,
+              "path": "mods/cratedelight-25.09.22-1.21-neoforge.jar",
+              "url": "mods/cratedelight-25.09.22-1.21-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845259490300,
+          "name": "Create%20Encased-1.21.1-1.8-ht2",
+          "favorite": false,
+          "version": {
+            "id": -2013845262628900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "957a7ee1741c7a8536bedd401a923d7fb73a7092",
+              "size": 2410332,
+              "path": "mods/Create%20Encased-1.21.1-1.8-ht2.jar",
+              "url": "mods/Create%20Encased-1.21.1-1.8-ht2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845262641200,
+          "name": "create-1.21.1-6.0.10",
+          "favorite": false,
+          "version": {
+            "id": -2013845282133500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "0e97e49837bed766e6f28a4c95b04885d6acc353",
+              "size": 19123767,
+              "path": "mods/create-1.21.1-6.0.10.jar",
+              "url": "mods/create-1.21.1-6.0.10.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845282161200,
+          "name": "create-aeronautics-bundled-1.21.1-1.0.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845316291300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "704aa5293585b58caceedcb4fa57db628db2329a",
+              "size": 32945368,
+              "path": "mods/create-aeronautics-bundled-1.21.1-1.0.3.jar",
+              "url": "mods/create-aeronautics-bundled-1.21.1-1.0.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845316323400,
+          "name": "create-aeronautics-bundled-1.21.1-1.3.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845349675500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ddbe9cbc25e8f663218aa1e9fdfc4b99f0e11e4b",
+              "size": 33123131,
+              "path": "mods/create-aeronautics-bundled-1.21.1-1.3.2.jar",
+              "url": "mods/create-aeronautics-bundled-1.21.1-1.3.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845349709400,
+          "name": "create-central-kitchen-2.3.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845350786600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "93ec8d7d6a77f3ee8ba1533c81563cdbcc261293",
+              "size": 342206,
+              "path": "mods/create-central-kitchen-2.3.0.jar",
+              "url": "mods/create-central-kitchen-2.3.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845350818500,
+          "name": "create-confectionery1.21.1_v1.1.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845353167700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "a38bfe8c4b4dde5e61d79785328b51b5687d1b1a",
+              "size": 2128395,
+              "path": "mods/create-confectionery1.21.1_v1.1.3.jar",
+              "url": "mods/create-confectionery1.21.1_v1.1.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845353188500,
+          "name": "create-dragons-plus-1.8.7",
+          "favorite": false,
+          "version": {
+            "id": -2013845354101300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3e53b26e850f9d2a995868b0d7c012ba8e9d373b",
+              "size": 644935,
+              "path": "mods/create-dragons-plus-1.8.7.jar",
+              "url": "mods/create-dragons-plus-1.8.7.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845354119100,
+          "name": "create-enchantment-industry-2.3.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845355144600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d9cef051c5318d27c634184bfb1ef35550b96789",
+              "size": 683005,
+              "path": "mods/create-enchantment-industry-2.3.0.jar",
+              "url": "mods/create-enchantment-industry-2.3.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845355169200,
+          "name": "create-stuff-additions1.21.1_v2.1.0e",
+          "favorite": false,
+          "version": {
+            "id": -2013845356962700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5de330acd44af9e09430a7710687ad176dabf1e2",
+              "size": 1318700,
+              "path": "mods/create-stuff-additions1.21.1_v2.1.0e.jar",
+              "url": "mods/create-stuff-additions1.21.1_v2.1.0e.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845356979400,
+          "name": "createaddition-1.5.10",
+          "favorite": false,
+          "version": {
+            "id": -2013845358704100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "2bd194da923dd38239ef49df30ecf1a720d38997",
+              "size": 1595173,
+              "path": "mods/createaddition-1.5.10.jar",
+              "url": "mods/createaddition-1.5.10.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845358718800,
+          "name": "createbetterfps-1.21.1-1.1.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845359162300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "cd8152d80a36e872690da101a8262877e854ceee",
+              "size": 26171,
+              "path": "mods/createbetterfps-1.21.1-1.1.3.jar",
+              "url": "mods/createbetterfps-1.21.1-1.1.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845359177800,
+          "name": "createbigcannons-5.11.2-mc.1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845362948500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3b43caff93cffe7c64498d56c1d79d0d034123dc",
+              "size": 3697176,
+              "path": "mods/createbigcannons-5.11.2-mc.1.21.1.jar",
+              "url": "mods/createbigcannons-5.11.2-mc.1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845362962700,
+          "name": "createbigcannons-5.11.7+mc.1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845367380900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c90ee0b2142e2c58d233e150cb3a24c7cb07eb2d",
+              "size": 3771506,
+              "path": "mods/createbigcannons-5.11.7+mc.1.21.1.jar",
+              "url": "mods/createbigcannons-5.11.7+mc.1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845367399200,
+          "name": "createchromaticreturn-1.0.1-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845368491200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "7c4afe913161b394af563078967bfc44ff04a691",
+              "size": 485772,
+              "path": "mods/createchromaticreturn-1.0.1-neoforge-1.21.1.jar",
+              "url": "mods/createchromaticreturn-1.0.1-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845368507700,
+          "name": "CreateCyberGoggles-1.21.1-7.5.2-NeoForge",
+          "favorite": false,
+          "version": {
+            "id": -2013845369462300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3496428d5ef0ec342fb03e50a61ccd6461cb642d",
+              "size": 444685,
+              "path": "mods/CreateCyberGoggles-1.21.1-7.5.2-NeoForge.jar",
+              "url": "mods/CreateCyberGoggles-1.21.1-7.5.2-NeoForge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845369478700,
+          "name": "createdeco-2.1.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845373539500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "93d9eff58b46c6953e907d071e6be4e3ce07be38",
+              "size": 3328498,
+              "path": "mods/createdeco-2.1.3.jar",
+              "url": "mods/createdeco-2.1.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845373558600,
+          "name": "creategoggles-1.21.1-6.1.1-[NEOFORGE]",
+          "favorite": false,
+          "version": {
+            "id": -2013845374140000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e0285c31a2d2501439264c33c965409c422cd5b1",
+              "size": 180932,
+              "path": "mods/creategoggles-1.21.1-6.1.1-[NEOFORGE].jar",
+              "url": "mods/creategoggles-1.21.1-6.1.1-[NEOFORGE].jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845374161100,
+          "name": "createpropulsion-0.3.6",
+          "favorite": false,
+          "version": {
+            "id": -2013845375004600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "7f669bed88386f9b74754536c62ab2d5d1b23fae",
+              "size": 532289,
+              "path": "mods/createpropulsion-0.3.6.jar",
+              "url": "mods/createpropulsion-0.3.6.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845375021700,
+          "name": "createsa_tank_fix-1.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845375460400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "8e3214432c1d0137b34d6e098be30032874db3e4",
+              "size": 48514,
+              "path": "mods/createsa_tank_fix-1.3.jar",
+              "url": "mods/createsa_tank_fix-1.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845375475100,
+          "name": "createsifter-1.21.1-2.2.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845376777500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "739bdcd8481b2ad46e9bde211ea5d6ccb7e11e96",
+              "size": 710087,
+              "path": "mods/createsifter-1.21.1-2.2.1.jar",
+              "url": "mods/createsifter-1.21.1-2.2.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845376794400,
+          "name": "create_aeronautics_transmission_linkage-0.2.8",
+          "favorite": false,
+          "version": {
+            "id": -2013845378044100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "bccaf90652905ae5f28dcc7e1134099d188ca020",
+              "size": 734744,
+              "path": "mods/create_aeronautics_transmission_linkage-0.2.8.jar",
+              "url": "mods/create_aeronautics_transmission_linkage-0.2.8.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845378058900,
+          "name": "create_compressed-2.2.0-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845378601400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "286c948a50b085ddfa6360ca8ef176775d32e4fd",
+              "size": 158961,
+              "path": "mods/create_compressed-2.2.0-neoforge-1.21.1.jar",
+              "url": "mods/create_compressed-2.2.0-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845378617800,
+          "name": "create_connected-1.1.13-mc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845385186400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "05d6b1508422662cdd6e497b8565d4d280e25c6a",
+              "size": 6555122,
+              "path": "mods/create_connected-1.1.13-mc1.21.1.jar",
+              "url": "mods/create_connected-1.1.13-mc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845385208100,
+          "name": "create_jetpack_curios-1.2.0-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845386351800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5146fc22a9385de8103b5ca0151f80dcd0f03978",
+              "size": 421892,
+              "path": "mods/create_jetpack_curios-1.2.0-neoforge-1.21.1.jar",
+              "url": "mods/create_jetpack_curios-1.2.0-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845386374700,
+          "name": "create_ltab-3.9.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845389943100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5d22ef80a1f6caf60922246c0fa54c3d81be4638",
+              "size": 2624316,
+              "path": "mods/create_ltab-3.9.1.jar",
+              "url": "mods/create_ltab-3.9.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845389982300,
+          "name": "create_optical-0.4.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845398838500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "609c2ec0b2d07b67ca609e5db2c329dbe7ca16fe",
+              "size": 8002788,
+              "path": "mods/create_optical-0.4.1.jar",
+              "url": "mods/create_optical-0.4.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845398869600,
+          "name": "create_radar-0.4.9.4-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845402097300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9726fced4bf86c9e2c0ea09b35bc39ed3ac007b6",
+              "size": 2990812,
+              "path": "mods/create_radar-0.4.9.4-1.21.1.jar",
+              "url": "mods/create_radar-0.4.9.4-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845402128200,
+          "name": "create_ratatouille-1.21.1-1.3.9",
+          "favorite": false,
+          "version": {
+            "id": -2013845403710700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e2c01836fa8ae79529cb43687956cc6e67ee1712",
+              "size": 917002,
+              "path": "mods/create_ratatouille-1.21.1-1.3.9.jar",
+              "url": "mods/create_ratatouille-1.21.1-1.3.9.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845403757900,
+          "name": "create_rustic_structures-1.0.0-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845404974100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "1f0f0f1fc4202eaaa3470c76d6b18f776762d85f",
+              "size": 710280,
+              "path": "mods/create_rustic_structures-1.0.0-neoforge-1.21.1.jar",
+              "url": "mods/create_rustic_structures-1.0.0-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845404993200,
+          "name": "create_sophback_compat-1.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845406332300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "401e8b83ab79c13bf71ba6209f4c8c487c001b38",
+              "size": 679850,
+              "path": "mods/create_sophback_compat-1.0.jar",
+              "url": "mods/create_sophback_compat-1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845406349700,
+          "name": "create_structures_arise-174.47.46%20Release-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845408020500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "53c5811a747c555fe70032f4712bc1e0903cb057",
+              "size": 1111819,
+              "path": "mods/create_structures_arise-174.47.46%20Release-neoforge-1.21.1.jar",
+              "url": "mods/create_structures_arise-174.47.46%20Release-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845408046600,
+          "name": "create_structures_overhaul-1.4.0-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845409168200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "49e30569533c2506beea0e8fe7dce9eb141c9534",
+              "size": 558256,
+              "path": "mods/create_structures_overhaul-1.4.0-neoforge-1.21.1.jar",
+              "url": "mods/create_structures_overhaul-1.4.0-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845409187700,
+          "name": "create_submarine-2.2.4",
+          "favorite": false,
+          "version": {
+            "id": -2013845411899500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "fb4902c2ca3463ea3016efbae7011408eb008d89",
+              "size": 1869296,
+              "path": "mods/create_submarine-2.2.4.jar",
+              "url": "mods/create_submarine-2.2.4.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845411931500,
+          "name": "create_the_air_wars-5.00",
+          "favorite": false,
+          "version": {
+            "id": -2013845432510000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d725b4b8cb2ef1de64ff7f593a8c0de06de6c1b9",
+              "size": 21313903,
+              "path": "mods/create_the_air_wars-5.00.jar",
+              "url": "mods/create_the_air_wars-5.00.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845432548800,
+          "name": "create_things_and_misc-4.1.0-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845433772700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4b6d2bef5a99cf15667c0b19dcb5dc514b5f6d90",
+              "size": 1032486,
+              "path": "mods/create_things_and_misc-4.1.0-neoforge-1.21.1.jar",
+              "url": "mods/create_things_and_misc-4.1.0-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845433817700,
+          "name": "create_ultimate_factory-2.2.3-neoforge-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845434451400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d774573b4f2c31d809c0a1a91c65e2bc6aa97a4c",
+              "size": 234343,
+              "path": "mods/create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+              "url": "mods/create_ultimate_factory-2.2.3-neoforge-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845434473600,
+          "name": "create_wizardry-1.21.1-0.4.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845435211700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "28a8db864c8e0553cd387eedb845bd3fec603d02",
+              "size": 243474,
+              "path": "mods/create_wizardry-1.21.1-0.4.2.jar",
+              "url": "mods/create_wizardry-1.21.1-0.4.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845435234300,
+          "name": "cristellib-neoforge-1.21.1-3.0.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845435992300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "8e61459df2c76caa19d3f1e218522389ad812f6c",
+              "size": 539899,
+              "path": "mods/cristellib-neoforge-1.21.1-3.0.3.jar",
+              "url": "mods/cristellib-neoforge-1.21.1-3.0.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845436009600,
+          "name": "cr_aero_structures",
+          "favorite": false,
+          "version": {
+            "id": -2013845436607500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f60358df1d049491b0b03a99483d8803060bd99a",
+              "size": 269552,
+              "path": "mods/cr_aero_structures.jar",
+              "url": "mods/cr_aero_structures.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845436624100,
+          "name": "cupboard-1.21-3.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845437016800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e5f55c8f9d172048fe6f8b919cda1dbe3cbfbc70",
+              "size": 26659,
+              "path": "mods/cupboard-1.21-3.5.jar",
+              "url": "mods/cupboard-1.21-3.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845437036600,
+          "name": "curios-neoforge-9.5.1+1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845437992500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "418fcd42e3a7844c9bdc71c9b6401fdb3894e0c4",
+              "size": 410690,
+              "path": "mods/curios-neoforge-9.5.1+1.21.1.jar",
+              "url": "mods/curios-neoforge-9.5.1+1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845438011200,
+          "name": "DnDesires-1.21.1-2.2d-BETA",
+          "favorite": false,
+          "version": {
+            "id": -2013845439641400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "fed072610e7d758c379cdaa2161ac8e5f28ce0b9",
+              "size": 1184499,
+              "path": "mods/DnDesires-1.21.1-2.2d-BETA.jar",
+              "url": "mods/DnDesires-1.21.1-2.2d-BETA.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845439662600,
+          "name": "dynamiclights-v1.9.3-mc1.17-26.2.9-mod",
+          "favorite": false,
+          "version": {
+            "id": -2013845440376100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4194919ace5fa7764af6f8f0f85500f664e5f0bd",
+              "size": 426439,
+              "path": "mods/dynamiclights-v1.9.3-mc1.17-26.2.9-mod.jar",
+              "url": "mods/dynamiclights-v1.9.3-mc1.17-26.2.9-mod.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845440396400,
+          "name": "enchdesc-neoforge-1.21.1-21.1.9",
+          "favorite": false,
+          "version": {
+            "id": -2013845440858800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e4fa515c5deab3165f250f2a1297ac836d496064",
+              "size": 81847,
+              "path": "mods/enchdesc-neoforge-1.21.1-21.1.9.jar",
+              "url": "mods/enchdesc-neoforge-1.21.1-21.1.9.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845440879500,
+          "name": "ends_delight-2.5.1+neoforge.1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845441612200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "22b63e1c852fbbedb9f7add64990fd9f8eca0787",
+              "size": 263222,
+              "path": "mods/ends_delight-2.5.1+neoforge.1.21.1.jar",
+              "url": "mods/ends_delight-2.5.1+neoforge.1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845441631600,
+          "name": "enigmaticlegacyplus-1.21.1-0.1.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845442909300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3e8c8fd616dd2be762b415e243c1a8de18b4465a",
+              "size": 816462,
+              "path": "mods/enigmaticlegacyplus-1.21.1-0.1.0.jar",
+              "url": "mods/enigmaticlegacyplus-1.21.1-0.1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845442928600,
+          "name": "entityculling-neoforge-1.10.1-mc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845444873700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "68759da313caf8990bcd5d961bc691fa85fa3f0e",
+              "size": 1578350,
+              "path": "mods/entityculling-neoforge-1.10.1-mc1.21.1.jar",
+              "url": "mods/entityculling-neoforge-1.10.1-mc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845444892600,
+          "name": "extra_create_recipes_1.21.1_v1",
+          "favorite": false,
+          "version": {
+            "id": -2013845445089300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "58552805ec6e6ab5ea1069fa7fba676d18006470",
+              "size": 2527,
+              "path": "mods/extra_create_recipes_1.21.1_v1.jar",
+              "url": "mods/extra_create_recipes_1.21.1_v1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845445107200,
+          "name": "FarmersDelight-1.21.1-1.2.11",
+          "favorite": false,
+          "version": {
+            "id": -2013845447788400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "2415b91d6437977e676985b4a2ef877208d202e1",
+              "size": 2941573,
+              "path": "mods/FarmersDelight-1.21.1-1.2.11.jar",
+              "url": "mods/FarmersDelight-1.21.1-1.2.11.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845447812100,
+          "name": "ferritecore-7.0.3-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2013845448382900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9563692efb708b6b568df27a01ec52f6311928ef",
+              "size": 121559,
+              "path": "mods/ferritecore-7.0.3-neoforge.jar",
+              "url": "mods/ferritecore-7.0.3-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845448403600,
+          "name": "forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845454404500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "a6f0e7b7c277fab7174bca4943fba7bdf3f74ed7",
+              "size": 5613208,
+              "path": "mods/forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1.jar",
+              "url": "mods/forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845454439000,
+          "name": "FpsReducer2-neoforge-1.21-2.10",
+          "favorite": false,
+          "version": {
+            "id": -2013845455036500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "edb3e8d90992aae937c79827282f854f4cc5939c",
+              "size": 143137,
+              "path": "mods/FpsReducer2-neoforge-1.21-2.10.jar",
+              "url": "mods/FpsReducer2-neoforge-1.21-2.10.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845455067200,
+          "name": "ftb-chunks-neoforge-2101.1.14",
+          "favorite": false,
+          "version": {
+            "id": -2013845456672000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "908b63b11d0e00ae6c9557d3fe6440bdbcf21bb7",
+              "size": 642340,
+              "path": "mods/ftb-chunks-neoforge-2101.1.14.jar",
+              "url": "mods/ftb-chunks-neoforge-2101.1.14.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845456694200,
+          "name": "ftb-library-neoforge-2101.1.31",
+          "favorite": false,
+          "version": {
+            "id": -2013845458246100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "686d4e784c28c14f7760cc22b2de6a8573b56b74",
+              "size": 1411181,
+              "path": "mods/ftb-library-neoforge-2101.1.31.jar",
+              "url": "mods/ftb-library-neoforge-2101.1.31.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845458303900,
+          "name": "ftb-teams-neoforge-2101.1.10",
+          "favorite": false,
+          "version": {
+            "id": -2013845459665600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "363376ae0fb22cb0527170fdf6a066d1da9b0225",
+              "size": 302712,
+              "path": "mods/ftb-teams-neoforge-2101.1.10.jar",
+              "url": "mods/ftb-teams-neoforge-2101.1.10.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845459689300,
+          "name": "geckolib-neoforge-1.21.1-4.8.4",
+          "favorite": false,
+          "version": {
+            "id": -2013845460540600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "eb854c8ec53ef922a5f3877a1aa4c1ce1352e0ce",
+              "size": 622582,
+              "path": "mods/geckolib-neoforge-1.21.1-4.8.4.jar",
+              "url": "mods/geckolib-neoforge-1.21.1-4.8.4.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845460564300,
+          "name": "gtbcs_geomancy_plus-1.1.0-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845461574100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "67e9652799f35f1fbd09968da6f400d0229f5599",
+              "size": 475333,
+              "path": "mods/gtbcs_geomancy_plus-1.1.0-1.21.1.jar",
+              "url": "mods/gtbcs_geomancy_plus-1.1.0-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845461598300,
+          "name": "gtbcs_spell_lib-1.5.0-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845462083700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6cd001c4142d51bf455bf1af029a3755779b8c85",
+              "size": 149362,
+              "path": "mods/gtbcs_spell_lib-1.5.0-1.21.1.jar",
+              "url": "mods/gtbcs_spell_lib-1.5.0-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845462105400,
+          "name": "Incendium_1.21.x_v5.4.4",
+          "favorite": false,
+          "version": {
+            "id": -2013845466394400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "40da6da25ec45c4d88447733255e4281b6f22fef",
+              "size": 4267528,
+              "path": "mods/Incendium_1.21.x_v5.4.4.jar",
+              "url": "mods/Incendium_1.21.x_v5.4.4.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845466419300,
+          "name": "infinitetrading-1.21.1-4.6",
+          "favorite": false,
+          "version": {
+            "id": -2013845466919600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "594bf8a30c6471136a173e08295071c2f59fb6b5",
+              "size": 36954,
+              "path": "mods/infinitetrading-1.21.1-4.6.jar",
+              "url": "mods/infinitetrading-1.21.1-4.6.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845466943800,
+          "name": "inventorysorter-1.21.1-24.0.24",
+          "favorite": false,
+          "version": {
+            "id": -2013845467353700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "8c842959ecb1927e1c7049d41d024fadf329a584",
+              "size": 53363,
+              "path": "mods/inventorysorter-1.21.1-24.0.24.jar",
+              "url": "mods/inventorysorter-1.21.1-24.0.24.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845467375200,
+          "name": "ironsspellsartifacts-1.0.1.1-1.21.x",
+          "favorite": false,
+          "version": {
+            "id": -2013845467788700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "02fdd67e409d4dc1397a3b090c2d77188f955102",
+              "size": 16837,
+              "path": "mods/ironsspellsartifacts-1.0.1.1-1.21.x.jar",
+              "url": "mods/ironsspellsartifacts-1.0.1.1-1.21.x.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845467808000,
+          "name": "ironsspellsdelight-1.1.0-1.21.x",
+          "favorite": false,
+          "version": {
+            "id": -2013845468291000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "7aa10ad137cd1824713614243b863e5beebd03b0",
+              "size": 49708,
+              "path": "mods/ironsspellsdelight-1.1.0-1.21.x.jar",
+              "url": "mods/ironsspellsdelight-1.1.0-1.21.x.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845468312800,
+          "name": "irons_lib-1.21.1-1.0.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845469203100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ef92f362a352a30f927c30c2be72a2d843c41342",
+              "size": 374610,
+              "path": "mods/irons_lib-1.21.1-1.0.2.jar",
+              "url": "mods/irons_lib-1.21.1-1.0.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845469223300,
+          "name": "irons_spellbooks-1.21.1-3.15.6",
+          "favorite": false,
+          "version": {
+            "id": -2013845482237200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c9fea9c9b38376af74b7a7da68dc8a7671f4b961",
+              "size": 13559913,
+              "path": "mods/irons_spellbooks-1.21.1-3.15.6.jar",
+              "url": "mods/irons_spellbooks-1.21.1-3.15.6.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845482285400,
+          "name": "irons_spells_dynamic_skilltree_1.1.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845483049800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "de961262e4328fea6861f6ba94323037df2d44ab",
+              "size": 254720,
+              "path": "mods/irons_spells_dynamic_skilltree_1.1.0.jar",
+              "url": "mods/irons_spells_dynamic_skilltree_1.1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845483086600,
+          "name": "Jade-1.21.1-NeoForge-15.10.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845484440800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d5bf134b3dbde9f5258666823900e21341dc0a50",
+              "size": 725742,
+              "path": "mods/Jade-1.21.1-NeoForge-15.10.5.jar",
+              "url": "mods/Jade-1.21.1-NeoForge-15.10.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845484467900,
+          "name": "JadeAddons-1.21.1-NeoForge-6.1.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845484883200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d0aef07e67f9e2dd7ae68f9f27d845511d8eaff3",
+              "size": 74419,
+              "path": "mods/JadeAddons-1.21.1-NeoForge-6.1.0.jar",
+              "url": "mods/JadeAddons-1.21.1-NeoForge-6.1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845484906800,
+          "name": "jei-1.21.1-neoforge-19.70.0.469",
+          "favorite": false,
+          "version": {
+            "id": -2013845490967600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "363f10ce1d8918381a125cc1e8d800caf1bcb40e",
+              "size": 4784333,
+              "path": "mods/jei-1.21.1-neoforge-19.70.0.469.jar",
+              "url": "mods/jei-1.21.1-neoforge-19.70.0.469.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845491000800,
+          "name": "jlme-Neoforge1.21.x-ver1.2.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845491683600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "1f9d161bdc27bb4da5bb5f9008a605f3caff44dd",
+              "size": 118081,
+              "path": "mods/jlme-Neoforge1.21.x-ver1.2.5.jar",
+              "url": "mods/jlme-Neoforge1.21.x-ver1.2.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845491712400,
+          "name": "JustEnoughResources-NeoForge-1.21.1-1.6.0.17",
+          "favorite": false,
+          "version": {
+            "id": -2013845492404000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e739d69b2de31ca8c0cb4691ab08e823f153bc44",
+              "size": 292088,
+              "path": "mods/JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar",
+              "url": "mods/JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845492434700,
+          "name": "let_it_walk-0.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845493470000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "cd17e4d1b8d9e543d104fe03a8c49c42572ec4b7",
+              "size": 628955,
+              "path": "mods/let_it_walk-0.1.1.jar",
+              "url": "mods/let_it_walk-0.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845493499200,
+          "name": "libraryferret-neoforge-1.21.1-4.0.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845493997200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "95887e3ae531dc7e8a39e2c285c8a27cf06d698c",
+              "size": 139416,
+              "path": "mods/libraryferret-neoforge-1.21.1-4.0.0.jar",
+              "url": "mods/libraryferret-neoforge-1.21.1-4.0.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845494029100,
+          "name": "lionfishapi-2.7-fix-fix",
+          "favorite": false,
+          "version": {
+            "id": -2013845494537000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "af90b807eed100e899b9afa13bb75e7d45294ba3",
+              "size": 141535,
+              "path": "mods/lionfishapi-2.7-fix-fix.jar",
+              "url": "mods/lionfishapi-2.7-fix-fix.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845494567400,
+          "name": "lithostitched-1.6.8-neoforge-21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845495643000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "0a332da63a3b63ca9b8f0f11a3e882b232b7d64d",
+              "size": 808010,
+              "path": "mods/lithostitched-1.6.8-neoforge-21.1.jar",
+              "url": "mods/lithostitched-1.6.8-neoforge-21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845495669800,
+          "name": "lodestone-1.21.1-1.8.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845496858000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d1f7c638fac5192e01b1873f27e694a3c262ad11",
+              "size": 818829,
+              "path": "mods/lodestone-1.21.1-1.8.2.jar",
+              "url": "mods/lodestone-1.21.1-1.8.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845496879400,
+          "name": "lootintegrations-1.21.1-4.7",
+          "favorite": false,
+          "version": {
+            "id": -2013845497296400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ba601fe630f444d974838bfd80a185a0e3e0309c",
+              "size": 36966,
+              "path": "mods/lootintegrations-1.21.1-4.7.jar",
+              "url": "mods/lootintegrations-1.21.1-4.7.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845497319200,
+          "name": "lootintegrations_ati-1.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845497657000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "52897794d55f0eb74b72ee657028a25e018e94b0",
+              "size": 5659,
+              "path": "mods/lootintegrations_ati-1.2.jar",
+              "url": "mods/lootintegrations_ati-1.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845497683600,
+          "name": "lootintegrations_yungs-1.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845498006800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9487c23169689396e3a79613953d4af341c37bd0",
+              "size": 5964,
+              "path": "mods/lootintegrations_yungs-1.5.jar",
+              "url": "mods/lootintegrations_yungs-1.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845498033900,
+          "name": "lootr-neoforge-1.21.1-1.11.37.118",
+          "favorite": false,
+          "version": {
+            "id": -2013845499259100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "95058da06c16441211619ce46950502fd5ac1f64",
+              "size": 970642,
+              "path": "mods/lootr-neoforge-1.21.1-1.11.37.118.jar",
+              "url": "mods/lootr-neoforge-1.21.1-1.11.37.118.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845499283500,
+          "name": "L_Ender's%20Cataclysm%201.21.1-3.27",
+          "favorite": false,
+          "version": {
+            "id": -2013845572502200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f34a5e3994fff1953c631b87b3dfa89ed62c26dc",
+              "size": 73346519,
+              "path": "mods/L_Ender's%20Cataclysm%201.21.1-3.27.jar",
+              "url": "mods/L_Ender's%20Cataclysm%201.21.1-3.27.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845572557900,
+          "name": "mechanicals-1.21.1-1.1.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845573454100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9fcb171d9191d7c2a76502eccb295520787c9e81",
+              "size": 507824,
+              "path": "mods/mechanicals-1.21.1-1.1.0.jar",
+              "url": "mods/mechanicals-1.21.1-1.1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845573502000,
+          "name": "mezz_config-1.21.1-neoforge-0.6.10-standalone",
+          "favorite": false,
+          "version": {
+            "id": -2013845574236600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "12beda0b388b97b9d49df76b6d9c8acde7f913e3",
+              "size": 346260,
+              "path": "mods/mezz_config-1.21.1-neoforge-0.6.10-standalone.jar",
+              "url": "mods/mezz_config-1.21.1-neoforge-0.6.10-standalone.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845574260100,
+          "name": "minersdelight-1.21.1-1.4.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845575381300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c19ad4f93945a92f83ae6fc9bb5a0d74d8c5cf73",
+              "size": 386636,
+              "path": "mods/minersdelight-1.21.1-1.4.2.jar",
+              "url": "mods/minersdelight-1.21.1-1.4.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845575407900,
+          "name": "mob_ragdoll_corpse-1.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845575786600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f4c03fba103cf463946f3ee5bcbeca1344ad2cf2",
+              "size": 17356,
+              "path": "mods/mob_ragdoll_corpse-1.1.1.jar",
+              "url": "mods/mob_ragdoll_corpse-1.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845575813800,
+          "name": "moonlight-neoforge-1.21.1-3.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845578493000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "05242edd767cd4b5a11c52f43dccd8013c8dbb68",
+              "size": 2028566,
+              "path": "mods/moonlight-neoforge-1.21.1-3.1.1.jar",
+              "url": "mods/moonlight-neoforge-1.21.1-3.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845578521400,
+          "name": "more-xp-more-health-v1.0.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845578967400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d625a3aca9c1e52ed7daa4f8a67ef59b69cd10b3",
+              "size": 11867,
+              "path": "mods/more-xp-more-health-v1.0.1.jar",
+              "url": "mods/more-xp-more-health-v1.0.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845578994700,
+          "name": "morevillagers-neoforge-1.21.1-6.0.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845579917800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "508d859b023ba2056c9845c4087db0177bb7825a",
+              "size": 227363,
+              "path": "mods/morevillagers-neoforge-1.21.1-6.0.0.jar",
+              "url": "mods/morevillagers-neoforge-1.21.1-6.0.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845579964600,
+          "name": "more_curios_slots-1.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845580627600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "225078b07b2df69c956c867cf0cca7617fc16adc",
+              "size": 218190,
+              "path": "mods/more_curios_slots-1.3.jar",
+              "url": "mods/more_curios_slots-1.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845580658100,
+          "name": "MouseTweaks-neoforge-mc1.21-2.26.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845581190200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc",
+              "size": 73938,
+              "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+              "url": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845581224700,
+          "name": "mowziesmobs-1.21.1-1.8.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845618819700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d64475cd77444b056ece6472c79d40293dc63c6c",
+              "size": 36042925,
+              "path": "mods/mowziesmobs-1.21.1-1.8.2.jar",
+              "url": "mods/mowziesmobs-1.21.1-1.8.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845618910600,
+          "name": "MyNethersDelight-1.21.1-1.9",
+          "favorite": false,
+          "version": {
+            "id": -2013845620408800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "146bc38650e09875c678a78014a3ed55d2fd4ca9",
+              "size": 798485,
+              "path": "mods/MyNethersDelight-1.21.1-1.9.jar",
+              "url": "mods/MyNethersDelight-1.21.1-1.9.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845620453500,
+          "name": "OP_UIS_magic_schools_1.19.2_1.20.1_1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845620951300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3bea1c609e57f68d7771187befcf983baa9917b3",
+              "size": 53631,
+              "path": "mods/OP_UIS_magic_schools_1.19.2_1.20.1_1.21.1.jar",
+              "url": "mods/OP_UIS_magic_schools_1.19.2_1.20.1_1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845620970300,
+          "name": "Patchouli-1.21.1-93-NEOFORGE",
+          "favorite": false,
+          "version": {
+            "id": -2013845622157200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5413bb9b8fc35ebe46b06b48bf9afafbd8471140",
+              "size": 646777,
+              "path": "mods/Patchouli-1.21.1-93-NEOFORGE.jar",
+              "url": "mods/Patchouli-1.21.1-93-NEOFORGE.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845622184600,
+          "name": "pipesnphysics-2.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845623218500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "0f929b0bc77374c2a65dada256941bc66969c84a",
+              "size": 379246,
+              "path": "mods/pipesnphysics-2.1.1.jar",
+              "url": "mods/pipesnphysics-2.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845623238300,
+          "name": "Placebo-1.21.1-9.9.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845624189800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "1c2b8c38066d6f36209c5dadee25c184ef65202e",
+              "size": 324056,
+              "path": "mods/Placebo-1.21.1-9.9.1.jar",
+              "url": "mods/Placebo-1.21.1-9.9.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845624216300,
+          "name": "player-animation-lib-forge-2.0.4+1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845624832000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "05be8ddcc78532b9a5520c718edc6c971cd0057c",
+              "size": 203149,
+              "path": "mods/player-animation-lib-forge-2.0.4+1.21.1.jar",
+              "url": "mods/player-animation-lib-forge-2.0.4+1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845624871500,
+          "name": "polymorph-neoforge-1.2.0%2B1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845625456600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "fa6c5fa8a21229c85d564b47c73df7160b3bd4df",
+              "size": 172671,
+              "path": "mods/polymorph-neoforge-1.2.0%2B1.21.1.jar",
+              "url": "mods/polymorph-neoforge-1.2.0%2B1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845625482300,
+          "name": "powergrid-mc1.21.1-0.5.5.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845632844300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "06b0500d7101c5846e9e2c5bb4b53646a50ef133",
+              "size": 6252168,
+              "path": "mods/powergrid-mc1.21.1-0.5.5.1.jar",
+              "url": "mods/powergrid-mc1.21.1-0.5.5.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845632902800,
+          "name": "prickle-neoforge-1.21.1-21.1.11",
+          "favorite": false,
+          "version": {
+            "id": -2013845633510900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36",
+              "size": 84812,
+              "path": "mods/prickle-neoforge-1.21.1-21.1.11.jar",
+              "url": "mods/prickle-neoforge-1.21.1-21.1.11.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845633547700,
+          "name": "ProjectRed-1.21.1-4.22.0-core",
+          "favorite": false,
+          "version": {
+            "id": -2013845634846100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9833022e8ab853147c593a08bbda7a920fda6854",
+              "size": 772497,
+              "path": "mods/ProjectRed-1.21.1-4.22.0-core.jar",
+              "url": "mods/ProjectRed-1.21.1-4.22.0-core.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845634864500,
+          "name": "ProjectRed-1.21.1-4.22.0-integration",
+          "favorite": false,
+          "version": {
+            "id": -2013845638702600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "dba795189dd1b5aca48ea4088e920b82bcc84ffd",
+              "size": 3569354,
+              "path": "mods/ProjectRed-1.21.1-4.22.0-integration.jar",
+              "url": "mods/ProjectRed-1.21.1-4.22.0-integration.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845638721700,
+          "name": "pufferfish_unofficial_additions-1.21.1-2.2.8",
+          "favorite": false,
+          "version": {
+            "id": -2013845639214800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b273ea691e027b33fb9a19fb966c5f072edfa5c0",
+              "size": 52976,
+              "path": "mods/pufferfish_unofficial_additions-1.21.1-2.2.8.jar",
+              "url": "mods/pufferfish_unofficial_additions-1.21.1-2.2.8.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845639242500,
+          "name": "puffish_attributes-0.8.2-1.21-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2013845639841300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f4b67aa8da294203203bc8e6cd4b0cbf0a99d9dc",
+              "size": 235521,
+              "path": "mods/puffish_attributes-0.8.2-1.21-neoforge.jar",
+              "url": "mods/puffish_attributes-0.8.2-1.21-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845639866800,
+          "name": "puffish_skills-0.17.3-1.21-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2013845641019600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4e6119010eaad3a571f70b7198422bb1b9d92589",
+              "size": 617167,
+              "path": "mods/puffish_skills-0.17.3-1.21-neoforge.jar",
+              "url": "mods/puffish_skills-0.17.3-1.21-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845641099200,
+          "name": "Quark-4.1-476",
+          "favorite": false,
+          "version": {
+            "id": -2013845657011300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "cb69532ce35acd0daf79b7ceb27f95ca58c923cc",
+              "size": 15578260,
+              "path": "mods/Quark-4.1-476.jar",
+              "url": "mods/Quark-4.1-476.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845657081300,
+          "name": "ragdoll_reactions-1.21.1-0.7.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845658110000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "60fd4e9695b4cc3055ef728dc1023f0a335cfc32",
+              "size": 226506,
+              "path": "mods/ragdoll_reactions-1.21.1-0.7.0.jar",
+              "url": "mods/ragdoll_reactions-1.21.1-0.7.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845658135300,
+          "name": "reap-neoforge-1.21.1-1.1.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845658668000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c57c3bcfdaf55e4719cc785b72631a794e5381fc",
+              "size": 140551,
+              "path": "mods/reap-neoforge-1.21.1-1.1.2.jar",
+              "url": "mods/reap-neoforge-1.21.1-1.1.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845658685700,
+          "name": "ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2013845659088800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ec2e4996f8bee8714173e603e379fef8a6901765",
+              "size": 76369,
+              "path": "mods/ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar",
+              "url": "mods/ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845659109400,
+          "name": "sable-neoforge-1.21.1-1.1.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845682777700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "98b491efe417046ced3fc4b2e45f603b5007c972",
+              "size": 24766579,
+              "path": "mods/sable-neoforge-1.21.1-1.1.3.jar",
+              "url": "mods/sable-neoforge-1.21.1-1.1.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845682817400,
+          "name": "sable-neoforge-1.21.1-2.0.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845694537800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f3ba9a497122ba29d9e94ebe6f9a3a3aaa5fa756",
+              "size": 12889000,
+              "path": "mods/sable-neoforge-1.21.1-2.0.3.jar",
+              "url": "mods/sable-neoforge-1.21.1-2.0.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845694578900,
+          "name": "sablemassview-1.0.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845694750000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e568ce1389bcb259483766cf35542dbc8cefb2b1",
+              "size": 5729,
+              "path": "mods/sablemassview-1.0.0.jar",
+              "url": "mods/sablemassview-1.0.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845694763100,
+          "name": "sable_player_ragdoll-1.21.1-0.7.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845696409500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c47b304774e251bd81861e4ca0cdfce9fb3c9fde",
+              "size": 1433160,
+              "path": "mods/sable_player_ragdoll-1.21.1-0.7.2.jar",
+              "url": "mods/sable_player_ragdoll-1.21.1-0.7.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845696435900,
+          "name": "sable_player_ragdoll-1.21.1-0.7.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845697731100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "114a953a830673ebfe2af154f5a1ce535fc4d90c",
+              "size": 1466748,
+              "path": "mods/sable_player_ragdoll-1.21.1-0.7.5.jar",
+              "url": "mods/sable_player_ragdoll-1.21.1-0.7.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845697743000,
+          "name": "SkniroNetherAndEndOres-1.1.0-1.21.1-NeoForge",
+          "favorite": false,
+          "version": {
+            "id": -2013845697919900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "762839b3ad8df02c9766753d2afd2a55af377517",
+              "size": 95971,
+              "path": "mods/SkniroNetherAndEndOres-1.1.0-1.21.1-NeoForge.jar",
+              "url": "mods/SkniroNetherAndEndOres-1.1.0-1.21.1-NeoForge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845697928500,
+          "name": "Slag-n-Embers-1.21.1-1.1a",
+          "favorite": false,
+          "version": {
+            "id": -2013845701986900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d42f3fb07c70cf90b5b7dac1037aceae5e59f286",
+              "size": 3764994,
+              "path": "mods/Slag-n-Embers-1.21.1-1.1a.jar",
+              "url": "mods/Slag-n-Embers-1.21.1-1.1a.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845702015000,
+          "name": "sodium-neoforge-0.8.13%2Bmc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845704128100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
+              "size": 1292934,
+              "path": "mods/sodium-neoforge-0.8.13%2Bmc1.21.1.jar",
+              "url": "mods/sodium-neoforge-0.8.13%2Bmc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845704147000,
+          "name": "sophisticatedbackpacks-1.21.1-3.25.40.1677",
+          "favorite": false,
+          "version": {
+            "id": -2013845705501000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "82b3c0445a8ecc833980cd5168df6eeb19c5d206",
+              "size": 1020674,
+              "path": "mods/sophisticatedbackpacks-1.21.1-3.25.40.1677.jar",
+              "url": "mods/sophisticatedbackpacks-1.21.1-3.25.40.1677.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845705515800,
+          "name": "sophisticatedcore-1.21.1-1.4.24.1680",
+          "favorite": false,
+          "version": {
+            "id": -2013845707351800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "0627a0297f32c9daa99805a0da1e33d9ede77e9b",
+              "size": 1479559,
+              "path": "mods/sophisticatedcore-1.21.1-1.4.24.1680.jar",
+              "url": "mods/sophisticatedcore-1.21.1-1.4.24.1680.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845707368900,
+          "name": "sophisticatedstorage-1.21.1-1.5.37.1622",
+          "favorite": false,
+          "version": {
+            "id": -2013845709392500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "feb61b0c3c04870b958c7fb728bd9a067a3c2de9",
+              "size": 1664233,
+              "path": "mods/sophisticatedstorage-1.21.1-1.5.37.1622.jar",
+              "url": "mods/sophisticatedstorage-1.21.1-1.5.37.1622.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845709417800,
+          "name": "sophisticatedstoragecreateintegration-1.21.1-0.1.16.122",
+          "favorite": false,
+          "version": {
+            "id": -2013845710012500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b779e324bbd6b09dbbcbe42bd9b0b189ed775acd",
+              "size": 133625,
+              "path": "mods/sophisticatedstoragecreateintegration-1.21.1-0.1.16.122.jar",
+              "url": "mods/sophisticatedstoragecreateintegration-1.21.1-0.1.16.122.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845710031000,
+          "name": "struts-1.2.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845710679400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "643f7be15730119d26e14f8ba6a31feae0a87e84",
+              "size": 214191,
+              "path": "mods/struts-1.2.5.jar",
+              "url": "mods/struts-1.2.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845710693500,
+          "name": "TerraBlender-neoforge-1.21.1-4.1.0.8",
+          "favorite": false,
+          "version": {
+            "id": -2013845710912600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "2016eed89eac0eb0510d2190c3b0b80bf4346191",
+              "size": 120364,
+              "path": "mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+              "url": "mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845710922700,
+          "name": "tfmg-1.2.0",
+          "favorite": false,
+          "version": {
+            "id": -2013845715702700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b520f3687f60a69eb265ff5b9a16759b9e124103",
+              "size": 4924243,
+              "path": "mods/tfmg-1.2.0.jar",
+              "url": "mods/tfmg-1.2.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845715718800,
+          "name": "tf_dnv-2.0.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845716469200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c4d57093fe706476d0603352c86c997b074cfa4f",
+              "size": 247711,
+              "path": "mods/tf_dnv-2.0.3.jar",
+              "url": "mods/tf_dnv-2.0.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845716484600,
+          "name": "the_afterdark-1.21.1-neoforge-1.0.3.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845717076000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "35712008353550b4ee62622f63e357ec9866932e",
+              "size": 300274,
+              "path": "mods/the_afterdark-1.21.1-neoforge-1.0.3.1.jar",
+              "url": "mods/the_afterdark-1.21.1-neoforge-1.0.3.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845717091000,
+          "name": "tracks-neoforge-1.21.1-1.0.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845718917100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "cccd208606d7ac33f483e1e8a237092712a1a2c0",
+              "size": 166455,
+              "path": "mods/tracks-neoforge-1.21.1-1.0.1.jar",
+              "url": "mods/tracks-neoforge-1.21.1-1.0.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845718938900,
+          "name": "trading_floor-3.0.16",
+          "favorite": false,
+          "version": {
+            "id": -2013845719360400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "7be6d8b24f3120fa6a2520c32a2e6c8c4254322c",
+              "size": 214343,
+              "path": "mods/trading_floor-3.0.16.jar",
+              "url": "mods/trading_floor-3.0.16.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845719379500,
+          "name": "twilightforest-1.21.1-4.8.3345-universal",
+          "favorite": false,
+          "version": {
+            "id": -2013845747540600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9cfd4154928433e2f1f6cfc3deb48c284debb580",
+              "size": 27154121,
+              "path": "mods/twilightforest-1.21.1-4.8.3345-universal.jar",
+              "url": "mods/twilightforest-1.21.1-4.8.3345-universal.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845747576600,
+          "name": "twilight_forest_final_boss-2.1.0%2B4.7.3196%2B1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845751536200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "19d712b0003d64b5f1d3cd1ec80c705ac53fc047",
+              "size": 3364135,
+              "path": "mods/twilight_forest_final_boss-2.1.0%2B4.7.3196%2B1.21.1.jar",
+              "url": "mods/twilight_forest_final_boss-2.1.0%2B4.7.3196%2B1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845751571300,
+          "name": "vista-neoforge-1.21.1-5.1.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845757827300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "beb0f0b76c0fd0fec340b78956a9c5c631b80a1b",
+              "size": 5710864,
+              "path": "mods/vista-neoforge-1.21.1-5.1.2.jar",
+              "url": "mods/vista-neoforge-1.21.1-5.1.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845757858000,
+          "name": "xaerominimap-neoforge-1.21.1-25.3.10",
+          "favorite": false,
+          "version": {
+            "id": -2013845760274100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d4828332dd831455429156b6cfa24aa9bd99dd77",
+              "size": 2137784,
+              "path": "mods/xaerominimap-neoforge-1.21.1-25.3.10.jar",
+              "url": "mods/xaerominimap-neoforge-1.21.1-25.3.10.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845760298800,
+          "name": "xaeroworldmap-neoforge-1.21.1-1.40.11",
+          "favorite": false,
+          "version": {
+            "id": -2013845761529100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c6f596bb6bc7d734100b7dbc8a57f69a5fb549a3",
+              "size": 1386001,
+              "path": "mods/xaeroworldmap-neoforge-1.21.1-1.40.11.jar",
+              "url": "mods/xaeroworldmap-neoforge-1.21.1-1.40.11.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845761544400,
+          "name": "YungsApi-1.21.1-NeoForge-5.1.6",
+          "favorite": false,
+          "version": {
+            "id": -2013845762519400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e1c394779fb9e038e4f7a1b4558d0432607d263b",
+              "size": 388678,
+              "path": "mods/YungsApi-1.21.1-NeoForge-5.1.6.jar",
+              "url": "mods/YungsApi-1.21.1-NeoForge-5.1.6.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845762535800,
+          "name": "YungsBetterCaves-1.21.1-NeoForge-3.1.4",
+          "favorite": false,
+          "version": {
+            "id": -2013845763753900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "c7eaa25a8734525d7085e730728344242a177990",
+              "size": 392794,
+              "path": "mods/YungsBetterCaves-1.21.1-NeoForge-3.1.4.jar",
+              "url": "mods/YungsBetterCaves-1.21.1-NeoForge-3.1.4.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845763767700,
+          "name": "YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845764866200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "90529257dbd92558998c65178294bc7b2fd16a64",
+              "size": 905839,
+              "path": "mods/YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar",
+              "url": "mods/YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845764882600,
+          "name": "YungsBetterDungeons-1.21.1-NeoForge-5.1.4",
+          "favorite": false,
+          "version": {
+            "id": -2013845766092000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "73a660c13063450e555e5e2c015ae24d606b32b4",
+              "size": 782160,
+              "path": "mods/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+              "url": "mods/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845766107200,
+          "name": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845767146200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "832f2c17425debe74a9f267f4136f1a0f0221d19",
+              "size": 398130,
+              "path": "mods/YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+              "url": "mods/YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845767159900,
+          "name": "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845768747100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d6b7ce6cf351b09cbd23147ff166c35cfdc572e8",
+              "size": 795839,
+              "path": "mods/YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar",
+              "url": "mods/YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845768771500,
+          "name": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845771481900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6a14e1d8201f068ca87ef8333e471c5378955906",
+              "size": 493967,
+              "path": "mods/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+              "url": "mods/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845771513200,
+          "name": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5",
+          "favorite": false,
+          "version": {
+            "id": -2013845772882500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4061ece2141475227646649046fc14c2da505922",
+              "size": 609639,
+              "path": "mods/YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+              "url": "mods/YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845772906500,
+          "name": "YungsBetterStrongholds-1.21.1-NeoForge-5.1.3",
+          "favorite": false,
+          "version": {
+            "id": -2013845773922600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5d06a5850af7c577612d4592706a8e156bbe1cbf",
+              "size": 461244,
+              "path": "mods/YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar",
+              "url": "mods/YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845773939800,
+          "name": "YungsCaveBiomes-1.21.1-NeoForge-3.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845786461400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "bcab81f578b3cb31e599ae327c6634b9fa8d0f04",
+              "size": 13006621,
+              "path": "mods/YungsCaveBiomes-1.21.1-NeoForge-3.1.1.jar",
+              "url": "mods/YungsCaveBiomes-1.21.1-NeoForge-3.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845786492300,
+          "name": "YungsExtras-1.21.1-NeoForge-5.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2013845787136800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "62833733aaf407f36bdacf648ed4b2ef9940662b",
+              "size": 198183,
+              "path": "mods/YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+              "url": "mods/YungsExtras-1.21.1-NeoForge-5.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845787161200,
+          "name": "YungsMenuTweaks-1.21.1-NeoForge-2.1.2",
+          "favorite": false,
+          "version": {
+            "id": -2013845787748700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "da42e597009dae71faa37290e98b7b69bca52c25",
+              "size": 157761,
+              "path": "mods/YungsMenuTweaks-1.21.1-NeoForge-2.1.2.jar",
+              "url": "mods/YungsMenuTweaks-1.21.1-NeoForge-2.1.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2013845787765000,
+          "name": "Zeta-1.1-39",
+          "favorite": false,
+          "version": {
+            "id": -2013845789029500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ef6f2e1a625a9f8770a33576b682a228e441747a",
+              "size": 765399,
+              "path": "mods/Zeta-1.1-39.jar",
+              "url": "mods/Zeta-1.1-39.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758926148200,
+          "name": "BadOptimizations-2.4.1-1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758926757900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "1461d8e46391efd32a3085150e86094c9f6f5c9d",
+              "size": 283566,
+              "path": "mods/BadOptimizations-2.4.1-1.21.1.jar",
+              "url": "mods/BadOptimizations-2.4.1-1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758926799500,
+          "name": "BetterFusionReactor-1.21.1-1.5.9rc1",
+          "favorite": false,
+          "version": {
+            "id": -2016758927251900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4c857bfb25ffb34de5997c7e4616562fba822707",
+              "size": 346698,
+              "path": "mods/BetterFusionReactor-1.21.1-1.5.9rc1.jar",
+              "url": "mods/BetterFusionReactor-1.21.1-1.5.9rc1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758927274800,
+          "name": "big-globe-biome-tags-1.0.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758927453100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "47ecd83e32014664c6214d1ef54df5be4c9d8f55",
+              "size": 11783,
+              "path": "mods/big-globe-biome-tags-1.0.0.jar",
+              "url": "mods/big-globe-biome-tags-1.0.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758927472200,
+          "name": "big-globe-l_enders-cataclysm-compatibility-1.0.2",
+          "favorite": false,
+          "version": {
+            "id": -2016758927642300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "87c1a0cec097458f7908249319296803008f6bb7",
+              "size": 7951,
+              "path": "mods/big-globe-l_enders-cataclysm-compatibility-1.0.2.jar",
+              "url": "mods/big-globe-l_enders-cataclysm-compatibility-1.0.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758927659400,
+          "name": "big-globe-yungs-better-desert-temples-compatibility-1.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758927806900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b36e3470caaaf5cb8012b946652e3939b8733eef",
+              "size": 2635,
+              "path": "mods/big-globe-yungs-better-desert-temples-compatibility-1.0.jar",
+              "url": "mods/big-globe-yungs-better-desert-temples-compatibility-1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758927822600,
+          "name": "big-globe-yungs-better-dungeons-compatibility-1.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758927962300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "781ea9b2d291162c69536369f283d7f380171edf",
+              "size": 13749,
+              "path": "mods/big-globe-yungs-better-dungeons-compatibility-1.0.jar",
+              "url": "mods/big-globe-yungs-better-dungeons-compatibility-1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758927977600,
+          "name": "big-globe-yungs-better-jungle-temples-compatibility-1.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758928097300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d7b289c544859e638153c430c8710f50a61b1477",
+              "size": 3692,
+              "path": "mods/big-globe-yungs-better-jungle-temples-compatibility-1.0.jar",
+              "url": "mods/big-globe-yungs-better-jungle-temples-compatibility-1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758928110300,
+          "name": "big-globe-yungs-better-nether-fortresses-compatibility-1.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758928269100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "deeed79433043d2e5521d74fff7e5021afd439d1",
+              "size": 4701,
+              "path": "mods/big-globe-yungs-better-nether-fortresses-compatibility-1.1.jar",
+              "url": "mods/big-globe-yungs-better-nether-fortresses-compatibility-1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758928295600,
+          "name": "big-globe-yungs-better-ocean-monuments-compatibility-1.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758928427900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "a116c669ca7c0c99191803077d8d6b8c0f921b9e",
+              "size": 5062,
+              "path": "mods/big-globe-yungs-better-ocean-monuments-compatibility-1.0.jar",
+              "url": "mods/big-globe-yungs-better-ocean-monuments-compatibility-1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758928441800,
+          "name": "big-globe-yungs-better-strongholds-compatibility-1.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758928575600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "fcfb1d9caf5ccffb42eae3be81001062aeba33a1",
+              "size": 11724,
+              "path": "mods/big-globe-yungs-better-strongholds-compatibility-1.1.jar",
+              "url": "mods/big-globe-yungs-better-strongholds-compatibility-1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758928590400,
+          "name": "big-globe-yungs-better-witch-huts-compatibility-1.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758928739500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "333aaa734a715c3074f4c9675e8c6d78a1c318de",
+              "size": 4299,
+              "path": "mods/big-globe-yungs-better-witch-huts-compatibility-1.0.jar",
+              "url": "mods/big-globe-yungs-better-witch-huts-compatibility-1.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758928766000,
+          "name": "Chunky-NeoForge-1.4.23",
+          "favorite": false,
+          "version": {
+            "id": -2016758929162600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ab0c74743a653020fe2dfc4986b43e893947f3e9",
+              "size": 340572,
+              "path": "mods/Chunky-NeoForge-1.4.23.jar",
+              "url": "mods/Chunky-NeoForge-1.4.23.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758929317100,
+          "name": "entityculling-neoforge-1.11.3-mc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758930632600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f122f84f329793675b2625d51b77f990d7de3579",
+              "size": 1510075,
+              "path": "mods/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+              "url": "mods/entityculling-neoforge-1.11.3-mc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758930698300,
+          "name": "ImmediatelyFast-NeoForge-1.6.15+1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758931129000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f991166f7c82b493481c876e3c83c9fac4159671",
+              "size": 368896,
+              "path": "mods/ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
+              "url": "mods/ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758931199900,
+          "name": "JustEnoughMekanismMultiblocks-1.21.1-7.21",
+          "favorite": false,
+          "version": {
+            "id": -2016758931493600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9e10e0368b7808a82c624c3f11b23669de675d21",
+              "size": 213205,
+              "path": "mods/JustEnoughMekanismMultiblocks-1.21.1-7.21.jar",
+              "url": "mods/JustEnoughMekanismMultiblocks-1.21.1-7.21.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758931513900,
+          "name": "kubejs-create-neoforge-2101.3.1-build.18",
+          "favorite": false,
+          "version": {
+            "id": -2016758931659900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f54d9ff53909771d27e4d9d135c3707cd5d5f855",
+              "size": 38629,
+              "path": "mods/kubejs-create-neoforge-2101.3.1-build.18.jar",
+              "url": "mods/kubejs-create-neoforge-2101.3.1-build.18.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758931684100,
+          "name": "kubejs-mekanism-neoforge-2101.1.7-build.18",
+          "favorite": false,
+          "version": {
+            "id": -2016758931845800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e605f4ef57395cb91f4438165c59f8536223ae10",
+              "size": 58054,
+              "path": "mods/kubejs-mekanism-neoforge-2101.1.7-build.18.jar",
+              "url": "mods/kubejs-mekanism-neoforge-2101.1.7-build.18.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758931860800,
+          "name": "kubejs-neoforge-2101.7.2-build.381",
+          "favorite": false,
+          "version": {
+            "id": -2016758933798800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b282ba250cdd247f319c016df02ff9e600caadb1",
+              "size": 2295092,
+              "path": "mods/kubejs-neoforge-2101.7.2-build.381.jar",
+              "url": "mods/kubejs-neoforge-2101.7.2-build.381.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758933815900,
+          "name": "kubejsadditions-neoforge-1.21.1-6.0.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758934066800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "a7b90a34b8a56d187fbd957d4353fa80f93a3553",
+              "size": 183984,
+              "path": "mods/kubejsadditions-neoforge-1.21.1-6.0.0.jar",
+              "url": "mods/kubejsadditions-neoforge-1.21.1-6.0.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "no_active",
+          "id": -2016758934081000,
+          "name": "kubejsdelight-1.1.6",
+          "favorite": false,
+          "version": {
+            "id": -2016758934198500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "66a5de83677d38828242ab3dc96bf1b6f2771198",
+              "size": 20406,
+              "path": "mods/kubejsdelight-1.1.6.jar",
+              "url": "mods/kubejsdelight-1.1.6.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758934228200,
+          "name": "lithium-neoforge-0.15.4+mc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758934926700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "97212e45c963730bbfc7c44780df99317814c21b",
+              "size": 774220,
+              "path": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar",
+              "url": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758934967600,
+          "name": "lootjs-neoforge-1.21.1-3.7.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758935263500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "54ffddd1763ae4af84e9bbcb22e4081a1e7f3556",
+              "size": 247689,
+              "path": "mods/lootjs-neoforge-1.21.1-3.7.0.jar",
+              "url": "mods/lootjs-neoforge-1.21.1-3.7.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758935293600,
+          "name": "Mekanism-1.21.1-10.7.19.85",
+          "favorite": false,
+          "version": {
+            "id": -2016758944915400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b78945c40cfe7640408f3fd1e44da385a8c8b805",
+              "size": 11976009,
+              "path": "mods/Mekanism-1.21.1-10.7.19.85.jar",
+              "url": "mods/Mekanism-1.21.1-10.7.19.85.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758944954300,
+          "name": "MekanismAdditions-1.21.1-10.7.19.85",
+          "favorite": false,
+          "version": {
+            "id": -2016758946113000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "0934a9f9961a9a1a47ff344762f8eeb0c149d80d",
+              "size": 1162551,
+              "path": "mods/MekanismAdditions-1.21.1-10.7.19.85.jar",
+              "url": "mods/MekanismAdditions-1.21.1-10.7.19.85.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758946135500,
+          "name": "mekanismcurios-1.21.1-1.2.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758946366500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "652371b8622d60d8d4d9528493095beb0c903aa8",
+              "size": 99159,
+              "path": "mods/mekanismcurios-1.21.1-1.2.1.jar",
+              "url": "mods/mekanismcurios-1.21.1-1.2.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758946383200,
+          "name": "MekanismGenerators-1.21.1-10.7.19.85",
+          "favorite": false,
+          "version": {
+            "id": -2016758947396500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "44c4d8006597580ff7e4101b5a22f7b426cdcaf6",
+              "size": 1114598,
+              "path": "mods/MekanismGenerators-1.21.1-10.7.19.85.jar",
+              "url": "mods/MekanismGenerators-1.21.1-10.7.19.85.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758947414200,
+          "name": "MekanismTools-1.21.1-10.7.19.85",
+          "favorite": false,
+          "version": {
+            "id": -2016758947954000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4433b3eec0a5a0bf415d873e710a1cecea5850bc",
+              "size": 526620,
+              "path": "mods/MekanismTools-1.21.1-10.7.19.85.jar",
+              "url": "mods/MekanismTools-1.21.1-10.7.19.85.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758947970900,
+          "name": "mekanism_extras-1.21.1-1.4.2",
+          "favorite": false,
+          "version": {
+            "id": -2016758950091300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "aa4d6ddb0d25c596ccb7c369b3d2b6110a9867b1",
+              "size": 2526178,
+              "path": "mods/mekanism_extras-1.21.1-1.4.2.jar",
+              "url": "mods/mekanism_extras-1.21.1-1.4.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758950108900,
+          "name": "mekanism_lasers-1.1.10.3-c",
+          "favorite": false,
+          "version": {
+            "id": -2016758950408200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "bef83dbd088a8ef96f18a94166880c0f93c6a4db",
+              "size": 196235,
+              "path": "mods/mekanism_lasers-1.1.10.3-c.jar",
+              "url": "mods/mekanism_lasers-1.1.10.3-c.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758950446800,
+          "name": "modernfix-neoforge-5.27.27+mc1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758951076900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "52c008540c7dc2cc451f7e939a885d7462c9ae72",
+              "size": 614138,
+              "path": "mods/modernfix-neoforge-5.27.27+mc1.21.1.jar",
+              "url": "mods/modernfix-neoforge-5.27.27+mc1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758951105800,
+          "name": "morejs-neoforge-1.21.1-0.16.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758951382200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "7e8aea4f03b18076cab5555f6d30e35ff919b342",
+              "size": 157690,
+              "path": "mods/morejs-neoforge-1.21.1-0.16.0.jar",
+              "url": "mods/morejs-neoforge-1.21.1-0.16.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758951400100,
+          "name": "MoreMekanismProcessing-1.21.1-6.4",
+          "favorite": false,
+          "version": {
+            "id": -2016758952017800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9ceb1b599a0e7fddb65b01207bd0ce90bfe02ba9",
+              "size": 619913,
+              "path": "mods/MoreMekanismProcessing-1.21.1-6.4.jar",
+              "url": "mods/MoreMekanismProcessing-1.21.1-6.4.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758952099500,
+          "name": "ponderjs-neoforge-1.21.1-2.4.0",
+          "favorite": false,
+          "version": {
+            "id": -2016758953527100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9c35c5c31a613d58fc06e591e455bccfc3de6022",
+              "size": 1571893,
+              "path": "mods/ponderjs-neoforge-1.21.1-2.4.0.jar",
+              "url": "mods/ponderjs-neoforge-1.21.1-2.4.0.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758953559400,
+          "name": "ProbeJS-8.0.3",
+          "favorite": false,
+          "version": {
+            "id": -2016758956381900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f0529482eff9596fa01de8a34abdce50529bdf55",
+              "size": 3405057,
+              "path": "mods/ProbeJS-8.0.3.jar",
+              "url": "mods/ProbeJS-8.0.3.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758956452600,
+          "name": "rhino-2101.2.8-build.91",
+          "favorite": false,
+          "version": {
+            "id": -2016758957383100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "56eab1d464ed0811c64040c64bd047df5cbc3aad",
+              "size": 980936,
+              "path": "mods/rhino-2101.2.8-build.91.jar",
+              "url": "mods/rhino-2101.2.8-build.91.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758957649600,
+          "name": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2",
+          "favorite": false,
+          "version": {
+            "id": -2016758958620300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "fba629defdb92ad99ec4f411895afb6e19555a18",
+              "size": 1025571,
+              "path": "mods/YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+              "url": "mods/YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758958648100,
+          "name": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758958997200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "bbf6c91f4a2829c58bc024eaaab821986bc93de6",
+              "size": 174789,
+              "path": "mods/YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+              "url": "mods/YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2016758959015000,
+          "name": "YungsBridges-1.21.1-NeoForge-5.1.1",
+          "favorite": false,
+          "version": {
+            "id": -2016758959225100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "18099c2d54acd16bb8ab90a66f40fa16496d065e",
+              "size": 136820,
+              "path": "mods/YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+              "url": "mods/YungsBridges-1.21.1-NeoForge-5.1.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -2019680113394900,
+          "name": "DistantHorizons-3.3.3-1.21.1-fabric-neoforge",
+          "favorite": false,
+          "version": {
+            "id": -2019680138902600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4357b4d19fab818780c94f0e43dad1cc931634b2",
+              "size": 28289212,
+              "path": "mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+              "url": "mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        }
+      ],
+      "resourcePacks": [],
+      "maps": [],
+      "shaderpacks": [],
+      "gameVersionDTO": {
+        "id": 53,
+        "name": "1.21.1"
+      },
+      "minecraftVersionName": {
+        "id": 2122,
+        "name": "21.1.265"
+      },
+      "id": -2012535639468201,
+      "name": "1.0",
+      "available": false,
+      "remove": false,
+      "minecraftVersionTypes": [
+        {
+          "id": 5,
+          "name": "neoForge"
+        }
+      ]
+    },
+    "userInstall": false,
+    "populateStatus": false,
+    "available": false,
+    "parser": false,
+    "notExists": false,
+    "totalComments": 0
+  },
+  "source": "local_version_repo",
+  "jar": "1.21.1",
+  "skinVersion": false
+}

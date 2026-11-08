@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "kubejs:item/solder_wire"
+                 },
+    "parent":  "minecraft:item/generated"
+}

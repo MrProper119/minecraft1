@@ -28,7 +28,7 @@
 	//Number of threads to use for worldgen tasks (including worldgen for Distant Horizons and Voxy)
 	//More threads will result in faster terrain gen, but may reduce performance in other areas of the game.
 	//Less threads will result in slower terrain gen, but may improve performance in other areas of the game.
-	"Threads": 8,
+	"Threads": 4,
 
 	//Configures how initial player spawning works in Big Globe worlds.
 	//These config options have no effect outside of Big Globe worlds.
@@ -98,7 +98,7 @@
 		//OFF: Big Globe will not do that.
 		//AUTO: Big Globe will only do that when neither Distant Horizons nor Voxy are installed.
 		//If you're on multiplayer, the server and the client must both have this option enabled for LOD rendering to work.
-		"Enabled": "AUTO",
+		"Enabled": "OFF",
 
 		//This config option controls what openGL tricks Big Globe uses to render LODs.
 		//It is recommended to set this to AUTO to allow Big Globe to pick the best backend for your hardware and drivers.
@@ -186,7 +186,7 @@
 		//CARVE - Caves will generate, but underground structures and features will not.
 		//DECORATE - All underground stuff will generate normally.
 		//Reducing this value can increase the speed which Big Globe can generate chunks for Distant Horizons at.
-		"Underground Mode": "FILL"
+		"Underground Mode": "NONE"
 	},
 
 	//Configures special actions to take or skip when generating chunks for Voxy.

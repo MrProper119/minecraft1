@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "kubejs:item/electronic_components"
+                 },
+    "parent":  "minecraft:item/generated"
+}

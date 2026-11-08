@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "slag:item/modular/pickaxe/metal/pickaxe_head_echo"
+  }
+}

@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "kubejs:item/etched_pcb"
+                 },
+    "parent":  "minecraft:item/generated"
+}

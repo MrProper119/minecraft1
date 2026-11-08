@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "slag:item/modular/mattock/metal/axe_head_netherite"
+  }
+}

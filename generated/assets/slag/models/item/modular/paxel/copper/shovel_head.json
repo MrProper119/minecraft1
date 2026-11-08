@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "slag:item/modular/paxel/base/shovel_head_copper"
+  }
+}

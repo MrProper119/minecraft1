@@ -1,0 +1,36 @@
+{
+	"script": [
+		"if (start.structure == STRUCTURE:",
+			"double*(minY = inf, maxY = -inf, caveY = 0.0L)",
+			"for (int x in range[start.minX, start.maxX] % 4:",
+				"unless (world_traits.`bigglobe:biome`(x, start.minY, start.minZ).isIn(BIOMES): return(false))",
+				"caveY = world_traits.`bigglobe:cave_max_y`(x, start.minZ)",
+				"minY = min(minY, caveY)",
+				"maxY = max(maxY, caveY)",
+				"",
+				"unless (world_traits.`bigglobe:biome`(x, start.minY, start.maxZ).isIn(BIOMES): return(false))",
+				"caveY = world_traits.`bigglobe:cave_max_y`(x, start.maxZ)",
+				"minY = min(minY, caveY)",
+				"maxY = max(maxY, caveY)",
+			")",
+			"for (int z in range[start.minZ, start.maxZ] % 4:",
+				"unless (world_traits.`bigglobe:biome`(start.minX, start.minY, z).isIn(BIOMES): return(false))",
+				"caveY = world_traits.`bigglobe:cave_max_y`(start.minX, z)",
+				"minY = min(minY, caveY)",
+				"maxY = max(maxY, caveY)",
+				"",
+				"unless (world_traits.`bigglobe:biome`(start.maxX, start.minY, z).isIn(BIOMES): return(false))",
+				"caveY = world_traits.`bigglobe:cave_max_y`(start.maxX, z)",
+				"minY = min(minY, caveY)",
+				"maxY = max(maxY, caveY)",
+			")",
+			"return((maxY - minY) / sqrt(start.sizeX ^ 2 + start.sizeZ ^ 2) <= MAX_SLOPE)",
+		")",
+		"return(true)"
+	],
+	"inputs": [
+		{ "name": "STRUCTURE", "type": "Structure" },
+		{ "name": "BIOMES",    "type": "BiomeTag"  },
+		{ "name": "MAX_SLOPE", "type": "double", "default": "0.25L" }
+	]
+}

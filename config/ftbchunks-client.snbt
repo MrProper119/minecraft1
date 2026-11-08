@@ -138,34 +138,43 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:chicken": true
-			"quark:toretoise": true
-			"minecraft:trader_llama": true
-			"minecraft:squid": true
-			"minecraft:slime": true
-			"minecraft:creeper": true
-			"quark:forgotten": true
-			"minecraft:enderman": true
-			"minecraft:pillager": true
-			"minecraft:iron_golem": true
-			"quark:stoneling": true
-			"minecraft:warden": true
-			"minecraft:glow_squid": true
-			"minecraft:drowned": true
-			"minecraft:skeleton": true
-			"artifacts:mimic": true
-			"minecraft:zombie": true
-			"minecraft:cat": true
-			"minecraft:bat": true
 			"irons_spellbooks:necromancer": true
+			"minecraft:rabbit": true
+			"minecraft:iron_golem": true
+			"minecraft:frog": true
+			"minecraft:chicken": true
+			"minecraft:drowned": true
 			"minecraft:villager": true
-			"mowziesmobs:naga": true
-			"minecraft:sheep": true
-			"irons_spellbooks:priest": true
-			"minecraft:spider": true
-			"minecraft:cow": true
+			"minecraft:pillager": true
+			"minecraft:glow_squid": true
 			"minecraft:pig": true
+			"irons_spellbooks:pyromancer": true
+			"minecraft:parrot": true
+			"minecraft:ocelot": true
+			"minecraft:skeleton": true
+			"quark:stoneling": true
+			"mowziesmobs:naga": true
+			"minecraft:spider": true
+			"minecraft:sheep": true
+			"minecraft:creeper": true
+			"minecraft:enderman": true
+			"minecraft:warden": true
+			"minecraft:zombie": true
+			"artifacts:mimic": true
+			"minecraft:cat": true
+			"minecraft:bee": true
+			"minecraft:trader_llama": true
+			"minecraft:turtle": true
+			"minecraft:slime": true
 			"minecraft:wandering_trader": true
+			"minecraft:bat": true
+			"irons_spellbooks:priest": true
+			"quark:forgotten": true
+			"minecraft:horse": true
+			"quark:toretoise": true
+			"minecraft:squid": true
+			"quark:crab": true
+			"minecraft:cow": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
