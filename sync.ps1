@@ -195,24 +195,24 @@ function Select-TargetFolder($defaultDir) {
         Write-Host "==================================================================" -ForegroundColor Cyan
 
         $versionDirs = @()
-        if (Test-Path -LiteralPath $defaultDir) {
-            $versionDirs += (Get-Item -LiteralPath $defaultDir)
-        }
+        $versionPaths = @($defaultDir)
         $otherDirs = Get-ChildItem -LiteralPath $VersionsRoot -Directory -ErrorAction SilentlyContinue |
             Where-Object { $_.FullName -ne $defaultDir } |
             Sort-Object LastWriteTime -Descending
-        if ($otherDirs) {
-            $versionDirs += $otherDirs
+        foreach ($od in $otherDirs) {
+            $versionPaths += $od.FullName
         }
 
         Write-Host "  [0] Пропустити синхронізацію і одразу запустити TLauncher" -ForegroundColor Yellow
-        for ($i = 0; $i -lt $versionDirs.Count; $i++) {
+        for ($i = 0; $i -lt $versionPaths.Count; $i++) {
             $idx = $i + 1
-            $dir = $versionDirs[$i]
-            $gitBadge = if (Test-Path (Join-Path $dir.FullName ".git")) { "[Git]" } else { "     " }
+            $dirPath = $versionPaths[$i]
+            $dirName = Split-Path $dirPath -Leaf
+            $exists = Test-Path -LiteralPath $dirPath
+            $gitBadge = if ($exists -and (Test-Path (Join-Path $dirPath ".git"))) { "[Git]" } elseif (-not $exists) { "[Нова]" } else { "     " }
             $defBadge = if ($idx -eq 1) { " (За замовчуванням - натисніть Enter)" } else { "" }
             $color = if ($idx -eq 1) { "Green" } else { "White" }
-            Write-Host ("  [{0}] {1,-16} {2} -> {3}{4}" -f $idx, $dir.Name, $gitBadge, $dir.FullName, $defBadge) -ForegroundColor $color
+            Write-Host ("  [{0}] {1,-16} {2} -> {3}{4}" -f $idx, $dirName, $gitBadge, $dirPath, $defBadge) -ForegroundColor $color
         }
         Write-Host "  [N] Створити нову папку у .minecraft\versions\<Назва>" -ForegroundColor Cyan
         Write-Host "  [B] Обрати будь-яку папку через Провідник Windows (вікно вибору)" -ForegroundColor Cyan
@@ -223,11 +223,11 @@ function Select-TargetFolder($defaultDir) {
         $choice = (Read-Host "Ваш вибір (Enter = [1], 0 = пропустити)").Trim()
 
         if ([string]::IsNullOrEmpty($choice)) {
-            if ($versionDirs.Count -gt 0) {
-                return $versionDirs[0].FullName
-            } else {
-                return (Join-Path $VersionsRoot "Test")
+            $chosenPath = $versionPaths[0]
+            if (-not (Test-Path -LiteralPath $chosenPath)) {
+                New-Item -ItemType Directory -Path $chosenPath -Force | Out-Null
             }
+            return $chosenPath
         }
 
         if ($choice -eq "0" -or $choice -ieq "S") {
@@ -281,8 +281,12 @@ function Select-TargetFolder($defaultDir) {
         # Перевіряємо чи введено номер зі списку
         $num = 0
         if ([int]::TryParse($choice, [ref]$num)) {
-            if ($num -ge 1 -and $num -le $versionDirs.Count) {
-                return $versionDirs[$num - 1].FullName
+            if ($num -ge 1 -and $num -le $versionPaths.Count) {
+                $chosenPath = $versionPaths[$num - 1]
+                if (-not (Test-Path -LiteralPath $chosenPath)) {
+                    New-Item -ItemType Directory -Path $chosenPath -Force | Out-Null
+                }
+                return $chosenPath
             }
         }
 
@@ -331,7 +335,7 @@ function Get-RepositoryCommits($gitExe, $targetDir) {
             $parts = $line -split '\|', 5
             if ($parts.Count -lt 5) { continue }
             $bName = $parts[0] -replace '^origin/', ''
-            if ($bName -eq "HEAD" -or $bName -eq "origin") { continue }
+            if ($bName -eq "HEAD" -or $bName -eq "origin" -or $bName -eq "sync-script") { continue }
             $branches += [PSCustomObject]@{
                 Name      = $bName
                 ShortSha  = $parts[1]
@@ -341,7 +345,7 @@ function Get-RepositoryCommits($gitExe, $targetDir) {
             }
         }
 
-        $logLines = & $gitExe -C $refRepo log --remotes=origin --date=short --pretty=format:"%h|%H|%ad|%D|%s" -n 20 2>$null
+        $logLines = & $gitExe -C $refRepo log --exclude="refs/remotes/origin/sync-script" --remotes=origin --date=short --pretty=format:"%h|%H|%ad|%D|%s" -n 20 2>$null
         foreach ($line in $logLines) {
             if ([string]::IsNullOrWhiteSpace($line)) { continue }
             $parts = $line -split '\|', 5
@@ -368,6 +372,7 @@ function Get-RepositoryCommits($gitExe, $targetDir) {
             $headers = @{ "User-Agent" = "MinecraftModpackSync/2.0" }
             $apiBranches = Invoke-RestMethod -Uri "$ApiBase/branches" -Headers $headers -TimeoutSec 10
             foreach ($b in $apiBranches) {
+                if ($b.name -eq "sync-script") { continue }
                 $bSha = $b.commit.sha
                 $branches += [PSCustomObject]@{
                     Name     = $b.name
