@@ -1,0 +1,8 @@
+name = "Big Globe"
+filename = "Big Globe-5.3.2-MC1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Builderb0y/BigGlobe/releases/download/V5.3.2/Big.Globe-5.3.2-MC1.21.1.jar"
+hash-format = "sha512"
+hash = "1f3d4c2bfd9b46d4ea8244dce148260d52d7ba376965f44466600525860979cbee0f47c9b1757562877d54aa71a768b637cb381107f722508d44a25709182b94"

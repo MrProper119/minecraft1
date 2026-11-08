@@ -1,0 +1,13 @@
+name = "Create Compressed"
+filename = "create_compressed-2.2.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "286c948a50b085ddfa6360ca8ef176775d32e4fd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6252716
+project-id = 886773

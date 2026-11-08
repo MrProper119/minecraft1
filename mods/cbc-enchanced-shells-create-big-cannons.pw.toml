@@ -1,0 +1,13 @@
+name = "CBC Enchanced Shells [Create Big Cannons]"
+filename = "CBCmoreshells-1.1.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b3f59c67050807f18884208487e1babab26e7fd5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8387133
+project-id = 1489732

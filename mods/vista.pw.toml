@@ -1,0 +1,13 @@
+name = "Vista"
+filename = "vista-neoforge-1.21.1-5.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "beb0f0b76c0fd0fec340b78956a9c5c631b80a1b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8397059
+project-id = 1368607

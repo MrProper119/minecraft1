@@ -1,0 +1,13 @@
+name = "Create : Misc & Things"
+filename = "create_things_and_misc-4.1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4b6d2bef5a99cf15667c0b19dcb5dc514b5f6d90"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7822511
+project-id = 652202

@@ -1,0 +1,13 @@
+name = "project-1094462"
+filename = "ironsspellsdelight-1.1.0-1.21.x.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7aa10ad137cd1824713614243b863e5beebd03b0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6219427
+project-id = 1094462

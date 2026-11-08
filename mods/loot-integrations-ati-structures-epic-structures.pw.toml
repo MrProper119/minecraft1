@@ -1,0 +1,13 @@
+name = "Loot Integrations: ATi Structures, Epic Structures Villages & Witch Huts"
+filename = "lootintegrations_ati-1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "52897794d55f0eb74b72ee657028a25e018e94b0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7416794
+project-id = 1420613

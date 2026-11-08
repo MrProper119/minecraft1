@@ -1,0 +1,13 @@
+name = "Create: Wizardry"
+filename = "create_wizardry-1.21.1-0.4.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "28a8db864c8e0553cd387eedb845bd3fec603d02"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7811721
+project-id = 949995

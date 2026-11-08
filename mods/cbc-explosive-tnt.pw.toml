@@ -1,0 +1,13 @@
+name = "Create big cannons - Explosive TNT"
+filename = "1786342327722-createtnt-1.21.1-neoforge-CreateTNT1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f30345460edb967754e5fe391f12f14762d673d5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8614253
+project-id = 1646650

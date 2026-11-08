@@ -1,0 +1,13 @@
+name = "Ragdoll mob corpses"
+filename = "mob_ragdoll_corpse-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f4c03fba103cf463946f3ee5bcbeca1344ad2cf2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8450230
+project-id = 1586005

@@ -1,0 +1,13 @@
+name = "Twilight Forest Final Boss (remake)"
+filename = "twilight_forest_final_boss-2.1.0+4.7.3196+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "19d712b0003d64b5f1d3cd1ec80c705ac53fc047"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7273092
+project-id = 1267766

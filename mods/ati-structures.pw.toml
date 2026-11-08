@@ -1,0 +1,13 @@
+name = "ATi Structures"
+filename = "ATi Structures V1.4.4 (1.21+).jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f0c645784c43fb41ba48b032a2cfdbdc19f11727"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7763358
+project-id = 964608

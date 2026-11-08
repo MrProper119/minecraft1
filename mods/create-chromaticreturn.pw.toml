@@ -1,0 +1,13 @@
+name = "Create: Chromatic Return"
+filename = "createchromaticreturn-1.0.1-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7c4afe913161b394af563078967bfc44ff04a691"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6262020
+project-id = 503784

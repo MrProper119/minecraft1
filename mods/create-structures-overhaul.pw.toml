@@ -1,0 +1,13 @@
+name = "Create: structures overhaul"
+filename = "create_structures_overhaul-1.4.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "49e30569533c2506beea0e8fe7dce9eb141c9534"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7198199
+project-id = 1303344

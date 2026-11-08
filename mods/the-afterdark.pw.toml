@@ -1,0 +1,13 @@
+name = "The Afterdark"
+filename = "the_afterdark-1.21.1-neoforge-1.0.3.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "35712008353550b4ee62622f63e357ec9866932e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5887176
+project-id = 1110531

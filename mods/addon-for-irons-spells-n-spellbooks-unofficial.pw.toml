@@ -1,0 +1,13 @@
+name = "Magic Schools Skill trees: Addon for Iron's Spells 'n Spellbooks Unofficial Skill Tree"
+filename = "OP_UIS_magic_schools_1.19.2_1.20.1_1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3bea1c609e57f68d7771187befcf983baa9917b3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6456778
+project-id = 1250165

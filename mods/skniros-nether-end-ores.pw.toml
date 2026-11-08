@@ -1,0 +1,13 @@
+name = "Skniro's Nether and End Ores"
+filename = "SkniroNetherAndEndOres-1.1.0-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "762839b3ad8df02c9766753d2afd2a55af377517"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6892219
+project-id = 896562

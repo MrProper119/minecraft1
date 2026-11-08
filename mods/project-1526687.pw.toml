@@ -1,0 +1,13 @@
+name = "project-1526687"
+filename = "createpropulsion-0.3.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7f669bed88386f9b74754536c62ab2d5d1b23fae"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8001628
+project-id = 1526687

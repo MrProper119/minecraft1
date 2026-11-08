@@ -1,0 +1,13 @@
+name = "Library Ferret - NeoForge"
+filename = "libraryferret-neoforge-1.21.1-4.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "95887e3ae531dc7e8a39e2c285c8a27cf06d698c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6118136
+project-id = 522351

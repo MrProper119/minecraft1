@@ -1,0 +1,13 @@
+name = "project-1345485"
+filename = "enigmaticlegacyplus-1.21.1-0.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3e8c8fd616dd2be762b415e243c1a8de18b4465a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6988231
+project-id = 1345485

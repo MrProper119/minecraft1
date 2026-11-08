@@ -1,0 +1,13 @@
+name = "Create Aeronautics Structures"
+filename = "cr_aero_structures.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f60358df1d049491b0b03a99483d8803060bd99a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8399115
+project-id = 1550279

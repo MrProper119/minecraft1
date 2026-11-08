@@ -1,0 +1,13 @@
+name = "project-1131213"
+filename = "ironsspellsartifacts-1.0.1.1-1.21.x.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "02fdd67e409d4dc1397a3b090c2d77188f955102"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6249034
+project-id = 1131213

@@ -1,0 +1,13 @@
+name = "More Xp More Health"
+filename = "more-xp-more-health-v1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d625a3aca9c1e52ed7daa4f8a67ef59b69cd10b3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7035140
+project-id = 1252466

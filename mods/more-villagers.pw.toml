@@ -1,0 +1,13 @@
+name = "More Villagers"
+filename = "morevillagers-neoforge-1.21.1-6.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "508d859b023ba2056c9845c4087db0177bb7825a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7526601
+project-id = 484954

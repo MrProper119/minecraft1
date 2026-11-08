@@ -1,0 +1,13 @@
+name = "Strut Your Stuff (Struts)"
+filename = "struts-1.2.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "643f7be15730119d26e14f8ba6a31feae0a87e84"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8301563
+project-id = 1486746

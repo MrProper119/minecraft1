@@ -1,0 +1,13 @@
+name = "Slag n' Embers"
+filename = "Slag-n-Embers-1.21.1-1.1a.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d42f3fb07c70cf90b5b7dac1037aceae5e59f286"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7786962
+project-id = 1360010

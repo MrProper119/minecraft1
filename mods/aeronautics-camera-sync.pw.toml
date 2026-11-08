@@ -1,0 +1,13 @@
+name = "Aeronautics Camera Sync"
+filename = "aero_cam_sync-1.3.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5a508ea08f8a83977223a516a3d30eae76001d38"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8447196
+project-id = 1526820

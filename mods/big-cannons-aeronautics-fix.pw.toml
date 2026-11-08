@@ -1,0 +1,13 @@
+name = "[Abandoned] Big Cannons Aeronautics Fix"
+filename = "big_cannons_aeronautics_fix-0.1-Alpha.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "172c54c30d0e1ac2a208c59e1c59892202ec7f0e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7952115
+project-id = 1518714
