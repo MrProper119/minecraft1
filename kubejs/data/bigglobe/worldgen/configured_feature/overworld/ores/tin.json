@@ -1,0 +1,24 @@
+﻿{
+	"type": "bigglobe:ore",
+	"config": {
+		"seed": "tin",
+		"blocks": {
+			"#bigglobe:stone_ore_replaceables": "mekanism:tin_ore",
+			"#bigglobe:deepslate_ore_replaceables": "mekanism:deepslate_tin_ore"
+		},
+		"chance": {
+			"template": "bigglobe:ores/exponential",
+			"inputs": {
+				"delay": "512.0L",
+				"peak": "0.9L",
+				"limit": "0.25L"
+			}
+		},
+		"radius": {
+			"type": "average",
+			"min": 2.5,
+			"max": 8.0,
+			"average": 4.0
+		}
+	}
+}

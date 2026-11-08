@@ -1,0 +1,21 @@
+{
+	"type": "bigglobe:ore",
+	"config": {
+		"seed": "naquadah",
+		"blocks": {
+			"#bigglobe:deepslate_ore_replaceables": "mekanism_extras:naquadah_ore"
+		},
+		"chance": [
+			"double depthLine = unmixLinear(256.0L, 640.0L, `bigglobe:approximate_distance_below_surface`)",
+			"double depthCurve = 1.0L - 1.0L / (max(depthLine, 0.0L) ^ 2 + 1.0L)",
+			"return(depthCurve * 0.35L)"
+		],
+		"radius": {
+			"type": "average",
+			"min": 1.2,
+			"max": 4.0,
+			"average": 2.2
+		}
+	}
+}
+

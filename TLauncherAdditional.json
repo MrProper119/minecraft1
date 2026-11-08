@@ -308,30 +308,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845228942400,
-          "name": "anvilcore-10.1%20Release-neoforge-1.21.1",
-          "favorite": false,
-          "version": {
-            "id": -2013845229187600,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "d807fa23228c5260aa85413c4eab03a577cdd255",
-              "size": 104557,
-              "path": "mods/anvilcore-10.1%20Release-neoforge-1.21.1.jar",
-              "url": "mods/anvilcore-10.1%20Release-neoforge-1.21.1.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845229201200,
           "name": "ApothicAttributes-1.21.1-2.9.1",
           "favorite": false,
@@ -415,30 +391,6 @@
               "size": 1030252,
               "path": "mods/artifacts-neoforge-13.2.1.jar",
               "url": "mods/artifacts-neoforge-13.2.1.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845231344900,
-          "name": "ATi%20Structures%20V1.4.4%20(1.21%2B)",
-          "favorite": false,
-          "version": {
-            "id": -2013845235132900,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "f0c645784c43fb41ba48b032a2cfdbdc19f11727",
-              "size": 3156978,
-              "path": "mods/ATi%20Structures%20V1.4.4%20(1.21%2B).jar",
-              "url": "mods/ATi%20Structures%20V1.4.4%20(1.21%2B).jar"
             },
             "available": false,
             "remove": false
@@ -884,54 +836,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845251440000,
-          "name": "connector-2.0.0-beta.17%2B1.21.1-full",
-          "favorite": false,
-          "version": {
-            "id": -2013845256428100,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "ba08b534af7982d0bd25a25b45cb654c09ffec8f",
-              "size": 4573244,
-              "path": "mods/connector-2.0.0-beta.17%2B1.21.1-full.jar",
-              "url": "mods/connector-2.0.0-beta.17%2B1.21.1-full.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845256441500,
-          "name": "copycats-3.0.4%2Bmc.1.21.1-neoforge",
-          "favorite": false,
-          "version": {
-            "id": -2013845258862400,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "6a11d5806bcf521e08faba1ee6ef5f31af55ca0f",
-              "size": 1791747,
-              "path": "mods/copycats-3.0.4%2Bmc.1.21.1-neoforge.jar",
-              "url": "mods/copycats-3.0.4%2Bmc.1.21.1-neoforge.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845258878400,
           "name": "cratedelight-25.09.22-1.21-neoforge",
           "favorite": false,
@@ -956,30 +860,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845259490300,
-          "name": "Create%20Encased-1.21.1-1.8-ht2",
-          "favorite": false,
-          "version": {
-            "id": -2013845262628900,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "957a7ee1741c7a8536bedd401a923d7fb73a7092",
-              "size": 2410332,
-              "path": "mods/Create%20Encased-1.21.1-1.8-ht2.jar",
-              "url": "mods/Create%20Encased-1.21.1-1.8-ht2.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845262641200,
           "name": "create-1.21.1-6.0.10",
           "favorite": false,
@@ -991,30 +871,6 @@
               "size": 19123767,
               "path": "mods/create-1.21.1-6.0.10.jar",
               "url": "mods/create-1.21.1-6.0.10.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845282161200,
-          "name": "create-aeronautics-bundled-1.21.1-1.0.3",
-          "favorite": false,
-          "version": {
-            "id": -2013845316291300,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "704aa5293585b58caceedcb4fa57db628db2329a",
-              "size": 32945368,
-              "path": "mods/create-aeronautics-bundled-1.21.1-1.0.3.jar",
-              "url": "mods/create-aeronautics-bundled-1.21.1-1.0.3.jar"
             },
             "available": false,
             "remove": false
@@ -1207,30 +1063,6 @@
               "size": 26171,
               "path": "mods/createbetterfps-1.21.1-1.1.3.jar",
               "url": "mods/createbetterfps-1.21.1-1.1.3.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845359177800,
-          "name": "createbigcannons-5.11.2-mc.1.21.1",
-          "favorite": false,
-          "version": {
-            "id": -2013845362948500,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "3b43caff93cffe7c64498d56c1d79d0d034123dc",
-              "size": 3697176,
-              "path": "mods/createbigcannons-5.11.2-mc.1.21.1.jar",
-              "url": "mods/createbigcannons-5.11.2-mc.1.21.1.jar"
             },
             "available": false,
             "remove": false
@@ -1676,30 +1508,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845406349700,
-          "name": "create_structures_arise-174.47.46%20Release-neoforge-1.21.1",
-          "favorite": false,
-          "version": {
-            "id": -2013845408020500,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "53c5811a747c555fe70032f4712bc1e0903cb057",
-              "size": 1111819,
-              "path": "mods/create_structures_arise-174.47.46%20Release-neoforge-1.21.1.jar",
-              "url": "mods/create_structures_arise-174.47.46%20Release-neoforge-1.21.1.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845408046600,
           "name": "create_structures_overhaul-1.4.0-neoforge-1.21.1",
           "favorite": false,
@@ -2060,30 +1868,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845442928600,
-          "name": "entityculling-neoforge-1.10.1-mc1.21.1",
-          "favorite": false,
-          "version": {
-            "id": -2013845444873700,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "68759da313caf8990bcd5d961bc691fa85fa3f0e",
-              "size": 1578350,
-              "path": "mods/entityculling-neoforge-1.10.1-mc1.21.1.jar",
-              "url": "mods/entityculling-neoforge-1.10.1-mc1.21.1.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845444892600,
           "name": "extra_create_recipes_1.21.1_v1",
           "favorite": false,
@@ -2156,30 +1940,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845448403600,
-          "name": "forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1",
-          "favorite": false,
-          "version": {
-            "id": -2013845454404500,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "a6f0e7b7c277fab7174bca4943fba7bdf3f74ed7",
-              "size": 5613208,
-              "path": "mods/forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1.jar",
-              "url": "mods/forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845454439000,
           "name": "FpsReducer2-neoforge-1.21-2.10",
           "favorite": false,
@@ -2191,30 +1951,6 @@
               "size": 143137,
               "path": "mods/FpsReducer2-neoforge-1.21-2.10.jar",
               "url": "mods/FpsReducer2-neoforge-1.21-2.10.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845455067200,
-          "name": "ftb-chunks-neoforge-2101.1.14",
-          "favorite": false,
-          "version": {
-            "id": -2013845456672000,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "908b63b11d0e00ae6c9557d3fe6440bdbcf21bb7",
-              "size": 642340,
-              "path": "mods/ftb-chunks-neoforge-2101.1.14.jar",
-              "url": "mods/ftb-chunks-neoforge-2101.1.14.jar"
             },
             "available": false,
             "remove": false
@@ -2263,30 +1999,6 @@
               "size": 302712,
               "path": "mods/ftb-teams-neoforge-2101.1.10.jar",
               "url": "mods/ftb-teams-neoforge-2101.1.10.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845459689300,
-          "name": "geckolib-neoforge-1.21.1-4.8.4",
-          "favorite": false,
-          "version": {
-            "id": -2013845460540600,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "eb854c8ec53ef922a5f3877a1aa4c1ce1352e0ce",
-              "size": 622582,
-              "path": "mods/geckolib-neoforge-1.21.1-4.8.4.jar",
-              "url": "mods/geckolib-neoforge-1.21.1-4.8.4.jar"
             },
             "available": false,
             "remove": false
@@ -2876,30 +2588,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845499283500,
-          "name": "L_Ender's%20Cataclysm%201.21.1-3.27",
-          "favorite": false,
-          "version": {
-            "id": -2013845572502200,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "f34a5e3994fff1953c631b87b3dfa89ed62c26dc",
-              "size": 73346519,
-              "path": "mods/L_Ender's%20Cataclysm%201.21.1-3.27.jar",
-              "url": "mods/L_Ender's%20Cataclysm%201.21.1-3.27.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845572557900,
           "name": "mechanicals-1.21.1-1.1.0",
           "favorite": false,
@@ -2911,30 +2599,6 @@
               "size": 507824,
               "path": "mods/mechanicals-1.21.1-1.1.0.jar",
               "url": "mods/mechanicals-1.21.1-1.1.0.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845573502000,
-          "name": "mezz_config-1.21.1-neoforge-0.6.10-standalone",
-          "favorite": false,
-          "version": {
-            "id": -2013845574236600,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "12beda0b388b97b9d49df76b6d9c8acde7f913e3",
-              "size": 346260,
-              "path": "mods/mezz_config-1.21.1-neoforge-0.6.10-standalone.jar",
-              "url": "mods/mezz_config-1.21.1-neoforge-0.6.10-standalone.jar"
             },
             "available": false,
             "remove": false
@@ -3284,30 +2948,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845624871500,
-          "name": "polymorph-neoforge-1.2.0%2B1.21.1",
-          "favorite": false,
-          "version": {
-            "id": -2013845625456600,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "fa6c5fa8a21229c85d564b47c73df7160b3bd4df",
-              "size": 172671,
-              "path": "mods/polymorph-neoforge-1.2.0%2B1.21.1.jar",
-              "url": "mods/polymorph-neoforge-1.2.0%2B1.21.1.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845625482300,
           "name": "powergrid-mc1.21.1-0.5.5.1",
           "favorite": false,
@@ -3572,54 +3212,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845659109400,
-          "name": "sable-neoforge-1.21.1-1.1.3",
-          "favorite": false,
-          "version": {
-            "id": -2013845682777700,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "98b491efe417046ced3fc4b2e45f603b5007c972",
-              "size": 24766579,
-              "path": "mods/sable-neoforge-1.21.1-1.1.3.jar",
-              "url": "mods/sable-neoforge-1.21.1-1.1.3.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845682817400,
-          "name": "sable-neoforge-1.21.1-2.0.3",
-          "favorite": false,
-          "version": {
-            "id": -2013845694537800,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "f3ba9a497122ba29d9e94ebe6f9a3a3aaa5fa756",
-              "size": 12889000,
-              "path": "mods/sable-neoforge-1.21.1-2.0.3.jar",
-              "url": "mods/sable-neoforge-1.21.1-2.0.3.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845694578900,
           "name": "sablemassview-1.0.0",
           "favorite": false,
@@ -3631,30 +3223,6 @@
               "size": 5729,
               "path": "mods/sablemassview-1.0.0.jar",
               "url": "mods/sablemassview-1.0.0.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845694763100,
-          "name": "sable_player_ragdoll-1.21.1-0.7.2",
-          "favorite": false,
-          "version": {
-            "id": -2013845696409500,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "c47b304774e251bd81861e4ca0cdfce9fb3c9fde",
-              "size": 1433160,
-              "path": "mods/sable_player_ragdoll-1.21.1-0.7.2.jar",
-              "url": "mods/sable_player_ragdoll-1.21.1-0.7.2.jar"
             },
             "available": false,
             "remove": false
@@ -3727,30 +3295,6 @@
               "size": 3764994,
               "path": "mods/Slag-n-Embers-1.21.1-1.1a.jar",
               "url": "mods/Slag-n-Embers-1.21.1-1.1a.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845702015000,
-          "name": "sodium-neoforge-0.8.13%2Bmc1.21.1",
-          "favorite": false,
-          "version": {
-            "id": -2013845704128100,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
-              "size": 1292934,
-              "path": "mods/sodium-neoforge-0.8.13%2Bmc1.21.1.jar",
-              "url": "mods/sodium-neoforge-0.8.13%2Bmc1.21.1.jar"
             },
             "available": false,
             "remove": false
@@ -3908,30 +3452,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845710922700,
-          "name": "tfmg-1.2.0",
-          "favorite": false,
-          "version": {
-            "id": -2013845715702700,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "b520f3687f60a69eb265ff5b9a16759b9e124103",
-              "size": 4924243,
-              "path": "mods/tfmg-1.2.0.jar",
-              "url": "mods/tfmg-1.2.0.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845715718800,
           "name": "tf_dnv-2.0.3",
           "favorite": false,
@@ -4052,30 +3572,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2013845747576600,
-          "name": "twilight_forest_final_boss-2.1.0%2B4.7.3196%2B1.21.1",
-          "favorite": false,
-          "version": {
-            "id": -2013845751536200,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "19d712b0003d64b5f1d3cd1ec80c705ac53fc047",
-              "size": 3364135,
-              "path": "mods/twilight_forest_final_boss-2.1.0%2B4.7.3196%2B1.21.1.jar",
-              "url": "mods/twilight_forest_final_boss-2.1.0%2B4.7.3196%2B1.21.1.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2013845751571300,
           "name": "vista-neoforge-1.21.1-5.1.2",
           "favorite": false,
@@ -4087,54 +3583,6 @@
               "size": 5710864,
               "path": "mods/vista-neoforge-1.21.1-5.1.2.jar",
               "url": "mods/vista-neoforge-1.21.1-5.1.2.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845757858000,
-          "name": "xaerominimap-neoforge-1.21.1-25.3.10",
-          "favorite": false,
-          "version": {
-            "id": -2013845760274100,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "d4828332dd831455429156b6cfa24aa9bd99dd77",
-              "size": 2137784,
-              "path": "mods/xaerominimap-neoforge-1.21.1-25.3.10.jar",
-              "url": "mods/xaerominimap-neoforge-1.21.1-25.3.10.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2013845760298800,
-          "name": "xaeroworldmap-neoforge-1.21.1-1.40.11",
-          "favorite": false,
-          "version": {
-            "id": -2013845761529100,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "c6f596bb6bc7d734100b7dbc8a57f69a5fb549a3",
-              "size": 1386001,
-              "path": "mods/xaeroworldmap-neoforge-1.21.1-1.40.11.jar",
-              "url": "mods/xaeroworldmap-neoforge-1.21.1-1.40.11.jar"
             },
             "available": false,
             "remove": false
@@ -4724,30 +4172,6 @@
         },
         {
           "stateGameElement": "active",
-          "id": -2016758928766000,
-          "name": "Chunky-NeoForge-1.4.23",
-          "favorite": false,
-          "version": {
-            "id": -2016758929162600,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "ab0c74743a653020fe2dfc4986b43e893947f3e9",
-              "size": 340572,
-              "path": "mods/Chunky-NeoForge-1.4.23.jar",
-              "url": "mods/Chunky-NeoForge-1.4.23.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
           "id": -2016758929317100,
           "name": "entityculling-neoforge-1.11.3-mc1.21.1",
           "favorite": false,
@@ -4783,30 +4207,6 @@
               "size": 368896,
               "path": "mods/ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
               "url": "mods/ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "active",
-          "id": -2016758931199900,
-          "name": "JustEnoughMekanismMultiblocks-1.21.1-7.21",
-          "favorite": false,
-          "version": {
-            "id": -2016758931493600,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "9e10e0368b7808a82c624c3f11b23669de675d21",
-              "size": 213205,
-              "path": "mods/JustEnoughMekanismMultiblocks-1.21.1-7.21.jar",
-              "url": "mods/JustEnoughMekanismMultiblocks-1.21.1-7.21.jar"
             },
             "available": false,
             "remove": false
@@ -4903,30 +4303,6 @@
               "size": 183984,
               "path": "mods/kubejsadditions-neoforge-1.21.1-6.0.0.jar",
               "url": "mods/kubejsadditions-neoforge-1.21.1-6.0.0.jar"
-            },
-            "available": false,
-            "remove": false
-          },
-          "userInstall": true,
-          "populateStatus": false,
-          "available": false,
-          "parser": false,
-          "notExists": false,
-          "totalComments": 0
-        },
-        {
-          "stateGameElement": "no_active",
-          "id": -2016758934081000,
-          "name": "kubejsdelight-1.1.6",
-          "favorite": false,
-          "version": {
-            "id": -2016758934198500,
-            "name": "1.0",
-            "metadata": {
-              "sha1": "66a5de83677d38828242ab3dc96bf1b6f2771198",
-              "size": 20406,
-              "path": "mods/kubejsdelight-1.1.6.jar",
-              "url": "mods/kubejsdelight-1.1.6.jar"
             },
             "available": false,
             "remove": false
@@ -5801,6 +5177,1722 @@
           "parser": false,
           "notExists": false,
           "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1312371,
+          "name": "Sable",
+          "author": "ryanhcode",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/sable",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 1394212,
+          "pictures": [
+            1394486,
+            1394490,
+            1394489,
+            1394488,
+            1394485,
+            1394487
+          ],
+          "lanName": "sable",
+          "version": {
+            "id": 8673825,
+            "name": "sable-neoforge-1.21.1-2.0.5",
+            "updateDate": 1787015648000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "05f666e973d32baaaf405acb9bbed6615b909971",
+              "size": 12986136,
+              "path": "mods/sable-neoforge-1.21.1-2.0.5.jar",
+              "url": "/mods/1312371/8673825/sable-neoforge-1.21.1-2.0.5.jar"
+            },
+            "installed": 66028,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 4,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 18642,
+              "name": "ImGuiMC",
+              "gameEntityId": 1524200,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 1275,
+              "name": "Create",
+              "gameEntityId": 328085,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 18511,
+              "name": "Veil Lib",
+              "gameEntityId": 1517006,
+              "dependencyType": "embedded",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1787000400000,
+          "update": 1787000400000,
+          "downloadALL": 417523,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 636608,
+          "name": "Open Parties and Claims",
+          "author": "xaero96",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/open-parties-and-claims",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 15,
+              "name": "server_utility",
+              "shortName": "plugins",
+              "nesting": 0
+            },
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 821257,
+          "pictures": [],
+          "lanName": "open-parties-and-claims",
+          "version": {
+            "id": 9221991,
+            "name": "open-parties-and-claims-neoforge-1.21.1-0.33.0",
+            "updateDate": 1792236668000,
+            "type": "beta",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              },
+              {
+                "id": 52,
+                "name": "1.21"
+              }
+            ],
+            "metadata": {
+              "sha1": "6075cf36ac8d70bd1fd870e0eb9ac84685388df7",
+              "size": 1903256,
+              "path": "mods/open-parties-and-claims-neoforge-1.21.1-0.33.0.jar",
+              "url": "/mods/636608/9221991/open-parties-and-claims-neoforge-1.21.1-0.33.0.jar"
+            },
+            "installed": 1920,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 2,
+              "name": "Fabric API",
+              "gameEntityId": 306612,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 841,
+              "name": "Forge Config API Port",
+              "gameEntityId": 547434,
+              "dependencyType": "required",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 72,
+            "name": "26.3"
+          },
+          "updated": 1788987600000,
+          "update": 1788987600000,
+          "downloadALL": 1873918,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 547434,
+          "name": "Forge Config API Port",
+          "author": "fuzs_",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/forge-config-api-port",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 15,
+              "name": "server_utility",
+              "shortName": "plugins",
+              "nesting": 0
+            },
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 865544,
+          "pictures": [],
+          "lanName": "forge-config-api-port",
+          "version": {
+            "id": 7213611,
+            "name": "ForgeConfigAPIPort-v21.1.6-1.21.1-NeoForge",
+            "updateDate": 1762938025000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "14f2dd9f43254b8c06af04b6f0c8ae5192f658b5",
+              "size": 104654,
+              "path": "mods/ForgeConfigAPIPort-v21.1.6-1.21.1-NeoForge.jar",
+              "url": "/mods/547434/7213611/ForgeConfigAPIPort-v21.1.6-1.21.1-NeoForge.jar"
+            },
+            "installed": 132441,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 2,
+              "name": "Fabric API",
+              "gameEntityId": 306612,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 204,
+              "name": "Mod Menu",
+              "gameEntityId": 308702,
+              "dependencyType": "optional",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 72,
+            "name": "26.3"
+          },
+          "updated": 1789938000000,
+          "update": 1789938000000,
+          "downloadALL": 2640717,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1689768,
+          "name": "MezzConfig",
+          "author": "mezz",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/mezzconfig",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 1546675,
+          "pictures": [],
+          "lanName": "mezzconfig",
+          "version": {
+            "id": 9453297,
+            "name": "MezzConfig 0.6.11 for NeoForge 1.21.1",
+            "updateDate": 1793881624000,
+            "type": "beta",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "d67b0773b42442a5353d40394479fa760fe9d486",
+              "size": 346826,
+              "path": "mods/mezz_config-1.21.1-neoforge-0.6.11-standalone.jar",
+              "url": "/mods/1689768/9453297/mezz_config-1.21.1-neoforge-0.6.11-standalone.jar"
+            },
+            "installed": 0,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 3,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [],
+          "lastGameVersion": {
+            "id": 72,
+            "name": "26.3"
+          },
+          "updated": 1789851600000,
+          "update": 1789851600000,
+          "downloadALL": 285089,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 898746,
+          "name": "Just Enough Mekanism Multiblocks",
+          "author": "м§Ђм ¤мџќл‹¤ м§Ђм ¤мџќл‹¤",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/just-enough-mekanism-multiblocks",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 5,
+              "name": "technology",
+              "shortName": "technology",
+              "nesting": 0
+            },
+            {
+              "id": 6,
+              "name": "map_information",
+              "shortName": "maps",
+              "nesting": 0
+            },
+            {
+              "id": 26,
+              "name": "mc_addons",
+              "shortName": "addons",
+              "nesting": 0
+            }
+          ],
+          "picture": 844408,
+          "pictures": [
+            514053,
+            514055,
+            514057,
+            1552601,
+            514058,
+            514051,
+            514059,
+            514052,
+            514061,
+            514056,
+            514060,
+            1373557,
+            514054
+          ],
+          "lanName": "just-enough-mekanism-multiblocks",
+          "version": {
+            "id": 9068212,
+            "name": "1.21.1-7.23",
+            "updateDate": 1791193907000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "b991df7554af8532d507eeccdef3797bec78f958",
+              "size": 246040,
+              "path": "mods/JustEnoughMekanismMultiblocks-1.21.1-7.23.jar",
+              "url": "/mods/898746/9068212/JustEnoughMekanismMultiblocks-1.21.1-7.23.jar"
+            },
+            "installed": 780,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 3,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 2560,
+              "name": "Mekanism Generators",
+              "gameEntityId": 268566,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 141,
+              "name": "Mekanism",
+              "gameEntityId": 268560,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 53,
+              "name": "Just Enough Items (JEI)",
+              "gameEntityId": 238222,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 7299,
+              "name": "Mekanism Lasers",
+              "gameEntityId": 1060096,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 4557,
+              "name": "Better Fusion Reactor for Mekanism PLUS",
+              "gameEntityId": 602409,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 13112,
+              "name": "Evolved Mekanism",
+              "gameEntityId": 1230085,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 11822,
+              "name": "Mekanism Extras",
+              "gameEntityId": 1026040,
+              "dependencyType": "optional",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1789592400000,
+          "update": 1789592400000,
+          "downloadALL": 101173,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 844063,
+          "name": "Mekanism Advanced Generators",
+          "author": "pocky880",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/mekanism-advancedgenerators",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 83,
+              "name": "storage",
+              "shortName": "storage",
+              "nesting": 0
+            },
+            {
+              "id": 5,
+              "name": "technology",
+              "shortName": "technology",
+              "nesting": 0
+            },
+            {
+              "id": 26,
+              "name": "mc_addons",
+              "shortName": "addons",
+              "nesting": 0
+            },
+            {
+              "id": 12,
+              "name": "technology_energy",
+              "shortName": "energy",
+              "nesting": 0
+            }
+          ],
+          "picture": 1065781,
+          "pictures": [
+            1393304,
+            425930,
+            1393303
+          ],
+          "lanName": "mekanism-advancedgenerators",
+          "version": {
+            "id": 9314413,
+            "name": "Mekanism Advanced Generators 2.3.2",
+            "updateDate": 1792877319000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "4ff33e127940707ed21196343d12cfe411c1d655",
+              "size": 464529,
+              "path": "mods/mekanismadvancedgenerators-neoforge-1.21.1-2.3.2.jar",
+              "url": "/mods/844063/9314413/mekanismadvancedgenerators-neoforge-1.21.1-2.3.2.jar"
+            },
+            "installed": 9,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 2,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 141,
+              "name": "Mekanism",
+              "gameEntityId": 268560,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 859,
+              "name": "Jade рџ”Ќ",
+              "gameEntityId": 324717,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 576,
+              "name": "Mekanism Generators",
+              "gameEntityId": 268566,
+              "dependencyType": "required",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1791838800000,
+          "update": 1791838800000,
+          "downloadALL": 87597,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 929829,
+          "name": "Mekanism Weapons",
+          "author": "oMeranha_ oMeranha_",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/mekanism-weapons",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 4,
+              "name": "armor_weapons_tools",
+              "shortName": "military",
+              "nesting": 0
+            },
+            {
+              "id": 5,
+              "name": "technology",
+              "shortName": "technology",
+              "nesting": 0
+            },
+            {
+              "id": 26,
+              "name": "mc_addons",
+              "shortName": "addons",
+              "nesting": 0
+            }
+          ],
+          "picture": 1558073,
+          "pictures": [
+            572028
+          ],
+          "lanName": "mekanism-weapons",
+          "version": {
+            "id": 8951656,
+            "name": "1.21.1-4.3",
+            "updateDate": 1790127737000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "8c921d26a40813eab834d84d020ed85ef6b7b8f6",
+              "size": 159399,
+              "path": "mods/MekanismWeapons-1.21.1-4.3.jar",
+              "url": "/mods/929829/8951656/MekanismWeapons-1.21.1-4.3.jar"
+            },
+            "installed": 1045,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 3,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 141,
+              "name": "Mekanism",
+              "gameEntityId": 268560,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 472,
+              "name": "Curios API",
+              "gameEntityId": 309927,
+              "dependencyType": "optional",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1790110800000,
+          "update": 1790110800000,
+          "downloadALL": 175876,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 388172,
+          "name": "GeckoLib",
+          "author": "spectralstudiosminecraft",
+          "uuid": "7d6a72e4-c34d-11ea-8f8c-b42e996a7d7a",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/geckolib",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 909991,
+          "pictures": [],
+          "lanName": "geckolib",
+          "version": {
+            "id": 8893490,
+            "name": "geckolib-neoforge-1.21.1-4.9.3",
+            "updateDate": 1789544053000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "5cfe835472a5c5457ae9ac192d9d7b317454d5ac",
+              "size": 634531,
+              "path": "mods/geckolib-neoforge-1.21.1-4.9.3.jar",
+              "url": "/mods/388172/8893490/geckolib-neoforge-1.21.1-4.9.3.jar"
+            },
+            "installed": 84735,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 638,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 7506,
+              "name": "Iris/Oculus & GeckoLib Compat",
+              "gameEntityId": 959388,
+              "dependencyType": "incompatible",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 72,
+            "name": "26.3"
+          },
+          "updated": 1790024400000,
+          "update": 1790024400000,
+          "downloadALL": 22689901,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1031448,
+          "name": "Mekanism Turrets & Fences",
+          "author": "SkelMaximus",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/mekanism-turrets-fences",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 4,
+              "name": "armor_weapons_tools",
+              "shortName": "military",
+              "nesting": 0
+            },
+            {
+              "id": 5,
+              "name": "technology",
+              "shortName": "technology",
+              "nesting": 0
+            },
+            {
+              "id": 26,
+              "name": "mc_addons",
+              "shortName": "addons",
+              "nesting": 0
+            },
+            {
+              "id": 12,
+              "name": "technology_energy",
+              "shortName": "energy",
+              "nesting": 0
+            }
+          ],
+          "picture": 1210542,
+          "pictures": [
+            850257,
+            850256,
+            850255,
+            850258
+          ],
+          "lanName": "mekanism-turrets-fences",
+          "version": {
+            "id": 9251289,
+            "name": "mekanism_turrets-2.2.4",
+            "updateDate": 1792370313000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "544a98bb890346cb66d4bda846fa70b5fbf76a01",
+              "size": 152283,
+              "path": "mods/mekanism_turrets-2.2.4.jar",
+              "url": "/mods/1031448/9251289/mekanism_turrets-2.2.4.jar"
+            },
+            "installed": 253,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 2,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 141,
+              "name": "Mekanism",
+              "gameEntityId": 268560,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 7299,
+              "name": "Mekanism Lasers",
+              "gameEntityId": 1060096,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 169,
+              "name": "GeckoLib",
+              "gameEntityId": 388172,
+              "dependencyType": "required",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1778446800000,
+          "update": 1778446800000,
+          "downloadALL": 33246,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1275257,
+          "name": "MekanismMore Machine",
+          "author": "lost_myself8",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/mekanism-more-machine",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 83,
+              "name": "storage",
+              "shortName": "storage",
+              "nesting": 0
+            },
+            {
+              "id": 5,
+              "name": "technology",
+              "shortName": "technology",
+              "nesting": 0
+            },
+            {
+              "id": 30,
+              "name": "technology_processing",
+              "shortName": "processing",
+              "nesting": 0
+            },
+            {
+              "id": 12,
+              "name": "technology_energy",
+              "shortName": "energy",
+              "nesting": 0
+            }
+          ],
+          "picture": 1289673,
+          "pictures": [
+            1141935,
+            1141938,
+            1141937,
+            1141934,
+            1289816,
+            1141936,
+            1289815,
+            1289817
+          ],
+          "lanName": "mekanism-more-machine",
+          "version": {
+            "id": 9393169,
+            "name": "mekmm-1.21.1-1.4.2",
+            "updateDate": 1793524679000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "7f5ad79707022186dfc5ffd0120150cabd3d333e",
+              "size": 3721605,
+              "path": "mods/mekmm-1.21.1-1.4.2.jar",
+              "url": "/mods/1275257/9393169/mekmm-1.21.1-1.4.2.jar"
+            },
+            "installed": 5,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 2,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 32,
+              "name": "Immersive Engineering",
+              "gameEntityId": 231951,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 141,
+              "name": "Mekanism",
+              "gameEntityId": 268560,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 35,
+              "name": "Applied Energistics 2",
+              "gameEntityId": 223794,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 528,
+              "name": "Integrated Dynamics",
+              "gameEntityId": 236307,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 839,
+              "name": "Mystical Agriculture",
+              "gameEntityId": 246640,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 2427,
+              "name": "Ars Nouveau",
+              "gameEntityId": 401955,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 13112,
+              "name": "Evolved Mekanism",
+              "gameEntityId": 1230085,
+              "dependencyType": "optional",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1787518800000,
+          "update": 1787518800000,
+          "downloadALL": 10550,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1448575,
+          "name": "Mekanism Ponders",
+          "author": "alyx20",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/mekanism-ponders",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 5,
+              "name": "technology",
+              "shortName": "technology",
+              "nesting": 0
+            },
+            {
+              "id": 26,
+              "name": "mc_addons",
+              "shortName": "addons",
+              "nesting": 0
+            }
+          ],
+          "picture": 1319187,
+          "pictures": [
+            1319349,
+            1319348,
+            1319346,
+            1319350,
+            1319347,
+            1319345
+          ],
+          "lanName": "mekanism-ponders",
+          "version": {
+            "id": 9110064,
+            "name": "mekanism_ponders-1.0.4-1.21.1",
+            "updateDate": 1791566286000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "a622c8dda325336333e6c23441426bab1d3bc6bb",
+              "size": 1699512,
+              "path": "mods/mekanism_ponders-1.0.4-1.21.1.jar",
+              "url": "/mods/1448575/9110064/mekanism_ponders-1.0.4-1.21.1.jar"
+            },
+            "installed": 78,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 1,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 2560,
+              "name": "Mekanism Generators",
+              "gameEntityId": 268566,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 141,
+              "name": "Mekanism",
+              "gameEntityId": 268560,
+              "dependencyType": "required",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1791493200000,
+          "update": 1791493200000,
+          "downloadALL": 3417,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1536749,
+          "name": "Create Aeronautics Mekanism Compatibility",
+          "author": "jugglebubbles",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-mekanism-compatibility",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 26,
+              "name": "mc_addons",
+              "shortName": "addons",
+              "nesting": 0
+            }
+          ],
+          "picture": 1413634,
+          "pictures": [
+            1414282
+          ],
+          "lanName": "create-aeronautics-mekanism-compatibility",
+          "version": {
+            "id": 8299825,
+            "name": "create_mekanism_compat-0.1.21",
+            "updateDate": 1782131398000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "048742b32d94daeba286e85d57ce6aa961f36280",
+              "size": 139829,
+              "path": "mods/create_mekanism_compat-0.1.21.jar",
+              "url": "/mods/1536749/8299825/create_mekanism_compat-0.1.21.jar"
+            },
+            "installed": 966,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 1,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 141,
+              "name": "Mekanism",
+              "gameEntityId": 268560,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 18510,
+              "name": "Sable",
+              "gameEntityId": 1312371,
+              "dependencyType": "required",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1782075600000,
+          "update": 1782075600000,
+          "downloadALL": 1526,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1637623,
+          "name": "Better Advanced Tooltips",
+          "author": "Lat",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/better-advanced-tooltips",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 6,
+              "name": "map_information",
+              "shortName": "maps",
+              "nesting": 0
+            },
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 1501438,
+          "pictures": [],
+          "lanName": "better-advanced-tooltips",
+          "version": {
+            "id": 8576077,
+            "name": "better-advanced-tooltips-2101.1.0-build.5",
+            "updateDate": 1785852610000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "5b73537b908764f2d3fd593a0f56a8b1b034bc50",
+              "size": 37653,
+              "path": "mods/better-advanced-tooltips-2101.1.0-build.5.jar",
+              "url": "/mods/1637623/8576077/better-advanced-tooltips-2101.1.0-build.5.jar"
+            },
+            "installed": 4461,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 1,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [],
+          "lastGameVersion": {
+            "id": 72,
+            "name": "26.3"
+          },
+          "updated": 1791752400000,
+          "update": 1791752400000,
+          "downloadALL": 4628,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 693815,
+          "name": "Create The Factory Must Grow",
+          "author": "dr_mango_tea",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/create-industry",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 4,
+              "name": "armor_weapons_tools",
+              "shortName": "military",
+              "nesting": 0
+            },
+            {
+              "id": 5,
+              "name": "technology",
+              "shortName": "technology",
+              "nesting": 0
+            },
+            {
+              "id": 26,
+              "name": "mc_addons",
+              "shortName": "addons",
+              "nesting": 0
+            }
+          ],
+          "picture": 898669,
+          "pictures": [
+            638976,
+            638977,
+            638980,
+            638975,
+            638981,
+            372750,
+            638984,
+            638978,
+            638979,
+            638982,
+            638983,
+            372754,
+            638988,
+            638987,
+            638986,
+            638985
+          ],
+          "lanName": "create-industry",
+          "version": {
+            "id": 8205648,
+            "name": "tfmg-1.2.2",
+            "updateDate": 1780751154000,
+            "type": "beta",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "5cce8ff5b1b985ff3f67ac95d9e76a4998ee01db",
+              "size": 4986234,
+              "path": "mods/tfmg-1.2.2.jar",
+              "url": "/mods/693815/8205648/tfmg-1.2.2.jar"
+            },
+            "installed": 82792,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 769,
+              "name": "Create",
+              "gameEntityId": 328085,
+              "dependencyType": "required",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1780693200000,
+          "update": 1780693200000,
+          "downloadALL": 1004522,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0,
+          "adult": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 1087826,
+          "name": "Mekanism The Factory Must Grow Compatibility",
+          "author": "AkacioBahno",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/mekanism-the-factory-must-grow-compatibility",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 26,
+              "name": "mc_addons",
+              "shortName": "addons",
+              "nesting": 0
+            }
+          ],
+          "picture": 1314679,
+          "pictures": [
+            953603,
+            953604,
+            953606,
+            953607,
+            953605
+          ],
+          "lanName": "mekanism-the-factory-must-grow-compatibility",
+          "version": {
+            "id": 8334108,
+            "name": "mekanism_tfmg_compat-0.4-1.21.1",
+            "updateDate": 1782644738000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 53,
+                "name": "1.21.1"
+              }
+            ],
+            "metadata": {
+              "sha1": "c9d5b74e44335f32014feac0b42eed35df1f184a",
+              "size": 55446,
+              "path": "mods/mekanism_tfmg_compat-0.4-1.21.1.jar",
+              "url": "/mods/1087826/8334108/mekanism_tfmg_compat-0.4-1.21.1.jar"
+            },
+            "installed": 280,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              }
+            ]
+          },
+          "popularity": 1,
+          "downloadMonth": 0,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 2560,
+              "name": "Mekanism Generators",
+              "gameEntityId": 268566,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 141,
+              "name": "Mekanism",
+              "gameEntityId": 268560,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 4,
+              "name": "Just Enough Items (JEI)",
+              "gameEntityId": 238222,
+              "dependencyType": "optional",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 769,
+              "name": "Create",
+              "gameEntityId": 328085,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 7864,
+              "name": "Create The Factory Must Grow",
+              "gameEntityId": 693815,
+              "dependencyType": "required",
+              "available": false
+            },
+            {
+              "gameType": "mod",
+              "id": 1238,
+              "name": "Mekanism Tools",
+              "gameEntityId": 268567,
+              "dependencyType": "optional",
+              "available": false
+            }
+          ],
+          "lastGameVersion": {
+            "id": 53,
+            "name": "1.21.1"
+          },
+          "updated": 1782594000000,
+          "update": 1782594000000,
+          "downloadALL": 2509,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -4903680010500,
+          "name": "FastSuite-1.21.1-6.0.7",
+          "favorite": false,
+          "version": {
+            "id": -4903680626700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "9dd867fe29642d9e3f2f9059f1abf372936fbabc",
+              "size": 28192,
+              "path": "mods/FastSuite-1.21.1-6.0.7.jar",
+              "url": "mods/FastSuite-1.21.1-6.0.7.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -4903680760900,
+          "name": "fzzy_config-0.7.7+fix1+1.21+neoforge",
+          "favorite": false,
+          "version": {
+            "id": -4903683304600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "aa04a2ddbce2f50b21d667d2f3e589f9e043e472",
+              "size": 2392720,
+              "path": "mods/fzzy_config-0.7.7+fix1+1.21+neoforge.jar",
+              "url": "mods/fzzy_config-0.7.7+fix1+1.21+neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -4903684151600,
+          "name": "moreculling-neoforge-1.21.1-1.0.11",
+          "favorite": false,
+          "version": {
+            "id": -4903684839600,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ea5ea2c826af8d8d4682d6cd867acb8e8ea983e7",
+              "size": 337255,
+              "path": "mods/moreculling-neoforge-1.21.1-1.0.11.jar",
+              "url": "mods/moreculling-neoforge-1.21.1-1.0.11.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -4903685031700,
+          "name": "particle_core-0.3.3+1.21+neoforge",
+          "favorite": false,
+          "version": {
+            "id": -4903685369700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f859d68818e522fb00056d3ed1603ca4300eb681",
+              "size": 138375,
+              "path": "mods/particle_core-0.3.3+1.21+neoforge.jar",
+              "url": "mods/particle_core-0.3.3+1.21+neoforge.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "no_active",
+          "id": -4903685752700,
+          "name": "ScalableLux-neoforge-0.3.0-alpha.0.8-all",
+          "favorite": false,
+          "version": {
+            "id": -4903686142000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "27d602b2aa6b371ceeb6af9b967f95bafb7d51a9",
+              "size": 197423,
+              "path": "mods/ScalableLux-neoforge-0.3.0-alpha.0.8-all.jar",
+              "url": "mods/ScalableLux-neoforge-0.3.0-alpha.0.8-all.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": -4903686177100,
+          "name": "servercore-neoforge-1.5.19+1.21.1",
+          "favorite": false,
+          "version": {
+            "id": -4903687848700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "62ce692654e09271b5c55cbb3a1ef7606d067132",
+              "size": 1462674,
+              "path": "mods/servercore-neoforge-1.5.19+1.21.1.jar",
+              "url": "mods/servercore-neoforge-1.5.19+1.21.1.jar"
+            },
+            "available": false,
+            "remove": false
+          },
+          "userInstall": true,
+          "populateStatus": false,
+          "available": false,
+          "parser": false,
+          "notExists": false,
+          "totalComments": 0
+        },
+        {
+          "stateGameElement": "active",
+          "id": 351264,
+          "name": "Kotlin for Forge",
+          "author": "thedarkcolour",
+          "linkProject": "https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge",
+          "favorite": false,
+          "categories": [
+            {
+              "id": 7,
+              "name": "library_api",
+              "shortName": "api",
+              "nesting": 0
+            }
+          ],
+          "picture": 787547,
+          "pictures": [],
+          "lanName": "kotlin-for-forge",
+          "version": {
+            "id": 8335665,
+            "name": "kotlinforforge-5.12.0-all",
+            "updateDate": 1782664425000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 63,
+                "name": "1.21.8"
+              },
+              {
+                "id": 62,
+                "name": "1.21.7"
+              },
+              {
+                "id": 61,
+                "name": "1.21.6"
+              },
+              {
+                "id": 59,
+                "name": "1.21.5"
+              },
+              {
+                "id": 57,
+                "name": "1.21.4"
+              },
+              {
+                "id": 55,
+                "name": "1.21.3"
+              },
+              {
+                "id": 54,
+                "name": "1.21.2"
+              },
+              {
+                "id": 53,
+                "name": "1.21.1"
+              },
+              {
+                "id": 52,
+                "name": "1.21"
+              },
+              {
+                "id": 51,
+                "name": "1.20.6"
+              }
+            ],
+            "metadata": {
+              "sha1": "a2032c921e93a0ccb0db5d742167e3139c2de01b",
+              "size": 7279276,
+              "path": "mods/kotlinforforge-5.12.0-all.jar",
+              "url": "/mods/351264/8335665/kotlinforforge-5.12.0-all.jar"
+            },
+            "installed": 105045,
+            "available": false,
+            "remove": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 5,
+                "name": "neoForge"
+              },
+              {
+                "id": 1,
+                "name": "forge"
+              }
+            ]
+          },
+          "popularity": 5,
+          "downloadMonth": 153,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [],
+          "lastGameVersion": {
+            "id": 72,
+            "name": "26.3"
+          },
+          "updated": 1782594000000,
+          "update": 1782594000000,
+          "downloadALL": 2912033,
+          "available": true,
+          "parser": true,
+          "notExists": false,
+          "totalComments": 0,
+          "adult": false
         }
       ],
       "resourcePacks": [],
@@ -5830,7 +6922,8 @@
     "available": false,
     "parser": false,
     "notExists": false,
-    "totalComments": 0
+    "totalComments": 0,
+    "elements": []
   },
   "source": "local_version_repo",
   "jar": "1.21.1",

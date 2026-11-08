@@ -1,0 +1,76 @@
+#Settings of the Improved Energy Tablet
+[improved_energy_tablet]
+	#Maximum amount of Joules the Improved Energy Tablet can store.
+	# Default: 3000000
+	# Range: 0 ~ 9223372036854775807
+	maxEnergy = 3000000
+	#Joules/t the Improved Energy Tablet can receive or give.
+	# Default: 15000
+	# Range: 0 ~ 9223372036854775807
+	chargeRate = 15000
+
+#Settings of the Quantum Energy Tablet
+[quantum_energy_tablet]
+	#Maximum amount of Joules the Quantum Energy Tablet can store.
+	# Default: 9000000
+	# Range: 0 ~ 9223372036854775807
+	maxEnergy = 9000000
+	#Joules/t the Quantum Energy Tablet can receive or give.
+	# Default: 45000
+	# Range: 0 ~ 9223372036854775807
+	chargeRate = 45000
+
+#Settings of the Spectral Energy Tablet
+[spectral_energy_tablet]
+	#Maximum amount of Joules the Spectral Energy Tablet can store.
+	# Default: 27000000
+	# Range: 0 ~ 9223372036854775807
+	maxEnergy = 27000000
+	#Joules/t the Spectral Energy Tablet can receive or give.
+	# Default: 135000
+	# Range: 0 ~ 9223372036854775807
+	chargeRate = 135000
+
+#Settings of the Singular Energy Tablet
+[singular_energy_tablet]
+	#Maximum amount of Joules the Singular Energy Tablet can store.
+	# Default: 81000000
+	# Range: 0 ~ 9223372036854775807
+	maxEnergy = 81000000
+	#Joules/t the Singular Energy Tablet can receive or give.
+	# Default: 405000
+	# Range: 0 ~ 9223372036854775807
+	chargeRate = 405000
+
+#Settings of the Light Absorbing Energy Tablet
+[light_absorbing_energy_tablet]
+	#Maximum amount of Joules the Light Absorbing Energy Tablet can store.
+	# Default: 243000000
+	# Range: 0 ~ 9223372036854775807
+	maxEnergy = 243000000
+	#Joules/t the Light Absorbing Energy Tablet can receive or give.
+	# Default: 1215000
+	# Range: 0 ~ 9223372036854775807
+	chargeRate = 1215000
+
+#Settings of the Photonic Energy Tablet
+[photonic_energy_tablet]
+	#Maximum amount of Joules the Photonic Energy Tablet can store.
+	# Default: 729000000
+	# Range: 0 ~ 9223372036854775807
+	maxEnergy = 729000000
+	#Joules/t the Photonic Energy Tablet can receive or give.
+	# Default: 3645000
+	# Range: 0 ~ 9223372036854775807
+	chargeRate = 3645000
+
+#Settings of the Creative Energy Tablet
+[creative_energy_tablet]
+	#Maximum amount of Joules the Creative Energy Tablet can store.
+	# Default: 2000000000
+	# Range: 0 ~ 9223372036854775807
+	maxEnergy = 2000000000
+	#Joules/t the Creative Energy Tablet can receive or give.
+	# Default: 10000000
+	# Range: 0 ~ 9223372036854775807
+	chargeRate = 10000000
