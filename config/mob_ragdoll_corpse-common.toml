@@ -1,0 +1,3 @@
+["Ignored entities"]
+	#List of Entity ids to ignore from creating corpse and instead drop items immediately.
+	ignoredEntityIds = []

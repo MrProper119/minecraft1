@@ -1,0 +1,93 @@
+[engine]
+	#Master switch. When false, Create's vanilla pipe transport runs unmodified.
+	enableEngine = true
+	#Flow in mB/tick that one pipe segment passes per block of head difference.
+	#Higher values equalize tanks faster and raise throughput everywhere.
+	# Default: 120.0
+	# Range: 0.1 ~ 10000.0
+	pipeConductance = 120.0
+	#Blocks of head a pump adds per RPM.
+	#At 0.25, a pump running at 64 RPM can lift fluid 16 blocks.
+	# Default: 0.25
+	# Range: 0.01 ~ 100.0
+	pumpHeadPerRpm = 0.25
+	#Pump throughput in mB/tick per RPM when pumping freely.
+	#Together with pumpHeadPerRpm this defines the pump curve:
+	#flow falls toward zero as the opposing head approaches the pump's head.
+	# Default: 1.0
+	# Range: 0.01 ~ 100.0
+	pumpFlowPerRpm = 1.0
+	#Hard cap on fluid moved into or out of a single tank or machine per tick, in mB.
+	# Default: 256
+	# Range: 1 ~ 8192
+	maxFlowPerEndpoint = 256
+	#How many blocks the head at a pipe's highest point may sit below that point
+	#before the liquid column breaks (the siphon / cavitation limit).
+	# Default: 8.0
+	# Range: 0.0 ~ 256.0
+	suctionLimitBlocks = 8.0
+	#Let an open pipe end draw fluid IN from the world when the network is under
+	#suction (its head sits below the pipe mouth): a self-regenerating source (a
+	#lake), a cauldron, or a finite/hand-placed source block. To keep it from
+	#sucking back what it just spilled, a network that spilled from ANY open end
+	#recently will not pull a finite source (lakes/cauldrons are unaffected).
+	enableOpenEndIntake = true
+	#After an open end on a network spills, how many ticks before that network
+	#may pull a finite source again (the anti-reclaim window). Lakes and cauldrons
+	#ignore this. Larger = safer against flicker on networks that both push and pull.
+	# Default: 20
+	# Range: 0 ~ 200
+	openEndIntakeCooldownTicks = 20
+	#Let a fluid valve throttle its flow by a 0-90 degree angle set with the scroll
+	#value (the box on its side faces). The shaft still opens and closes the valve;
+	#the angle only caps how much flows while it is open (90 = fully open). When
+	#false, valves stay plain on/off.
+	enableValveThrottle = true
+	#The valve's opening curve — how its 0-90 degree angle maps to the share of flow
+	#it passes. LINEAR: angle = flow (45 deg passes half; predictable, matches the
+	#goggle %). QUICK_OPENING: reaches most flow early. EQUAL_PERCENTAGE: slow to open,
+	#rushes near full. BALL_VALVE: the lens-shaped bore overlap of a real ball valve
+	#(very restrictive until near open). Only reshapes the knob's feel; the engine's
+	#flow model stays linear.
+	#Allowed Values: LINEAR, QUICK_OPENING, EQUAL_PERCENTAGE, BALL_VALVE
+	valveCharacteristic = "LINEAR"
+	#Automatically detect fluid-handler blocks that are NOT passive tanks — relays
+	#like a docking connector or a flexible hose — and stop equalizing them as
+	#reservoirs. A real tank only changes fill by our transfers; a relay spontaneously
+	#GAINS fluid from its own pairing/cascade (a consumer only ever loses it). A block
+	#type seen gaining fluid on its own several times is treated as a drain-priority
+	#relay endpoint (a one-way source while it holds fluid, a one-way sink while empty),
+	#so it is drained/filled on demand instead of being wrongly held 'balanced'. Override
+	#with the block tags is_reservoir (force normal tank), relay_endpoint (force relay),
+	#sink_only (receive-only), or ignore_fluid_handler (skip); Create tanks and basins
+	#are never demoted.
+	autoDetectRelayHandlers = true
+
+[sableCompat]
+	#When an open-ended pipe on a Sable sub-level spills fluid,
+	#place the fluid block in the real world at the projected position.
+	enableOpenEndWorldPlacement = true
+	#Recompute pipe connection state on Sable sub-levels. Sable assembles a
+	#contraption with raw setBlockState (no neighbour update), so a pipe's
+	#connection shape can stay stale and drop real edges — the network then
+	#solves 'no flow' until a manual pipe edit fixes it. This refreshes each
+	#sub-level pipe once so pumps/networks work without the manual poke.
+	enableSubLevelConnectionRefresh = true
+	#Cross-level piping: let an open pipe end draw fluid IN from a block on ANY OTHER
+	#Sable level whose physical bounds overlap the pipe mouth — a contraption drinking
+	#a fluid block on another contraption where the two touch, OR a main-level (dimension)
+	#pipe drinking from a contraption passing over it, OR a contraption drinking the
+	#dimension it overlaps. Uses the same one-way vacuum intake and anti-reclaim guards
+	#as ordinary open-end intake, plus a spatial (broadphase) query per mouth.
+	enableCrossLevelPiping = true
+
+[tankMass]
+	#Enable dynamic mass for fluid tanks on Sable sub-levels.
+	#Fuller tanks become heavier, affecting sub-level physics.
+	enableDynamicTankMass = true
+	#Mass in kg added per bucket of fluid stored in a tank.
+	# Default: 0.1
+	# Range: 0.001 ~ 100.0
+	fluidMassPerBucket = 0.1
+	#EXPERIMENTAL: shift center of gravity based on fluid fill level.
+	experimentalTankCenterOfGravity = true

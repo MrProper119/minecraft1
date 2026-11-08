@@ -1,5 +1,7 @@
 # Моди (їх завантажує packwiz)
+mods/*.jar
 *.jar
+!packwiz-installer-bootstrap.jar
 
 # Світи та дані гравця
 saves/

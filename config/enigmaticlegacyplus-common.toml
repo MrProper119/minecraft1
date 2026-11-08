@@ -1,0 +1,174 @@
+[sevenCurses]
+	# Default: 200
+	# Range: 100 ~ 500
+	painMultiplier = 200
+	# Default: 24.0
+	# Range: 4.0 ~ 100.0
+	neutralAngerRange = 24.0
+	# Default: 30
+	# Range: 0 ~ 100
+	armorDebuff = 30
+	# Default: 40
+	# Range: 0 ~ 100
+	monsterDamageDebuff = 40
+	#Allowed Values: ALWAYS_LOSS, NEED_CURSE_RING, NEED_CURSE_RING_AND_IGNORE_KEEPINVENTORY
+	soulCrystalsMode = "NEED_CURSE_RING"
+	enableInsomnia = true
+	# Default: 1
+	# Range: 0 ~ 10
+	lootingBonus = 1
+	# Default: 1
+	# Range: 0 ~ 10
+	fortuneBonus = 1
+	# Default: 300
+	# Range: 0 ~ 1000
+	experienceBonus = 300
+	# Default: 10
+	# Range: 0 ~ 30
+	enchantingBonus = 10
+	enableSpecialDrops = true
+	autoEquip = false
+	ultraHardcore = false
+
+	[spellstone.golemHeart]
+		# Default: 4.0
+		# Range: 0.0 ~ 20.0
+		defaultArmorBonus = 4.0
+		# Default: 16.0
+		# Range: 0.0 ~ 100.0
+		superArmorBonus = 16.0
+		# Default: 4.0
+		# Range: 0.0 ~ 20.0
+		superArmorToughnessBonus = 4.0
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		knockbackResistance = 1.0
+		# Default: 25
+		# Range: 0 ~ 100
+		meleeResistance = 25
+		# Default: 40
+		# Range: 0 ~ 100
+		explosionResistance = 40
+		# Default: 2.0
+		# Range: 1.0 ~ 20.0
+		vulnerabilityModifier = 2.0
+
+	[spellstone.blazingCore]
+		# Default: 4.0
+		# Range: 0.0 ~ 64.0
+		damageFeedback = 4.0
+		# Default: 4
+		# Range: 0 ~ 32
+		ignitionFeedback = 4
+		# Default: 2.0
+		# Range: 1.0 ~ 20.0
+		vulnerabilityModifier = 2.0
+
+	[spellstone.oceanStone]
+		# Default: 40
+		# Range: 0 ~ 100
+		underwaterCreaturesResistance = 40
+		# Default: 1.0
+		# Range: 0.0 ~ 10.0
+		xpCostModifier = 1.0
+		preventOxygenBarRender = true
+		# Default: 2.0
+		# Range: 1.0 ~ 20.0
+		vulnerabilityModifier = 2.0
+
+	[spellstone.angelBlessing]
+		# Default: 40
+		# Range: 0 ~ 100
+		deflectChance = 40
+		# Default: 2.0
+		# Range: 1.0 ~ 20.0
+		vulnerabilityModifier = 2.0
+
+	[spellstone.eyeOfNebula]
+		# Default: 40
+		# Range: 0 ~ 100
+		magicBoost = 40
+		# Default: 65
+		# Range: 0 ~ 100
+		magicResistance = 65
+		# Default: 15
+		# Range: 0 ~ 100
+		dodgeProbability = 15
+		# Default: 150
+		# Range: 0 ~ 1000
+		attackEmpower = 150
+		# Default: 2.0
+		# Range: 1.0 ~ 20.0
+		vulnerabilityModifier = 2.0
+
+	[spellstone.voidPearl]
+		# Default: 16.0
+		# Range: 0.0 ~ 128.0
+		shadowRange = 16.0
+		# Default: 4
+		# Range: 0 ~ 100
+		darknessDamage = 4
+		# Default: 2
+		# Range: 0 ~ 10
+		witheringLevel = 2
+		# Default: 5.0
+		# Range: 0.0 ~ 120.0
+		witheringTime = 5.0
+		# Default: 30
+		# Range: 0 ~ 80
+		undeadProbability = 30
+
+	[cursedItems.TheTwist]
+		# Default: 300
+		# Range: 0 ~ 1000
+		specialDamageBoost = 300
+		# Default: 300
+		# Range: 0 ~ 1000
+		knockbackModifier = 300
+
+	[cursedItems.BerserkEmblem]
+		# Default: 1.0
+		# Range: 0.0 ~ 10.0
+		attackDamage = 1.0
+		# Default: 1.0
+		# Range: 0.0 ~ 10.0
+		attackSpeed = 1.0
+		# Default: 0.5
+		# Range: 0.0 ~ 10.0
+		movementSpeed = 0.5
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		damageResistance = 0.5
+
+[else]
+	# Default: 8.0
+	# Range: 1.0 ~ 256.0
+	magnetRingRange = 8.0
+
+	[else.magnetButton]
+		# Default: 0
+		# Range: -1024 ~ 1024
+		OffsetX = 0
+		# Default: 0
+		# Range: -1024 ~ 1024
+		OffsetY = 0
+		# Default: 0
+		# Range: -1024 ~ 1024
+		OffsetXCreative = 0
+		# Default: 0
+		# Range: -1024 ~ 1024
+		OffsetYCreative = 0
+
+	[else.enderButton]
+		# Default: 0
+		# Range: -1024 ~ 1024
+		OffsetX = 0
+		# Default: 0
+		# Range: -1024 ~ 1024
+		OffsetY = 0
+		# Default: 0
+		# Range: -1024 ~ 1024
+		OffsetXCreative = 0
+		# Default: 0
+		# Range: -1024 ~ 1024
+		OffsetYCreative = 0

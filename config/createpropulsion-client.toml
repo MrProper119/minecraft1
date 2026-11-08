@@ -1,0 +1,13 @@
+[Thruster]
+	#Particle additional velocity modifier when ship is moving in the same direction as exhaust.
+	"Particle velocity offset" = 0.15
+	#The higher this number is - the more particles are spawned.
+	"Particle count multiplier" = 1.0
+
+["Stirling Engine"]
+	#Revolution period of the simulated shaft (affects only piston movement).
+	"Revolution period" = 0.2
+	#Radius of the simulated crank.
+	"Crank radius" = 0.125
+	#Length of the simulated conrod.
+	"Conrod length" = 0.5

@@ -1,0 +1,245 @@
+# ════════════════════════════════════════════════════════════════
+#  Create TNT — Configuration
+# ════════════════════════════════════════════════════════════════
+#  Edit and save — changes apply LIVE without restarting the game.
+#  Format:  key = value    (lines starting with # are comments)
+#  If this file is deleted, a new one with defaults is created.
+#  Invalid values are reset to defaults; valid values are kept.
+# ════════════════════════════════════════════════════════════════
+
+# ────────────────────────────────────────────────────────────────
+#  SIMPLE — General gameplay options
+# ────────────────────────────────────────────────────────────────
+
+# Whether water/lava SOURCE blocks can be scattered by explosions (flowing water is never scattered)
+scatterFluids = false
+
+# TNT strength (block destruction radius). Entity damage auto-scales to 1.5x
+tntStrength = 12.0
+
+# Global explosive power scale (0.4 = 60% weaker). Applies to block destruction and entity damage
+explosionPowerScale = 0.4
+
+# Knockback impulse on mobs/players/primed TNT/debris (0.35 = minimal nudge, 1.0 = full shove)
+entityKnockbackScale = 0.35
+
+# TNTs explode all at once instantly (true) or one-by-one (false)
+simultaneousChainDetonation = true
+
+# Ticks between each TNT when detonating one-by-one (20 ticks = 1 second)
+chainDetonationDelay = 2
+
+# Whether the camera wobbles when the blast wave arrives
+screenShake = true
+
+# Spawn the big smoke plume cloud
+showShellExplosionClouds = true
+
+# Spawn trailing smoke streaks in the cloud
+showExtraShellExplosionTrails = true
+
+# Main plume (base smoke) puff count multiplier (0.45 = half; does not affect the blast rays)
+baseSmokeAmount = 0.45
+
+# Visual size of the entire explosion effect (smoke, rays, shake, sound). 1.0 = full size, 0.5 = half. Block destruction = tntStrength
+explosionVisualScale = 0.5
+
+# How many blast-ray streaks shoot out (1.0 = 12-17, spread evenly in random directions so lines never touch)
+explosionTrailMultiplier = 1.0
+
+# Darkest smoke shade at spawn (0.35 = some puffs start dark gray)
+smokeDarknessMin = 0.1
+
+# Brightest smoke shade at spawn (1.0 = white)
+smokeDarknessMax = 1.0
+
+# Item drop chance fraction (chance = this / blockRadius; lower = fewer drops)
+blockDropChance = 0.25
+
+# Upward acceleration once smoke starts rising (hot plume lift)
+smokeBuoyancy = 0.01
+
+# Ticks before smoke starts rising (25 = smoke hangs ~1.2s after the blast)
+smokeRiseDelay = 25
+
+# Ticks over which the rise ramps from 0 to full strength
+smokeRiseRamp = 20
+
+# Coolest per-puff heat at birth (buoyancy multiplier; cooler puffs stay short)
+smokeHeatMin = 0.2
+
+# Hottest per-puff heat at birth (hotter puffs rise harder)
+smokeHeatMax = 1.6
+
+# Fastest cooling rate (heat kept per tick; 0.99 = cools fast, short rise)
+smokeHeatDecayMin = 0.99
+
+# Slowest cooling rate (0.999 = holds heat, tall column)
+smokeHeatDecayMax = 0.999
+
+# Random per-tick smoke acceleration (breaks pattern-like spreading; 0 = off)
+smokeTurbulence = 0.02
+
+# Mutual puff repulsion strength (overlapping puffs push apart so the cloud expands evenly; 0 = off)
+smokeRepelStrength = 0.008
+
+# Speed cap for the large base smoke in blocks per second (1.2 = a bit faster than the ray particles)
+smokeBaseCap = 1.2
+
+# Blocks between puffs along a pillar ray (smaller = denser pillar trails)
+pillarTrailSpacing = 0.4
+
+
+# ────────────────────────────────────────────────────────────────
+#  ADVANCED — Explosion algorithm
+#  Tune these to design your own explosion behavior.
+# ────────────────────────────────────────────────────────────────
+
+# Per-block shock absorption: capacity = (blastResistance + resistanceBase) * this. A block explodes only when the shock exceeds its capacity, absorbing exactly that much energy; weaker shocks are fully absorbed and the block survives. 1.0 ≈ vanilla-like penetration (TNT breaks 1-2 stone blocks)
+energyAbsorptionMultiplier = 1.0
+
+# Base resistance added to every block before scaling
+resistanceBase = 0.3
+
+# Energy subtracted per ray-march step
+rayStepDecay = 0.225
+
+# Per-ray reach random variation range (added to 0.7 baseline)
+rayReachVariation = 0.6
+
+# Chain-explosion power scaling in water (1.0 = full power, 0.0 = no explosion)
+waterResistanceScale = 0.6
+
+# Chain-explosion power scaling in lava (1.0 = full power, 0.0 = no explosion)
+lavaResistanceScale = 0.3
+
+# Probability that a high-energy water block evaporates (destroyed, drops nothing)
+waterEvaporationChance = 0.4
+
+# Fraction of blockRadius defining the high-energy evaporation zone (0.4 = inner 40%)
+waterEvaporationThreshold = 0.4
+
+
+#  Fluid launch velocity (how fast scattered fluids fly outward)
+
+# Base launch speed for scattered fluid blocks
+fluidLaunchSpeed = 0.3
+
+# Extra upward velocity added to scattered fluids
+fluidUpwardBoost = 0.2
+
+# Maximum upward velocity for scattered fluids
+fluidVelocityCapY = 0.3
+
+# Maximum horizontal velocity for scattered fluids
+fluidVelocityCapXZ = 0.35
+
+
+# ────────────────────────────────────────────────────────────────
+#  ADVANCED — TNT fuse & water behavior
+# ────────────────────────────────────────────────────────────────
+
+# Min ticks lit before water can unlight TNT (10 = 0.5s)
+waterUnlightMinTicks = 10
+
+# Max ticks lit after which water no longer unlights TNT (20 = 1s)
+waterUnlightMaxTicks = 20
+
+
+# ────────────────────────────────────────────────────────────────
+#  Smoke particle physics & cloud spawning
+#  The core spawn geometry (plume timing, velocity/displacement scales,
+#  per-particle-setting counts) is fixed so the explosion always reads
+#  correctly; the tunable motion and visual knobs are in the sections
+#  above.
+# ────────────────────────────────────────────────────────────────
+
+# ────────────────────────────────────────────────────────────────
+#  ADVANCED — Falling block physics
+# ────────────────────────────────────────────────────────────────
+
+# Gravity applied to falling debris per tick (0.04 = vanilla)
+fallingBlockGravity = 0.04
+
+# Horizontal velocity decay per tick after the boom
+fallingBlockHorizontalDecay = 0.04
+
+# Damage = maxFallSpeed * this (12 = vanilla-like)
+fallingBlockImpactDamageMultiplier = 12.0
+
+# Maximum impact damage (50 = 25 hearts)
+fallingBlockImpactDamageCap = 50.0
+
+# Maximum lifetime of a falling block in ticks (600 = 30s)
+fallingBlockMaxLifetime = 600
+
+
+# ────────────────────────────────────────────────────────────────
+#  ADVANCED — Camera shake
+# ────────────────────────────────────────────────────────────────
+
+# Spring constant of the shake oscillator (lower = looser wobble)
+shakeSpringiness = 0.08
+
+# Damping of the shake oscillator (higher = stops faster)
+shakeDecay = 0.3
+
+# Global multiplier for screen shake strength
+shakeIntensity = 1.3
+
+# Blast power * this = shake strength
+shakePowerMultiplier = 6.0
+
+# Maximum camera rotation in degrees
+shakePowerLimit = 45.0
+
+# Blast wave arrival speed in m/s (higher = shake reaches player faster)
+blastEffectDelaySpeed = 320.0
+
+
+# ────────────────────────────────────────────────────────────────
+#  ADVANCED — Structure collapse
+# ────────────────────────────────────────────────────────────────
+
+# Max blocks processed per server tick (higher = faster collapse)
+collapseMaxPerTick = 80
+
+# Max cascade generation depth (higher = collapses spread further)
+collapseMaxDepth = 16
+
+# Max blocks visited per connectivity check (bigger = verifies larger structures; exceeded = block stays)
+collapseSupportScanBudget = 2048
+
+# Solid blocks directly below that make a block an anchor to the ground (5 = stands on real terrain)
+collapseGroundColumnDepth = 5
+
+# Max support range any block can have (how many blocks it can extend past a support)
+collapseSupportRangeMax = 16
+
+
+# ────────────────────────────────────────────────────────────────
+#  ADVANCED — Per-block support levels
+#  supportRange.<modid:block> = N  →  this block can extend N blocks
+#  past a support point. Example: dirt = 1 means one dirt block hangs
+#  off a support, but a second dirt block extended out falls.
+#  Unlisted blocks use round(blast hardness), clamped to
+#  [1, collapseSupportRangeMax]. Deleting a line restores its default.
+# ────────────────────────────────────────────────────────────────
+
+supportRange.minecraft:dirt = 1
+supportRange.minecraft:grass = 1
+supportRange.minecraft:sand = 1
+supportRange.minecraft:gravel = 1
+supportRange.minecraft:planks = 2
+supportRange.minecraft:log = 2
+supportRange.minecraft:log2 = 2
+supportRange.minecraft:stone = 2
+supportRange.minecraft:cobblestone = 2
+supportRange.minecraft:stonebrick = 2
+supportRange.minecraft:brick_block = 2
+supportRange.minecraft:iron_block = 5
+supportRange.minecraft:obsidian = 16
+
+# ════════════════════════════════════════════════════════════════
+#  End of configuration
+# ════════════════════════════════════════════════════════════════

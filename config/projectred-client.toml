@@ -1,0 +1,17 @@
+#Render settings
+[rendering]
+	#If set to false, flat wire textures will be used for logic gates. Significant performance improvement
+	gate_3d_wires = true
+	#If set to false, wires will be rendered in the TESR rather than the WorldRenderer
+	static_wire_renderer = true
+	#If set to false, gates will be rendered in the TESR rather than the WorldRenderer
+	static_gate_renderer = true
+
+#Lighting settings
+[lighting]
+	#Max lights on screen at a time, -1 for unlimited. This limits the number of light halos that can be rendered around ProjectRed light sources. Lower values improve performance. 
+	# Default: -1
+	# Range: -1 ~ 1024
+	max_lights = -1
+	#Use fabulous shader pipeline for lights when on Fabulous Graphics mode. This creates a screenspaceblooming effect when looking towards ProjectRed light sources.
+	fabulous_lights = true
