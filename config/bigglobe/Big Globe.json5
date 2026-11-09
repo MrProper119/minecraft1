@@ -28,7 +28,7 @@
 	//Number of threads to use for worldgen tasks (including worldgen for Distant Horizons and Voxy)
 	//More threads will result in faster terrain gen, but may reduce performance in other areas of the game.
 	//Less threads will result in slower terrain gen, but may improve performance in other areas of the game.
-	"Threads": 4,
+	"Threads": 3,
 
 	//Configures how initial player spawning works in Big Globe worlds.
 	//These config options have no effect outside of Big Globe worlds.
