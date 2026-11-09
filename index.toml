@@ -14,7 +14,7 @@ hash = "499f6897d1837516680f3114072d8106e11c9adcd933fe5cf051b551089b0c99"
 
 [[files]]
 file = "Test.json"
-hash = "cffef55909b8d13d9ebd8781b9586b77ecfb968c0fb13d2f1cc1e00de96edad7"
+hash = "97a71ff693ae732dc5f88688a86bb09d0f147580e53b55a1ba26ded0b4c85263"
 
 [[files]]
 file = "XaeroWaypoints_BACKUP240807/Новый мир/config.txt"
@@ -26,7 +26,7 @@ hash = "f9886a71077af30ea69ab27eee4d5d2475e91441758773a4d2072e3f1eade670"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "b98897581184103beb953ff80d81d4b6ebd0b712170f02c63c23534f1c720b26"
+hash = "04a971c8f3b59913def594026f57242e1fd2ee5898fdf3e9e7458e4e27258ef7"
 
 [[files]]
 file = "config/EndRemastered-NeoForge/Eyes/black_eye.json"
@@ -438,7 +438,7 @@ hash = "0fa4f192f54dc1fc4f7ac7ab8be7cba88e324fe21571777cb8a6d404f6ce49a9"
 
 [[files]]
 file = "config/bigglobe/Big Globe.json5"
-hash = "c8be32e03c9d905c47a7d1c8fafc586158697c809da414126dd37b50f8465ac3"
+hash = "45f937c7c39b35c9850f354fc33819e0cd07dcb1e19eed629865c8fb8a9c0e8c"
 
 [[files]]
 file = "config/bigglobe/mixins.properties"

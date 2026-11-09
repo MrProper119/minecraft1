@@ -28,7 +28,7 @@
 	//Number of threads to use for worldgen tasks (including worldgen for Distant Horizons and Voxy)
 	//More threads will result in faster terrain gen, but may reduce performance in other areas of the game.
 	//Less threads will result in slower terrain gen, but may improve performance in other areas of the game.
-	"Threads": 3,
+	"Threads": 2,
 
 	//Configures how initial player spawning works in Big Globe worlds.
 	//These config options have no effect outside of Big Globe worlds.
@@ -36,7 +36,7 @@
 
 		//Maximum distance from the origin which players can spawn at.
 		//This is a square distance, not a circular distance.
-		"Max Spawn Radius": 10000.0,
+		"Max Spawn Radius": 1500.0,
 
 		//If true, every player will be given their own unique spawn point the first time they spawn in the world.
 		//If false, every player will spawn at the world's spawn point.
@@ -179,7 +179,7 @@
 		//If true, Big Globe will generate distant terrain directly through Distant Horizons' API, skipping chunks entirely.
 		//If false, Big Globe will allow Distant Horizons to wrap Big Globe's default chunk generator.
 		//Enabling this config option will skip structures and features. In particular, you will not see any trees with this option enabled until you get close to them.
-		"Hyperspeed Generation": false,
+		"Hyperspeed Generation": true,
 
 		//NONE - The underground and all blocks in it are completely skipped.
 		//FILL - The underground will be filled with stone, but no caves will generate.

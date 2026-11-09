@@ -47,7 +47,8 @@
           "-XX:G1MixedGCCountTarget=4",
           "-XX:InitiatingHeapOccupancyPercent=15",
           "-XX:G1MixedGCLiveThresholdPercent=90",
-          "-XX:+PerfDisableSharedMem"
+          "-XX:+PerfDisableSharedMem",
+          "-Dmax.bg.threads=4"
         ],
         "rules": [
           {

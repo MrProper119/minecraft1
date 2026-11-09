@@ -12,7 +12,7 @@ _version = 5
 	#
 	# Defines the distance allowed to be synchronized around the player. 
 	# Should be the same or larger than maxGenerationRequestDistance in most cases.
-	maxSyncOnLoadRequestDistance = 512
+	maxSyncOnLoadRequestDistance = 128
 	#
 	# If true, clients will receive updated LODs when joining or loading new LODs.
 	synchronizeOnLoad = true
@@ -24,7 +24,7 @@ _version = 5
 	serverKey = ""
 	#
 	# Defines the distance allowed to generate around the player.
-	maxGenerationRequestDistance = 512
+	maxGenerationRequestDistance = 128
 	#
 	# Makes the server send level keys for each world.
 	# Disable this if you use alternative ways to send level keys.
@@ -117,7 +117,7 @@ _version = 5
 	[common.multiThreading]
 		#
 		# How many threads should be used by Distant Horizons?
-		numberOfThreads = 2
+		numberOfThreads = 1
 		#
 		# A value between 1.0 and 0.0 that represents the percentage 
 		# of time each thread can run before going idle. 
@@ -125,13 +125,13 @@ _version = 5
 		# This can be used to reduce CPU usage if the thread count 
 		# is already set to 1 for the given option, or more finely 
 		# tune CPU performance.
-		threadRunTimeRatio = "0.5"
+		threadRunTimeRatio = "0.25"
 		#
 		# What Java thread priority should DH's primary thread pools run with? 
 		# 
 		# You probably don't need to change this unless you are also 
 		# running C2ME and are seeing thread starvation in either C2ME or DH.
-		threadPriority = 4
+		threadPriority = 3
 
 	[common.logging]
 		#
@@ -310,7 +310,7 @@ _version = 5
 		# 
 		# DISABLED 
 		# No distant terrain will be generated.
-		generatorPlan = "SURFACE_THEN_CHUNKS"
+		generatorPlan = "SURFACE_ONLY"
 		#
 		# If true and the player/camera is moving quickly 
 		# Distant Horizons will pause world gen to improve loading speed 
@@ -495,10 +495,10 @@ _version = 5
 		[client.advanced.graphics]
 			#
 			# Enabling Anti-Aliasing smooths edges and reduces flickering when moving.
-			enableAntiAliasing = true
+			enableAntiAliasing = false
 			#
 			# Enable Screen Space Ambient Occlusion
-			enableSsao = true
+			enableSsao = false
 			#
 			# If true some vanilla graphics settings will be automatically changed 
 			# during DH setup to provide a better experience. 
@@ -660,7 +660,7 @@ _version = 5
 				# Should a noise texture be applied to LODs? 
 				# 
 				# This is done to simulate textures and make the LODs appear more detailed.
-				enableNoiseTexture = true
+				enableNoiseTexture = false
 				#
 				# Defines how far should the noise texture render before it fades away. (in blocks) 
 				# Set to 0 to disable noise from fading away
@@ -752,7 +752,7 @@ _version = 5
 				# 
 				# Fastest: CHUNK
 				# Fanciest: BLOCK
-				maxHorizontalResolution = "TWO_BLOCKS"
+				maxHorizontalResolution = "FOUR_BLOCKS"
 				#
 				# If true LODs will fade away as you get closer to them. 
 				# If false LODs will cut off abruptly at a set distance from the camera. 
@@ -809,7 +809,7 @@ _version = 5
 				# Note: this is a best effort number. 
 				# The actual render distance may be above or below this number 
 				# depending on your other graphic settings.
-				lodChunkRenderDistanceRadius = 64
+				lodChunkRenderDistanceRadius = 48
 				#
 				# How should the sides and bottom of grass block LODs render? 
 				# 
