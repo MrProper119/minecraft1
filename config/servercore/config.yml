@@ -32,7 +32,7 @@ dynamic:
   # Note: adding view / simulation distance here will override their value in server.properties.
   default-values:
     MOBCAP_PERCENTAGE: 100
-    CHUNK_TICK_DISTANCE: 10
+    CHUNK_TICK_DISTANCE: 8
 
   # The settings that will be decreased when the server is overloaded, in the specified order.
   # You can remove settings from the list that you don't want to be dynamically adjusted.
@@ -42,8 +42,8 @@ dynamic:
   # ► interval = The amount of seconds between each check to increase or decrease.
   dynamic-settings:
     - setting: 'CHUNK_TICK_DISTANCE'
-      max: 10
-      min: 6
+      max: 8
+      min: 5
       increment: 1
       interval: 15
 
@@ -149,28 +149,28 @@ mob-spawning:
       despawn-distance: 128
 
     - category: 'AMBIENT'
-      mobcap: 15
-      spawn-interval: 1
-      despawn-distance: 128
+      mobcap: 8
+      spawn-interval: 20
+      despawn-distance: 96
 
     - category: 'AXOLOTLS'
       mobcap: 5
-      spawn-interval: 1
+      spawn-interval: 20
       despawn-distance: 128
 
     - category: 'UNDERGROUND_WATER_CREATURE'
       mobcap: 5
-      spawn-interval: 1
-      despawn-distance: 128
+      spawn-interval: 20
+      despawn-distance: 96
 
     - category: 'WATER_CREATURE'
       mobcap: 5
-      spawn-interval: 1
+      spawn-interval: 10
       despawn-distance: 128
 
     - category: 'WATER_AMBIENT'
-      mobcap: 20
-      spawn-interval: 1
+      mobcap: 12
+      spawn-interval: 10
       despawn-distance: 64
 
 
