@@ -130,6 +130,44 @@ namespace ModpackSync {
         private const string ApiBase = "https://api.github.com/repos/MrProper119/minecraft1";
         private const string RawBase = "https://raw.githubusercontent.com/MrProper119/minecraft1";
 
+        private static readonly HashSet<string> ExcludedUploadRootDirs = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+            "saves",
+            "world",
+            "backups",
+            "mods_backup",
+            "logs",
+            "crash-reports",
+            "debug",
+            ".git",
+            ".cache",
+            ".fabric",
+            ".mixin.out",
+            ".pg-native",
+            ".sable",
+            "natives",
+            "dynamic-resource-pack-cache",
+            "vista_web_content_cache",
+            "vista_ffmpeg_bin",
+            "downloads",
+            "local",
+            "xaero",
+            "distant_horizons_server_data",
+            "screenshots",
+            "schematics",
+            "telemetry",
+            "webcache2"
+        };
+
+        private static readonly HashSet<string> ExcludedUploadFiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+            ".synced_commit.txt",
+            ".modpack_hash_cache.json",
+            "command_history.txt",
+            "usercache.json",
+            "usernamecache.json",
+            ".ds_store",
+            "thumbs.db"
+        };
+
         private string minecraftRoot;
         private string versionsRoot;
         private string stateFilePath;
@@ -143,6 +181,14 @@ namespace ModpackSync {
         private Button btnRefresh;
         private ComboBox cmbCommits;
         private Label lblCurrentCommit;
+
+        private Panel pnlUpload;
+        private RadioButton rbUploadExisting;
+        private RadioButton rbUploadNew;
+        private TextBox txtNewBranch;
+        private TextBox txtCommitMsg;
+        private Button btnUpload;
+
         private Label lblStatus;
         private ProgressBar progressBar;
         private TextBox txtLog;
@@ -165,13 +211,13 @@ namespace ModpackSync {
 
             InitializeComponents();
             LoadFolders();
-            this.Shown += (s, e) => FetchBranchesAsync();
+            this.Shown += (s, e) => FetchBranchesAsync(null);
         }
 
         private void InitializeComponents() {
-            this.Text = "\u0421\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u044f \u0437\u0431\u0456\u0440\u043a\u0438 Minecraft 1.21.1 (GitHub -> TLauncher)";
-            this.Size = new Size(760, 560);
-            this.MinimumSize = new Size(720, 520);
+            this.Text = "\u0421\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u044f \u0437\u0431\u0456\u0440\u043a\u0438 Minecraft 1.21.1 (GitHub <-> TLauncher)";
+            this.Size = new Size(760, 710);
+            this.MinimumSize = new Size(740, 690);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.BackColor = Color.FromArgb(30, 30, 46);
             this.ForeColor = Color.FromArgb(205, 214, 244);
@@ -185,30 +231,30 @@ namespace ModpackSync {
             } catch { }
 
             Label lblHeader = new Label();
-            lblHeader.Text = "\u0421\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u044f \u043c\u043e\u0434\u043f\u0430\u043a\u0443 Minecraft (Delta Sync)";
+            lblHeader.Text = "\u0421\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u044f \u043c\u043e\u0434\u043f\u0430\u043a\u0443 Minecraft (Delta Sync & Upload)";
             lblHeader.Font = new Font("Segoe UI", 14f, FontStyle.Bold);
             lblHeader.ForeColor = Color.FromArgb(137, 180, 250);
-            lblHeader.Location = new Point(20, 14);
+            lblHeader.Location = new Point(20, 12);
             lblHeader.AutoSize = true;
             this.Controls.Add(lblHeader);
 
             Label lblSubHeader = new Label();
-            lblSubHeader.Text = "\u041f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0454 \u043b\u0438\u0448\u0435 \u0432\u0456\u0434\u043c\u0456\u043d\u043d\u043e\u0441\u0442\u0456 \u0439 \u0434\u043e\u0432\u0430\u043d\u0442\u0430\u0436\u0443\u0454 \u0442\u0456\u043b\u044c\u043a\u0438 \u043d\u043e\u0432\u0456 \u0430\u0431\u043e \u0437\u043c\u0456\u043d\u0435\u043d\u0456 \u043c\u043e\u0434\u0438 \u0442\u0430 \u043a\u043e\u043d\u0444\u0456\u0433\u0438";
+            lblSubHeader.Text = "\u0417\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0443\u0439\u0442\u0435 \u0430\u0431\u043e \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0443\u0439\u0442\u0435 \u0437\u0431\u0456\u0440\u043a\u0443 \u0432 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0456\u0439 GitHub \u0437 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u043e\u044e \u0432\u0456\u0434\u043c\u0456\u043d\u043d\u043e\u0441\u0442\u0435\u0439";
             lblSubHeader.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
             lblSubHeader.ForeColor = Color.FromArgb(166, 173, 200);
-            lblSubHeader.Location = new Point(22, 42);
+            lblSubHeader.Location = new Point(22, 39);
             lblSubHeader.AutoSize = true;
             this.Controls.Add(lblSubHeader);
 
             Label lblFolder = new Label();
-            lblFolder.Text = "1. \u041f\u0430\u043f\u043a\u0430 \u0437\u0431\u0456\u0440\u043a\u0438 (\u043a\u0443\u0434\u0438 \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0443\u0432\u0430\u0442\u0438):";
+            lblFolder.Text = "1. \u041f\u0430\u043f\u043a\u0430 \u0437\u0431\u0456\u0440\u043a\u0438 (\u0434\u043b\u044f \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f):";
             lblFolder.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
-            lblFolder.Location = new Point(20, 74);
+            lblFolder.Location = new Point(20, 68);
             lblFolder.AutoSize = true;
             this.Controls.Add(lblFolder);
 
             cmbFolders = new ComboBox();
-            cmbFolders.Location = new Point(20, 98);
+            cmbFolders.Location = new Point(20, 91);
             cmbFolders.Size = new Size(510, 28);
             cmbFolders.BackColor = Color.FromArgb(49, 50, 68);
             cmbFolders.ForeColor = Color.White;
@@ -216,43 +262,43 @@ namespace ModpackSync {
             cmbFolders.TextChanged += (s, e) => UpdateCurrentFolderInfo();
             this.Controls.Add(cmbFolders);
 
-            btnBrowseFolder = CreateButton("\u041e\u0433\u043b\u044f\u0434...", new Point(540, 96), new Size(90, 28), Color.FromArgb(69, 71, 90));
+            btnBrowseFolder = CreateButton("\u041e\u0433\u043b\u044f\u0434...", new Point(540, 89), new Size(90, 28), Color.FromArgb(69, 71, 90));
             btnBrowseFolder.Click += BtnBrowseFolder_Click;
             this.Controls.Add(btnBrowseFolder);
 
-            btnNewVersion = CreateButton("+ \u041d\u043e\u0432\u0430", new Point(638, 96), new Size(85, 28), Color.FromArgb(69, 71, 90));
+            btnNewVersion = CreateButton("+ \u041d\u043e\u0432\u0430", new Point(638, 89), new Size(85, 28), Color.FromArgb(69, 71, 90));
             btnNewVersion.Click += BtnNewVersion_Click;
             this.Controls.Add(btnNewVersion);
 
             Label lblBranch = new Label();
             lblBranch.Text = "2. \u0413\u0456\u043b\u043a\u0430 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0456\u044e (Branch):";
             lblBranch.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
-            lblBranch.Location = new Point(20, 136);
+            lblBranch.Location = new Point(20, 126);
             lblBranch.AutoSize = true;
             this.Controls.Add(lblBranch);
 
             cmbBranches = new ComboBox();
             cmbBranches.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbBranches.Location = new Point(20, 160);
+            cmbBranches.Location = new Point(20, 149);
             cmbBranches.Size = new Size(580, 28);
             cmbBranches.BackColor = Color.FromArgb(49, 50, 68);
             cmbBranches.ForeColor = Color.White;
             cmbBranches.SelectedIndexChanged += CmbBranches_SelectedIndexChanged;
             this.Controls.Add(cmbBranches);
 
-            btnRefresh = CreateButton("\u041e\u043d\u043e\u0432\u0438\u0442\u0438", new Point(610, 158), new Size(113, 28), Color.FromArgb(69, 71, 90));
-            btnRefresh.Click += (s, e) => FetchBranchesAsync();
+            btnRefresh = CreateButton("\u041e\u043d\u043e\u0432\u0438\u0442\u0438", new Point(610, 147), new Size(113, 28), Color.FromArgb(69, 71, 90));
+            btnRefresh.Click += (s, e) => FetchBranchesAsync(null);
             this.Controls.Add(btnRefresh);
 
             Label lblCommit = new Label();
-            lblCommit.Text = "3. \u041a\u043e\u043c\u0456\u0442 \u0434\u043b\u044f \u0441\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u0457 (\u0430\u0431\u043e \u0432\u0432\u0435\u0434\u0456\u0442\u044c \u0445\u0435\u0448 \u043a\u043e\u043c\u0456\u0442\u0443 \u0432\u0440\u0443\u0447\u043d\u0443):";
+            lblCommit.Text = "3. \u041a\u043e\u043c\u0456\u0442 \u0434\u043b\u044f \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f (\u0430\u0431\u043e \u0432\u0432\u0435\u0434\u0456\u0442\u044c \u0445\u0435\u0448 \u043a\u043e\u043c\u0456\u0442\u0443 \u0432\u0440\u0443\u0447\u043d\u0443):";
             lblCommit.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
-            lblCommit.Location = new Point(20, 198);
+            lblCommit.Location = new Point(20, 184);
             lblCommit.AutoSize = true;
             this.Controls.Add(lblCommit);
 
             cmbCommits = new ComboBox();
-            cmbCommits.Location = new Point(20, 222);
+            cmbCommits.Location = new Point(20, 207);
             cmbCommits.Size = new Size(703, 28);
             cmbCommits.BackColor = Color.FromArgb(49, 50, 68);
             cmbCommits.ForeColor = Color.White;
@@ -261,20 +307,102 @@ namespace ModpackSync {
             lblCurrentCommit = new Label();
             lblCurrentCommit.Text = "\u0412\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0439 \u0443 \u043f\u0430\u043f\u0446\u0456 \u043a\u043e\u043c\u0456\u0442: \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0430...";
             lblCurrentCommit.ForeColor = Color.FromArgb(249, 226, 175);
-            lblCurrentCommit.Location = new Point(20, 254);
+            lblCurrentCommit.Location = new Point(20, 239);
             lblCurrentCommit.AutoSize = true;
             this.Controls.Add(lblCurrentCommit);
 
+            pnlUpload = new Panel();
+            pnlUpload.Location = new Point(20, 268);
+            pnlUpload.Size = new Size(703, 134);
+            pnlUpload.BackColor = Color.FromArgb(38, 39, 58);
+            pnlUpload.BorderStyle = BorderStyle.FixedSingle;
+            this.Controls.Add(pnlUpload);
+
+            Label lblUploadTitle = new Label();
+            lblUploadTitle.Text = "4. \u0412\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0441\u0432\u043e\u0454\u0457 \u0432\u0435\u0440\u0441\u0456\u0457 \u0437\u0431\u0456\u0440\u043a\u0438 \u0432 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0456\u0439 (Upload \u043d\u0430 GitHub):";
+            lblUploadTitle.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
+            lblUploadTitle.ForeColor = Color.FromArgb(203, 166, 247);
+            lblUploadTitle.Location = new Point(10, 8);
+            lblUploadTitle.AutoSize = true;
+            pnlUpload.Controls.Add(lblUploadTitle);
+
+            rbUploadExisting = new RadioButton();
+            rbUploadExisting.Text = "\u0412 \u0456\u0441\u043d\u0443\u044e\u0447\u0443 \u0433\u0456\u043b\u043a\u0443 (\u0442\u0456\u043b\u044c\u043a\u0438 \u0437\u043c\u0456\u043d\u0435\u043d\u0456)";
+            rbUploadExisting.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
+            rbUploadExisting.ForeColor = Color.White;
+            rbUploadExisting.Location = new Point(12, 34);
+            rbUploadExisting.AutoSize = true;
+            rbUploadExisting.Checked = true;
+            rbUploadExisting.CheckedChanged += (s, e) => {
+                txtNewBranch.Enabled = !isBusy && rbUploadNew.Checked;
+            };
+            pnlUpload.Controls.Add(rbUploadExisting);
+
+            rbUploadNew = new RadioButton();
+            rbUploadNew.Text = "\u0423 \u043d\u043e\u0432\u0443 \u0433\u0456\u043b\u043a\u0443 (\u0443\u0441\u0435, \u043a\u0440\u0456\u043c saves/):";
+            rbUploadNew.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
+            rbUploadNew.ForeColor = Color.White;
+            rbUploadNew.Location = new Point(252, 34);
+            rbUploadNew.AutoSize = true;
+            rbUploadNew.CheckedChanged += (s, e) => {
+                txtNewBranch.Enabled = !isBusy && rbUploadNew.Checked;
+                if (rbUploadNew.Checked) {
+                    txtNewBranch.Focus();
+                    txtNewBranch.SelectAll();
+                }
+            };
+            pnlUpload.Controls.Add(rbUploadNew);
+
+            txtNewBranch = new TextBox();
+            txtNewBranch.Text = "my-modpack-branch";
+            txtNewBranch.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
+            txtNewBranch.BackColor = Color.FromArgb(49, 50, 68);
+            txtNewBranch.ForeColor = Color.White;
+            txtNewBranch.Location = new Point(475, 32);
+            txtNewBranch.Size = new Size(214, 24);
+            txtNewBranch.Enabled = false;
+            pnlUpload.Controls.Add(txtNewBranch);
+
+            Label lblCommitMsg = new Label();
+            lblCommitMsg.Text = "\u041e\u043f\u0438\u0441 (\u043d\u0430\u0437\u0432\u0430) \u043a\u043e\u043c\u0456\u0442\u0443:";
+            lblCommitMsg.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
+            lblCommitMsg.ForeColor = Color.FromArgb(205, 214, 244);
+            lblCommitMsg.Location = new Point(10, 69);
+            lblCommitMsg.AutoSize = true;
+            pnlUpload.Controls.Add(lblCommitMsg);
+
+            txtCommitMsg = new TextBox();
+            txtCommitMsg.Text = "\u041e\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f \u0437\u0431\u0456\u0440\u043a\u0438";
+            txtCommitMsg.Font = new Font("Segoe UI", 9.5f, FontStyle.Regular);
+            txtCommitMsg.BackColor = Color.FromArgb(49, 50, 68);
+            txtCommitMsg.ForeColor = Color.White;
+            txtCommitMsg.Location = new Point(150, 66);
+            txtCommitMsg.Size = new Size(340, 26);
+            pnlUpload.Controls.Add(txtCommitMsg);
+
+            btnUpload = CreateButton("\u0412\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0438\u0442\u0438 \u0437\u0431\u0456\u0440\u043a\u0443", new Point(500, 63), new Size(189, 32), Color.FromArgb(137, 87, 229));
+            btnUpload.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
+            btnUpload.Click += (s, e) => StartUploadAsync();
+            pnlUpload.Controls.Add(btnUpload);
+
+            Label lblUploadHint = new Label();
+            lblUploadHint.Text = "\u0412 \u0456\u0441\u043d\u0443\u044e\u0447\u0443 \u0433\u0456\u043b\u043a\u0443: \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0443\u0454 \u043b\u0438\u0448\u0435 \u043d\u043e\u0432\u0456/\u0437\u043c\u0456\u043d\u0435\u043d\u0456 \u0444\u0430\u0439\u043b\u0438. \u0423 \u043d\u043e\u0432\u0443 \u0433\u0456\u043b\u043a\u0443: \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0443\u0454 \u0432\u0441\u0456 \u0444\u0430\u0439\u043b\u0438 \u0437\u0431\u0456\u0440\u043a\u0438 (\u043a\u0440\u0456\u043c \u043f\u0430\u043f\u043a\u0438 \u0437\u0456 \u0441\u0432\u0456\u0442\u0430\u043c\u0438 saves/).";
+            lblUploadHint.Font = new Font("Segoe UI", 8.2f, FontStyle.Regular);
+            lblUploadHint.ForeColor = Color.FromArgb(166, 173, 200);
+            lblUploadHint.Location = new Point(10, 104);
+            lblUploadHint.AutoSize = true;
+            pnlUpload.Controls.Add(lblUploadHint);
+
             lblStatus = new Label();
-            lblStatus.Text = "\u0413\u043e\u0442\u043e\u0432\u043e \u0434\u043e \u0441\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u0457.";
+            lblStatus.Text = "\u0413\u043e\u0442\u043e\u0432\u043e \u0434\u043e \u0440\u043e\u0431\u043e\u0442\u0438.";
             lblStatus.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
             lblStatus.ForeColor = Color.FromArgb(166, 227, 161);
-            lblStatus.Location = new Point(20, 282);
+            lblStatus.Location = new Point(20, 412);
             lblStatus.Size = new Size(703, 22);
             this.Controls.Add(lblStatus);
 
             progressBar = new ProgressBar();
-            progressBar.Location = new Point(20, 308);
+            progressBar.Location = new Point(20, 438);
             progressBar.Size = new Size(703, 24);
             progressBar.Minimum = 0;
             progressBar.Maximum = 1000;
@@ -288,21 +416,21 @@ namespace ModpackSync {
             txtLog.BackColor = Color.FromArgb(24, 24, 37);
             txtLog.ForeColor = Color.FromArgb(205, 214, 244);
             txtLog.Font = new Font("Consolas", 9f);
-            txtLog.Location = new Point(20, 342);
-            txtLog.Size = new Size(703, 115);
+            txtLog.Location = new Point(20, 472);
+            txtLog.Size = new Size(703, 130);
             this.Controls.Add(txtLog);
 
-            btnSyncAndLaunch = CreateButton("\u0421\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0443\u0432\u0430\u0442\u0438 \u0442\u0430 \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u0438 TLauncher", new Point(20, 468), new Size(310, 40), Color.FromArgb(46, 160, 67));
+            btnSyncAndLaunch = CreateButton("\u0417\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0438\u0442\u0438 \u0442\u0430 \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u0438 TLauncher", new Point(20, 614), new Size(310, 40), Color.FromArgb(46, 160, 67));
             btnSyncAndLaunch.Font = new Font("Segoe UI", 10f, FontStyle.Bold);
             btnSyncAndLaunch.Click += (s, e) => StartSyncAsync(true);
             this.Controls.Add(btnSyncAndLaunch);
 
-            btnSyncOnly = CreateButton("\u0422\u0456\u043b\u044c\u043a\u0438 \u0441\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0443\u0432\u0430\u0442\u0438", new Point(340, 468), new Size(175, 40), Color.FromArgb(56, 110, 200));
+            btnSyncOnly = CreateButton("\u0422\u0456\u043b\u044c\u043a\u0438 \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0438\u0442\u0438", new Point(340, 614), new Size(175, 40), Color.FromArgb(56, 110, 200));
             btnSyncOnly.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
             btnSyncOnly.Click += (s, e) => StartSyncAsync(false);
             this.Controls.Add(btnSyncOnly);
 
-            btnSkipAndLaunch = CreateButton("\u041f\u0440\u043e\u043f\u0443\u0441\u0442\u0438\u0442\u0438 -> TLauncher", new Point(525, 468), new Size(198, 40), Color.FromArgb(88, 91, 112));
+            btnSkipAndLaunch = CreateButton("\u041f\u0440\u043e\u043f\u0443\u0441\u0442\u0438\u0442\u0438 -> TLauncher", new Point(525, 614), new Size(198, 40), Color.FromArgb(88, 91, 112));
             btnSkipAndLaunch.Font = new Font("Segoe UI", 9.5f, FontStyle.Regular);
             btnSkipAndLaunch.Click += (s, e) => {
                 LaunchTLauncher();
@@ -356,6 +484,11 @@ namespace ModpackSync {
             cmbBranches.Enabled = !busy;
             btnRefresh.Enabled = !busy;
             cmbCommits.Enabled = !busy;
+            rbUploadExisting.Enabled = !busy;
+            rbUploadNew.Enabled = !busy;
+            txtNewBranch.Enabled = !busy && rbUploadNew.Checked;
+            txtCommitMsg.Enabled = !busy;
+            btnUpload.Enabled = !busy;
             btnSyncAndLaunch.Enabled = !busy;
             btnSyncOnly.Enabled = !busy;
         }
@@ -430,7 +563,7 @@ namespace ModpackSync {
 
         private void BtnBrowseFolder_Click(object sender, EventArgs e) {
             using (FolderBrowserDialog dlg = new FolderBrowserDialog()) {
-                dlg.Description = "\u041e\u0431\u0435\u0440\u0456\u0442\u044c \u043f\u0430\u043f\u043a\u0443 \u0434\u043b\u044f \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f / \u0441\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u0457 \u0437\u0431\u0456\u0440\u043a\u0438";
+                dlg.Description = "\u041e\u0431\u0435\u0440\u0456\u0442\u044c \u043f\u0430\u043f\u043a\u0443 \u0437\u0431\u0456\u0440\u043a\u0438";
                 dlg.SelectedPath = Directory.Exists(cmbFolders.Text) ? cmbFolders.Text : versionsRoot;
                 dlg.ShowNewFolderButton = true;
                 if (dlg.ShowDialog(this) == DialogResult.OK) {
@@ -499,6 +632,12 @@ namespace ModpackSync {
         }
 
         private string RunGitCommand(string workingDir, string arguments) {
+            int exitCode;
+            string stdErr;
+            return RunGitCommandEx(workingDir, arguments, out exitCode, out stdErr);
+        }
+
+        private string RunGitCommandEx(string workingDir, string arguments, out int exitCode, out string stdErr) {
             ProcessStartInfo psi = new ProcessStartInfo();
             psi.FileName = FindGitExe();
             psi.Arguments = arguments;
@@ -506,11 +645,14 @@ namespace ModpackSync {
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
             psi.StandardOutputEncoding = Encoding.UTF8;
+            psi.StandardErrorEncoding = Encoding.UTF8;
             psi.UseShellExecute = false;
             psi.CreateNoWindow = true;
             using (Process p = Process.Start(psi)) {
                 string output = p.StandardOutput.ReadToEnd();
+                stdErr = p.StandardError.ReadToEnd();
                 p.WaitForExit();
+                exitCode = p.ExitCode;
                 return output;
             }
         }
@@ -532,7 +674,7 @@ namespace ModpackSync {
 
         private string HttpGetJson(string url) {
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
-            req.UserAgent = "MinecraftModpackDeltaSync/3.0";
+            req.UserAgent = "MinecraftModpackDeltaSync/4.0";
             req.Timeout = 15000;
             if (!string.IsNullOrEmpty(gitToken)) {
                 req.Headers.Add("Authorization", "Bearer " + gitToken);
@@ -543,7 +685,7 @@ namespace ModpackSync {
             }
         }
 
-        private void FetchBranchesAsync() {
+        private void FetchBranchesAsync(string selectBranchName) {
             if (isBusy) return;
             SetBusy(true);
             SetStatus("\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f \u0441\u043f\u0438\u0441\u043a\u0443 \u0433\u0456\u043b\u043e\u043a \u0456\u0437 GitHub...", 50);
@@ -574,7 +716,6 @@ namespace ModpackSync {
                             }
                         }
                     } catch {
-
                         EnsureMetaGitUpdated();
                         string refsOut = RunGitCommand(metaGitDir, "for-each-ref --sort=-committerdate \"refs/remotes/origin\" --format=\"%(refname:short)|%(objectname)\"");
                         foreach (string line in refsOut.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
@@ -595,12 +736,17 @@ namespace ModpackSync {
 
                     this.BeginInvoke(new Action(() => {
                         cmbBranches.Items.Clear();
-                        foreach (var br in branches) {
-                            cmbBranches.Items.Add(br);
+                        int targetIdx = 0;
+                        for (int i = 0; i < branches.Count; i++) {
+                            cmbBranches.Items.Add(branches[i]);
+                            if (!string.IsNullOrEmpty(selectBranchName) &&
+                                string.Equals(branches[i].Name, selectBranchName, StringComparison.OrdinalIgnoreCase)) {
+                                targetIdx = i;
+                            }
                         }
                         SetBusy(false);
                         if (cmbBranches.Items.Count > 0) {
-                            cmbBranches.SelectedIndex = 0;
+                            cmbBranches.SelectedIndex = targetIdx;
                         } else {
                             SetStatus("\u0413\u0456\u043b\u043a\u0438 \u043d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e.", 0);
                         }
@@ -682,7 +828,7 @@ namespace ModpackSync {
                             cmbCommits.SelectedIndex = 0;
                         }
                         SetBusy(false);
-                        SetStatus("\u0413\u043e\u0442\u043e\u0432\u043e \u0434\u043e \u0441\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u0457. \u041e\u0431\u0435\u0440\u0456\u0442\u044c \u043a\u043e\u043c\u0456\u0442 \u0456 \u043d\u0430\u0442\u0438\u0441\u043d\u0456\u0442\u044c \u043a\u043d\u043e\u043f\u043a\u0443 \u043d\u0438\u0436\u0447\u0435.", 0);
+                        SetStatus("\u0413\u043e\u0442\u043e\u0432\u043e \u0434\u043e \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0437\u0431\u0456\u0440\u043a\u0438.", 0);
                         LogMessage("\u0417\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043e " + commits.Count + " \u043a\u043e\u043c\u0456\u0442\u0456\u0432 \u0456\u0437 \u0433\u0456\u043b\u043a\u0438 '" + selectedBranch.Name + "'.");
                     }));
                 } catch (Exception ex) {
@@ -750,6 +896,483 @@ namespace ModpackSync {
             }
 
             return false;
+        }
+
+        private static bool ShouldExcludeFromUpload(string relPath) {
+            if (string.IsNullOrEmpty(relPath)) return true;
+            string norm = relPath.Replace('\\', '/').TrimStart('/');
+            string[] parts = norm.Split('/');
+            if (parts.Length == 0) return true;
+
+            if (ExcludedUploadRootDirs.Contains(parts[0])) {
+                return true;
+            }
+            for (int i = 0; i < parts.Length; i++) {
+                if (string.Equals(parts[i], ".git", StringComparison.OrdinalIgnoreCase)) {
+                    return true;
+                }
+            }
+
+            string fileName = parts[parts.Length - 1];
+            if (ExcludedUploadFiles.Contains(fileName)) {
+                return true;
+            }
+
+            string lowerFile = fileName.ToLowerInvariant();
+            if (lowerFile.EndsWith(".downloading") ||
+                lowerFile.EndsWith(".deactivation") ||
+                lowerFile.EndsWith(".tmp") ||
+                lowerFile.EndsWith(".bak") ||
+                lowerFile.EndsWith(".log") ||
+                lowerFile.EndsWith(".log.gz") ||
+                lowerFile.EndsWith(".lock")) {
+                return true;
+            }
+
+            return false;
+        }
+
+        private void StartUploadAsync() {
+            if (isBusy) return;
+
+            string targetDir = (cmbFolders.Text ?? "").Trim();
+            if (string.IsNullOrEmpty(targetDir)) {
+                MessageBox.Show(this, "\u0411\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430, \u043e\u0431\u0435\u0440\u0456\u0442\u044c \u043f\u0430\u043f\u043a\u0443 \u0437\u0456 \u0437\u0431\u0456\u0440\u043a\u043e\u044e \u0434\u043b\u044f \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f.", "\u0423\u0432\u0430\u0433\u0430", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!Path.IsPathRooted(targetDir)) {
+                targetDir = Path.Combine(versionsRoot, targetDir);
+            }
+            if (!Directory.Exists(targetDir)) {
+                MessageBox.Show(this, "\u041e\u0431\u0440\u0430\u043d\u0430 \u043f\u0430\u043f\u043a\u0430 \u043d\u0435 \u0456\u0441\u043d\u0443\u0454:\n" + targetDir, "\u041f\u043e\u043c\u0438\u043b\u043a\u0430", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            bool isNewBranch = rbUploadNew.Checked;
+            string branchName = "";
+            if (isNewBranch) {
+                branchName = (txtNewBranch.Text ?? "").Trim();
+                branchName = Regex.Replace(branchName, @"\s+", "-");
+                branchName = Regex.Replace(branchName, @"[\~\^\:\?\*\[\]\\]", "");
+                if (string.IsNullOrEmpty(branchName)) {
+                    MessageBox.Show(this, "\u0411\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430, \u0432\u0432\u0435\u0434\u0456\u0442\u044c \u043d\u0430\u0437\u0432\u0443 \u043d\u043e\u0432\u043e\u0457 \u0433\u0456\u043b\u043a\u0438.", "\u0423\u0432\u0430\u0433\u0430", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtNewBranch.Focus();
+                    return;
+                }
+            } else {
+                BranchItem selectedBranch = cmbBranches.SelectedItem as BranchItem;
+                if (selectedBranch != null) {
+                    branchName = selectedBranch.Name;
+                }
+                if (string.IsNullOrEmpty(branchName)) {
+                    MessageBox.Show(this, "\u0411\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430, \u043e\u0431\u0435\u0440\u0456\u0442\u044c \u0456\u0441\u043d\u0443\u044e\u0447\u0443 \u0433\u0456\u043b\u043a\u0443 \u0443 \u0441\u043f\u0438\u0441\u043a\u0443 '2. \u0413\u0456\u043b\u043a\u0430 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0456\u044e' \u0430\u0431\u043e \u043e\u0431\u0435\u0440\u0456\u0442\u044c \u0441\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u043d\u043e\u0432\u043e\u0457 \u0433\u0456\u043b\u043a\u0438.", "\u0423\u0432\u0430\u0433\u0430", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
+            string commitMsg = (txtCommitMsg.Text ?? "").Trim();
+            if (string.IsNullOrEmpty(commitMsg)) {
+                commitMsg = isNewBranch ? ("\u041f\u043e\u0432\u043d\u0435 \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0437\u0431\u0456\u0440\u043a\u0438 \u0443 \u0433\u0456\u043b\u043a\u0443 " + branchName) : ("\u041e\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f \u0437\u0431\u0456\u0440\u043a\u0438 (" + DateTime.Now.ToString("yyyy-MM-dd HH:mm") + ")");
+            }
+
+            SetBusy(true);
+            txtLog.Clear();
+            LogMessage("\u041f\u043e\u0447\u0430\u0442\u043e\u043a \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0437\u0431\u0456\u0440\u043a\u0438 \u0432 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0456\u0439 GitHub...");
+            LogMessage("\u041f\u0430\u043f\u043a\u0430 \u0437\u0431\u0456\u0440\u043a\u0438: " + targetDir);
+            LogMessage("\u0420\u0435\u0436\u0438\u043c: " + (isNewBranch ? ("\u041d\u043e\u0432\u0430 \u0433\u0456\u043b\u043a\u0430 '" + branchName + "' (\u0443\u0441\u0456 \u0444\u0430\u0439\u043b\u0438 \u0437\u0431\u0456\u0440\u043a\u0438, \u043a\u0440\u0456\u043c saves/)") : ("\u0406\u0441\u043d\u0443\u044e\u0447\u0430 \u0433\u0456\u043b\u043a\u0430 '" + branchName + "' (\u0442\u0456\u043b\u044c\u043a\u0438 \u043d\u043e\u0432\u0456 \u0442\u0430 \u0437\u043c\u0456\u043d\u0435\u043d\u0456 \u0444\u0430\u0439\u043b\u0438)")));
+            LogMessage("\u041e\u043f\u0438\u0441 \u043a\u043e\u043c\u0456\u0442\u0443: " + commitMsg);
+
+            ThreadPool.QueueUserWorkItem(_ => {
+                try {
+                    RunUploadSync(targetDir, isNewBranch, branchName, commitMsg);
+                } catch (Exception ex) {
+                    this.BeginInvoke(new Action(() => {
+                        SetBusy(false);
+                        SetStatus("\u041f\u043e\u043c\u0438\u043b\u043a\u0430 \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f: " + ex.Message, 0);
+                        LogMessage("\u041a\u0420\u0418\u0422\u0418\u0427\u041d\u0410 \u041f\u041e\u041c\u0418\u041b\u041a\u0410 \u0412\u0418\u0412\u0410\u041d\u0422\u0410\u0416\u0415\u041d\u041d\u042f: " + ex.ToString());
+                        MessageBox.Show(this, "\u0412\u0438\u043d\u0438\u043a\u043b\u0430 \u043f\u043e\u043c\u0438\u043b\u043a\u0430 \u043f\u0456\u0434 \u0447\u0430\u0441 \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0437\u0431\u0456\u0440\u043a\u0438:\n" + ex.Message, "\u041f\u043e\u043c\u0438\u043b\u043a\u0430 \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }));
+                }
+            });
+        }
+
+        private void EnsureLocalGitRepoForUpload(string targetDir) {
+            string gitDir = Path.Combine(targetDir, ".git");
+            string indexLock = Path.Combine(gitDir, "index.lock");
+            if (File.Exists(indexLock)) {
+                try { File.Delete(indexLock); } catch { }
+            }
+
+            if (!Directory.Exists(gitDir)) {
+                LogMessage("\u0406\u043d\u0456\u0446\u0456\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u044f \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0445\u043e\u0432\u0438\u0449\u0430 Git \u0443 \u043f\u0430\u043f\u0446\u0456 \u0437\u0431\u0456\u0440\u043a\u0438...");
+                RunGitCommand(targetDir, "init");
+                RunGitCommand(targetDir, "remote add origin " + RepoUrl);
+            } else {
+                string remotes = RunGitCommand(targetDir, "remote");
+                if (!Regex.IsMatch(remotes ?? "", @"(?m)^origin$")) {
+                    RunGitCommand(targetDir, "remote add origin " + RepoUrl);
+                } else {
+                    RunGitCommand(targetDir, "remote set-url origin " + RepoUrl);
+                }
+            }
+
+            RunGitCommand(targetDir, "config core.repositoryformatversion 1");
+            RunGitCommand(targetDir, "config extensions.partialclone origin");
+            RunGitCommand(targetDir, "config remote.origin.promisor true");
+            RunGitCommand(targetDir, "config remote.origin.partialclonefilter blob:none");
+            RunGitCommand(targetDir, "config core.autocrlf false");
+            RunGitCommand(targetDir, "config core.quotepath false");
+
+            string userName = RunGitCommand(targetDir, "config user.name").Trim();
+            if (string.IsNullOrEmpty(userName)) {
+                RunGitCommand(targetDir, "config user.name \"ModpackPlayer\"");
+            }
+            string userEmail = RunGitCommand(targetDir, "config user.email").Trim();
+            if (string.IsNullOrEmpty(userEmail)) {
+                RunGitCommand(targetDir, "config user.email \"player@modpack.local\"");
+            }
+
+            string testObjectsDir = Path.Combine(versionsRoot, "Test", ".git", "objects");
+            string currentObjectsDir = Path.Combine(targetDir, ".git", "objects");
+            if (Directory.Exists(testObjectsDir) && !string.Equals(testObjectsDir, currentObjectsDir, StringComparison.OrdinalIgnoreCase)) {
+                try {
+                    string infoDir = Path.Combine(currentObjectsDir, "info");
+                    if (!Directory.Exists(infoDir)) Directory.CreateDirectory(infoDir);
+                    string altFile = Path.Combine(infoDir, "alternates");
+                    string normTestObj = testObjectsDir.Replace('\\', '/');
+                    if (!File.Exists(altFile) || !File.ReadAllText(altFile, Encoding.UTF8).Contains(normTestObj)) {
+                        File.WriteAllText(altFile, normTestObj + Environment.NewLine, new UTF8Encoding(false));
+                    }
+                } catch { }
+            }
+        }
+
+        private bool RunGitPushWithProgress(string workingDir, string arguments, int startProgress, int endProgress, out string errorOutput) {
+            ProcessStartInfo psi = new ProcessStartInfo();
+            psi.FileName = FindGitExe();
+            psi.Arguments = arguments;
+            psi.WorkingDirectory = workingDir;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.UTF8;
+            psi.StandardErrorEncoding = Encoding.UTF8;
+            psi.UseShellExecute = false;
+            psi.CreateNoWindow = true;
+
+            StringBuilder errSb = new StringBuilder();
+            using (Process p = Process.Start(psi)) {
+                p.OutputDataReceived += (s, e) => {
+                    if (!string.IsNullOrEmpty(e.Data)) {
+                        LogMessage("  [git] " + e.Data);
+                    }
+                };
+                p.BeginOutputReadLine();
+
+                StreamReader sr = p.StandardError;
+                StringBuilder lineBuf = new StringBuilder();
+                int ch;
+                int lastUiUpdate = 0;
+                while ((ch = sr.Read()) != -1) {
+                    if (ch == '\r' || ch == '\n') {
+                        string line = lineBuf.ToString().Trim();
+                        lineBuf.Length = 0;
+                        if (string.IsNullOrEmpty(line)) continue;
+
+                        if (ch == '\n') {
+                            errSb.AppendLine(line);
+                            if (!line.StartsWith("Counting objects:") &&
+                                !line.StartsWith("Compressing objects:") &&
+                                !line.StartsWith("Writing objects:") &&
+                                !line.StartsWith("Enumerating objects:")) {
+                                LogMessage("  [GitHub] " + line);
+                            }
+                        }
+
+                        int now = Environment.TickCount;
+                        if (now - lastUiUpdate > 50 || line.Contains("100%")) {
+                            lastUiUpdate = now;
+                            Match mWrite = Regex.Match(line, @"Writing objects:\s*(\d+)%\s*\((\d+)/(\d+)\)(.*)");
+                            Match mComp = Regex.Match(line, @"Compressing objects:\s*(\d+)%\s*\((\d+)/(\d+)\)");
+                            Match mCount = Regex.Match(line, @"(?:Counting|Enumerating) objects:\s*(\d+)%");
+                            if (mWrite.Success) {
+                                int pctVal = int.Parse(mWrite.Groups[1].Value);
+                                string speedInfo = mWrite.Groups[4].Value.Trim().TrimStart(',').Trim();
+                                int barVal = startProgress + (int)((endProgress - startProgress) * (0.20 + 0.80 * (pctVal / 100.0)));
+                                string msg = string.Format("\u0412\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u043d\u0430 GitHub: {0}% ({1}/{2}){3}",
+                                    pctVal, mWrite.Groups[2].Value, mWrite.Groups[3].Value,
+                                    string.IsNullOrEmpty(speedInfo) ? "" : " \u2014 " + speedInfo);
+                                SetStatus(msg, barVal);
+                            } else if (mComp.Success) {
+                                int pctVal = int.Parse(mComp.Groups[1].Value);
+                                int barVal = startProgress + (int)((endProgress - startProgress) * (0.05 + 0.15 * (pctVal / 100.0)));
+                                SetStatus(string.Format("\u0421\u0442\u0438\u0441\u043d\u0435\u043d\u043d\u044f \u0444\u0430\u0439\u043b\u0456\u0432 \u043f\u0435\u0440\u0435\u0434 \u0432\u0456\u0434\u043f\u0440\u0430\u0432\u043a\u043e\u044e: {0}% ({1}/{2})...", pctVal, mComp.Groups[2].Value, mComp.Groups[3].Value), barVal);
+                            } else if (mCount.Success) {
+                                int pctVal = int.Parse(mCount.Groups[1].Value);
+                                int barVal = startProgress + (int)((endProgress - startProgress) * (0.05 * (pctVal / 100.0)));
+                                SetStatus(string.Format("\u041f\u0456\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043f\u0430\u043a\u0435\u0442\u0443 Git: {0}%...", pctVal), barVal);
+                            }
+                        }
+                    } else {
+                        lineBuf.Append((char)ch);
+                    }
+                }
+                p.WaitForExit();
+                errorOutput = errSb.ToString();
+                return p.ExitCode == 0;
+            }
+        }
+
+        private void RunUploadSync(string targetDir, bool isNewBranch, string branchName, string commitMsg) {
+            SetStatus("\u041f\u0456\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0456\u044e \u0442\u0430 \u0456\u043d\u0434\u0435\u043a\u0441\u0456\u0432...", 20);
+            EnsureLocalGitRepoForUpload(targetDir);
+
+            string packwizExe = Path.Combine(targetDir, "packwiz.exe");
+            string packToml = Path.Combine(targetDir, "pack.toml");
+            if (File.Exists(packwizExe) && File.Exists(packToml)) {
+                try {
+                    SetStatus("\u041e\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f \u0456\u043d\u0434\u0435\u043a\u0441\u0456\u0432 Packwiz (packwiz refresh)...", 35);
+                    LogMessage("\u041e\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f \u0445\u0435\u0448\u0456\u0432 \u043c\u043e\u0434\u0456\u0432 \u0447\u0435\u0440\u0435\u0437 packwiz.exe refresh...");
+                    ProcessStartInfo pwPsi = new ProcessStartInfo(packwizExe, "refresh");
+                    pwPsi.WorkingDirectory = targetDir;
+                    pwPsi.UseShellExecute = false;
+                    pwPsi.CreateNoWindow = true;
+                    using (Process pw = Process.Start(pwPsi)) {
+                        pw.WaitForExit(15000);
+                    }
+                } catch { }
+            }
+
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            js.MaxJsonLength = int.MaxValue;
+            string cacheFile = Path.Combine(targetDir, ".modpack_hash_cache.json");
+            Dictionary<string, string> hashCache = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            if (File.Exists(cacheFile)) {
+                try {
+                    var loaded = js.Deserialize<Dictionary<string, string>>(File.ReadAllText(cacheFile, Encoding.UTF8));
+                    if (loaded != null) {
+                        foreach (var kv in loaded) hashCache[kv.Key] = kv.Value;
+                    }
+                } catch { }
+            }
+
+            SetStatus("\u0421\u043a\u0430\u043d\u0443\u0432\u0430\u043d\u043d\u044f \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u0438\u0445 \u0444\u0430\u0439\u043b\u0456\u0432 \u0437\u0431\u0456\u0440\u043a\u0438 (\u0431\u0435\u0437 \u043f\u0430\u043f\u043a\u0438 saves/)...", 50);
+            string[] allFullFiles = Directory.GetFiles(targetDir, "*", SearchOption.AllDirectories);
+            List<string> eligibleRelFiles = new List<string>();
+            HashSet<string> localRelSet = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+            int rootLen = targetDir.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar).Length + 1;
+            foreach (string fullPath in allFullFiles) {
+                if (fullPath.Length <= rootLen) continue;
+                string rel = fullPath.Substring(rootLen).Replace('\\', '/');
+                if (ShouldExcludeFromUpload(rel)) continue;
+                eligibleRelFiles.Add(rel);
+                localRelSet.Add(rel);
+            }
+
+            string newCommitSha = "";
+
+            if (!isNewBranch) {
+                SetStatus("\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f \u0441\u0442\u0430\u043d\u0443 \u0433\u0456\u043b\u043a\u0438 '" + branchName + "' \u0456\u0437 GitHub...", 80);
+                LogMessage("\u0417\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u043c\u0435\u0442\u0430\u0434\u0430\u043d\u0438\u0445 \u0433\u0456\u043b\u043a\u0438 '" + branchName + "' \u0434\u043b\u044f \u043f\u043e\u0440\u0456\u0432\u043d\u044f\u043d\u043d\u044f \u0444\u0430\u0439\u043b\u0456\u0432...");
+
+                int fetchExit;
+                string fetchErr;
+                RunGitCommandEx(targetDir, "fetch --filter=blob:none --no-tags origin \"+refs/heads/" + branchName + ":refs/remotes/origin/" + branchName + "\"", out fetchExit, out fetchErr);
+                string parentSha = RunGitCommand(targetDir, "rev-parse \"refs/remotes/origin/" + branchName + "\"").Trim();
+                if (fetchExit != 0 || parentSha.Length != 40) {
+                    throw new Exception("\u041d\u0435 \u0432\u0434\u0430\u043b\u043e\u0441\u044f \u043e\u0442\u0440\u0438\u043c\u0430\u0442\u0438 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "' \u0456\u0437 GitHub: " + fetchErr);
+                }
+
+                Dictionary<string, string> remoteTree = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                string lsTreeOut = RunGitCommand(targetDir, "-c core.quotePath=false ls-tree -r \"" + parentSha + "\"");
+                foreach (string line in lsTreeOut.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
+                    int tabIdx = line.IndexOf('\t');
+                    if (tabIdx <= 0) continue;
+                    string metaPart = line.Substring(0, tabIdx).Trim();
+                    string rPath = line.Substring(tabIdx + 1).Trim();
+                    string[] mParts = metaPart.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    if (mParts.Length < 3 || mParts[1] != "blob") continue;
+                    remoteTree[rPath] = mParts[2];
+                }
+
+                List<string> changedOrAdded = new List<string>();
+                int unchangedCount = 0;
+                int addedCount = 0;
+                int modifiedCount = 0;
+
+                for (int i = 0; i < eligibleRelFiles.Count; i++) {
+                    string rel = eligibleRelFiles[i];
+                    string fullPath = Path.Combine(targetDir, rel.Replace('/', Path.DirectorySeparatorChar));
+
+                    if (i % 20 == 0 || i == eligibleRelFiles.Count - 1) {
+                        int pct = 100 + (int)((i + 1) * 280.0 / Math.Max(1, eligibleRelFiles.Count));
+                        SetStatus(string.Format("\u041f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0430 \u0437\u043c\u0456\u043d \u0443 \u0444\u0430\u0439\u043b\u0430\u0445 [{0}/{1}]...", i + 1, eligibleRelFiles.Count), pct);
+                    }
+
+                    string remoteSha;
+                    if (remoteTree.TryGetValue(rel, out remoteSha)) {
+                        if (LocalFileMatchesGitSha(fullPath, remoteSha, -1, hashCache)) {
+                            unchangedCount++;
+                        } else {
+                            changedOrAdded.Add(rel);
+                            modifiedCount++;
+                            LogMessage("  [\u0417\u043c\u0456\u043d\u0435\u043d\u043e] " + rel);
+                        }
+                    } else {
+                        changedOrAdded.Add(rel);
+                        addedCount++;
+                        LogMessage("  [\u041d\u043e\u0432\u0438\u0439 \u0444\u0430\u0439\u043b] " + rel);
+                    }
+                }
+
+                List<string> deletedFiles = new List<string>();
+                foreach (var kv in remoteTree) {
+                    string rPath = kv.Key;
+                    if (ShouldExcludeFromUpload(rPath)) continue;
+                    if (string.Equals(rPath, "sync.ps1", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(rPath, "sync.bat", StringComparison.OrdinalIgnoreCase)) {
+                        continue;
+                    }
+                    if (!localRelSet.Contains(rPath)) {
+                        deletedFiles.Add(rPath);
+                        LogMessage("  [\u0412\u0438\u0434\u0430\u043b\u0435\u043d\u043e] " + rPath);
+                    }
+                }
+
+                LogMessage(string.Format("\u0417\u0432\u0456\u0440\u043a\u0430 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430: \u0431\u0435\u0437 \u0437\u043c\u0456\u043d (\u043f\u0440\u043e\u043f\u0443\u0449\u0435\u043d\u043e): {0}, \u043d\u043e\u0432\u0438\u0445: {1}, \u0437\u043c\u0456\u043d\u0435\u043d\u0438\u0445: {2}, \u0432\u0438\u0434\u0430\u043b\u0435\u043d\u0438\u0445: {3}.",
+                    unchangedCount, addedCount, modifiedCount, deletedFiles.Count));
+
+                if (changedOrAdded.Count == 0 && deletedFiles.Count == 0) {
+                    SetStatus("\u0423\u0441\u0456 \u0444\u0430\u0439\u043b\u0438 \u0432\u0436\u0435 \u0430\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u0456 \u0432 \u0433\u0456\u043b\u0446\u0456 '" + branchName + "'. \u0417\u043c\u0456\u043d \u0434\u043b\u044f \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u043d\u0435\u043c\u0430\u0454.", 1000);
+                    this.BeginInvoke(new Action(() => {
+                        SetBusy(false);
+                        MessageBox.Show(this, "\u0423 \u0432\u0430\u0448\u0456\u0439 \u043f\u0430\u043f\u0446\u0456 \u043d\u0435\u043c\u0430\u0454 \u043d\u043e\u0432\u0438\u0445 \u0430\u0431\u043e \u0437\u043c\u0456\u043d\u0435\u043d\u0438\u0445 \u0444\u0430\u0439\u043b\u0456\u0432 \u043f\u043e\u0440\u0456\u0432\u043d\u044f\u043d\u043e \u0437 \u0433\u0456\u043b\u043a\u043e\u044e '" + branchName + "'.\n\u0412\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u043d\u0435 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0435!", "\u0417\u043c\u0456\u043d \u043d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }));
+                    return;
+                }
+
+                SetStatus("\u041f\u0456\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u0456\u043d\u0434\u0435\u043a\u0441\u0443 \u0433\u0456\u043b\u043a\u0438 '" + branchName + "'...", 390);
+                RunGitCommand(targetDir, "read-tree \"" + parentSha + "\"");
+
+                for (int i = 0; i < changedOrAdded.Count; i++) {
+                    string rel = changedOrAdded[i];
+                    int pct = 400 + (int)((i + 1) * 220.0 / Math.Max(1, changedOrAdded.Count));
+                    SetStatus(string.Format("\u0406\u043d\u0434\u0435\u043a\u0441\u0430\u0446\u0456\u044f \u043d\u043e\u0432\u0438\u0445/\u0437\u043c\u0456\u043d\u0435\u043d\u0438\u0445 \u0444\u0430\u0439\u043b\u0456\u0432 [{0}/{1}]: {2}", i + 1, changedOrAdded.Count, Path.GetFileName(rel)), pct);
+                    RunGitCommand(targetDir, "add -f -- \"" + rel + "\"");
+                }
+
+                if (deletedFiles.Count > 0) {
+                    SetStatus("\u0412\u0438\u043b\u0443\u0447\u0435\u043d\u043d\u044f \u0432\u0438\u0434\u0430\u043b\u0435\u043d\u0438\u0445 \u0444\u0430\u0439\u043b\u0456\u0432 \u0437 \u0456\u043d\u0434\u0435\u043a\u0441\u0443...", 630);
+                    for (int i = 0; i < deletedFiles.Count; i += 10) {
+                        List<string> batch = new List<string>();
+                        for (int j = i; j < Math.Min(deletedFiles.Count, i + 10); j++) {
+                            batch.Add("\"" + deletedFiles[j] + "\"");
+                        }
+                        RunGitCommand(targetDir, "rm --cached --ignore-unmatch -- " + string.Join(" ", batch.ToArray()));
+                    }
+                }
+
+                SetStatus("\u0421\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u043a\u043e\u043c\u0456\u0442\u0443...", 650);
+                string treeSha = RunGitCommand(targetDir, "write-tree").Trim();
+                string msgFile = Path.Combine(targetDir, ".git", "COMMIT_MSG_TMP");
+                File.WriteAllText(msgFile, commitMsg, new UTF8Encoding(false));
+                newCommitSha = RunGitCommand(targetDir, "commit-tree " + treeSha + " -p " + parentSha + " -F \".git/COMMIT_MSG_TMP\"").Trim();
+                try { File.Delete(msgFile); } catch { }
+
+                if (newCommitSha.Length != 40) {
+                    throw new Exception("\u041d\u0435 \u0432\u0434\u0430\u043b\u043e\u0441\u044f \u0441\u0442\u0432\u043e\u0440\u0438\u0442\u0438 \u043a\u043e\u043c\u0456\u0442: " + newCommitSha);
+                }
+
+                RunGitCommand(targetDir, "update-ref \"refs/heads/" + branchName + "\" " + newCommitSha);
+                RunGitCommand(targetDir, "symbolic-ref HEAD \"refs/heads/" + branchName + "\"");
+
+                SetStatus("\u0412\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u043d\u043e\u0432\u0438\u0445 \u0442\u0430 \u0437\u043c\u0456\u043d\u0435\u043d\u0438\u0445 \u0444\u0430\u0439\u043b\u0456\u0432 \u0443 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "'...", 670);
+                LogMessage("\u0412\u0456\u0434\u043f\u0440\u0430\u0432\u043a\u0430 \u043a\u043e\u043c\u0456\u0442\u0443 " + newCommitSha.Substring(0, 7) + " \u0443 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "'...");
+
+                string pushErr;
+                bool pushOk = RunGitPushWithProgress(targetDir, "push --progress origin " + newCommitSha + ":refs/heads/" + branchName, 670, 990, out pushErr);
+                if (!pushOk && !string.IsNullOrEmpty(gitToken)) {
+                    string authUrl = "https://x-access-token:" + gitToken + "@github.com/MrProper119/minecraft1.git";
+                    pushOk = RunGitPushWithProgress(targetDir, "push --progress \"" + authUrl + "\" " + newCommitSha + ":refs/heads/" + branchName, 670, 990, out pushErr);
+                }
+                if (!pushOk) {
+                    throw new Exception("\u041f\u043e\u043c\u0438\u043b\u043a\u0430 git push \u0443 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "':\n" + pushErr);
+                }
+            } else {
+                SetStatus("\u041f\u0456\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u0447\u0438c\u0442\u043e\u0433\u043e \u0456\u043d\u0434\u0435\u043a\u0441\u0443 \u0434\u043b\u044f \u043d\u043e\u0432\u043e\u0457 \u0433\u0456\u043b\u043a\u0438 '" + branchName + "'...", 70);
+                LogMessage(string.Format("\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e \u0444\u0430\u0439\u043b\u0456\u0432 \u0437\u0431\u0456\u0440\u043a\u0438 \u0434\u043b\u044f \u043f\u043e\u0432\u043d\u043e\u0433\u043e \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f (\u0431\u0435\u0437 saves/): {0}.", eligibleRelFiles.Count));
+
+                RunGitCommand(targetDir, "read-tree --empty");
+
+                int batchSize = 15;
+                int total = eligibleRelFiles.Count;
+                for (int i = 0; i < total; i += batchSize) {
+                    int end = Math.Min(total, i + batchSize);
+                    List<string> quotedBatch = new List<string>( end - i );
+                    for (int j = i; j < end; j++) {
+                        quotedBatch.Add("\"" + eligibleRelFiles[j] + "\"");
+                    }
+                    string lastFileName = Path.GetFileName(eligibleRelFiles[end - 1]);
+                    int pct = 80 + (int)(end * 500.0 / Math.Max(1, total));
+                    SetStatus(string.Format("\u041f\u0456\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u0432\u0441\u0456\u0445 \u0444\u0430\u0439\u043b\u0456\u0432 \u0437\u0431\u0456\u0440\u043a\u0438 [{0}/{1}]: {2}", end, total, lastFileName), pct);
+
+                    RunGitCommand(targetDir, "add -f -- " + string.Join(" ", quotedBatch.ToArray()));
+
+                    if (end % 150 == 0 || end == total) {
+                        LogMessage(string.Format("  \u041f\u0440\u043e\u0456\u043d\u0434\u0435\u043a\u0441\u043e\u0432\u0430\u043d\u043e \u0444\u0430\u0439\u043b\u0456\u0432 \u0437\u0431\u0456\u0440\u043a\u0438: {0} / {1}", end, total));
+                    }
+                }
+
+                SetStatus("\u0424\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u043d\u044f \u043f\u043e\u0432\u043d\u043e\u0433\u043e \u043a\u043e\u043c\u0456\u0442\u0443 \u0434\u043b\u044f \u043d\u043e\u0432\u043e\u0457 \u0433\u0456\u043b\u043a\u0438 '" + branchName + "'...", 600);
+                string treeSha = RunGitCommand(targetDir, "write-tree").Trim();
+                string msgFile = Path.Combine(targetDir, ".git", "COMMIT_MSG_TMP");
+                File.WriteAllText(msgFile, commitMsg, new UTF8Encoding(false));
+                newCommitSha = RunGitCommand(targetDir, "commit-tree " + treeSha + " -F \".git/COMMIT_MSG_TMP\"").Trim();
+                try { File.Delete(msgFile); } catch { }
+
+                if (newCommitSha.Length != 40) {
+                    throw new Exception("\u041d\u0435 \u0432\u0434\u0430\u043b\u043e\u0441\u044f \u0441\u0442\u0432\u043e\u0440\u0438\u0442\u0438 \u043a\u043e\u043c\u0456\u0442 \u0434\u043b\u044f \u043d\u043e\u0432\u043e\u0457 \u0433\u0456\u043b\u043a\u0438: " + newCommitSha);
+                }
+
+                RunGitCommand(targetDir, "update-ref \"refs/heads/" + branchName + "\" " + newCommitSha);
+                RunGitCommand(targetDir, "symbolic-ref HEAD \"refs/heads/" + branchName + "\"");
+
+                SetStatus("\u0412\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0432\u0441\u0456\u0454\u0457 \u0437\u0431\u0456\u0440\u043a\u0438 \u0443 \u043d\u043e\u0432\u0443 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "'...", 630);
+                LogMessage("\u0412\u0456\u0434\u043f\u0440\u0430\u0432\u043a\u0430 \u043f\u043e\u0432\u043d\u043e\u0433\u043e \u043a\u043e\u043c\u0456\u0442\u0443 " + newCommitSha.Substring(0, 7) + " \u0443 \u043d\u043e\u0432\u0443 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "'...");
+
+                string pushErr;
+                bool pushOk = RunGitPushWithProgress(targetDir, "push --progress -f -u origin " + newCommitSha + ":refs/heads/" + branchName, 630, 990, out pushErr);
+                if (!pushOk && !string.IsNullOrEmpty(gitToken)) {
+                    string authUrl = "https://x-access-token:" + gitToken + "@github.com/MrProper119/minecraft1.git";
+                    pushOk = RunGitPushWithProgress(targetDir, "push --progress -f \"" + authUrl + "\" " + newCommitSha + ":refs/heads/" + branchName, 630, 990, out pushErr);
+                }
+                if (!pushOk) {
+                    throw new Exception("\u041f\u043e\u043c\u0438\u043b\u043a\u0430 git push \u0443 \u043d\u043e\u0432\u0443 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "':\n" + pushErr);
+                }
+            }
+
+            try {
+                File.WriteAllText(cacheFile, js.Serialize(hashCache), Encoding.UTF8);
+                File.WriteAllText(Path.Combine(targetDir, ".synced_commit.txt"), newCommitSha, Encoding.UTF8);
+            } catch { }
+
+            string shortNewSha = newCommitSha.Length >= 7 ? newCommitSha.Substring(0, 7) : newCommitSha;
+            string doneMsg = string.Format("\u0412\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0443\u0441\u043f\u0456\u0448\u043d\u043e \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u043e! \u0413\u0456\u043b\u043a\u0430: '{0}', \u043a\u043e\u043c\u0456\u0442: {1}", branchName, shortNewSha);
+            SetStatus(doneMsg, 1000);
+            LogMessage(doneMsg);
+
+            this.BeginInvoke(new Action(() => {
+                UpdateCurrentFolderInfo();
+                SetBusy(false);
+                FetchBranchesAsync(branchName);
+                MessageBox.Show(this,
+                    "\u0417\u0431\u0456\u0440\u043a\u0443 \u0443\u0441\u043f\u0456\u0448\u043d\u043e \u0432\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043e \u0432 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0456\u0439 GitHub!\n\n" +
+                    "\u0413\u0456\u043b\u043a\u0430: " + branchName + "\n" +
+                    "\u041a\u043e\u043c\u0456\u0442: " + shortNewSha + " (" + commitMsg + ")",
+                    "\u0412\u0438\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u043e",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }));
         }
 
         private void StartSyncAsync(bool launchAfterSync) {
@@ -968,7 +1591,7 @@ namespace ModpackSync {
                 string tempFile = localPath + ".downloading";
 
                 HttpWebRequest dlReq = (HttpWebRequest)WebRequest.Create(rawUrl);
-                dlReq.UserAgent = "MinecraftModpackDeltaSync/3.0";
+                dlReq.UserAgent = "MinecraftModpackDeltaSync/4.0";
                 dlReq.Timeout = 30000;
                 if (!string.IsNullOrEmpty(gitToken)) {
                     dlReq.Headers.Add("Authorization", "Bearer " + gitToken);
