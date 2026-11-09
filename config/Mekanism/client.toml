@@ -3,7 +3,7 @@
 	#Tries to force all text rendered as part of radial menus to be white instead of the color of the slice's mode.
 	whiteRadialText = false
 	#If true, renders sides for Universal Cables, Mechanical Pipes, Pressurized Tubes, Logistical Transporters, and Thermodynamic Conductors instead of rendering their contents. If transmitters are causing you fps issues, this should hopefully help.
-	opaqueTransmitters = false
+	opaqueTransmitters = true
 	#Allows changing the mode of held items by holding sneak and using the scroll wheel.
 	allowModeScroll = true
 
@@ -25,22 +25,22 @@
 	#Range at which Block Entity Renderers added by Mekanism can render at, for example the contents of multiblocks. Vanilla defaults the rendering range for BERs to 64 for most blocks (for example chests), but uses a range of 256 for blocks like beacons and end gateways. Lowering this will likely increase your performance, at the cost of multiblock contents and wind generators 'popping' in
 	# Default: 256
 	# Range: 1 ~ 1024
-	berRange = 256
+	berRange = 48
 
 	#Settings for configuring Mekanism's Particles
 	[rendering.particle]
 		#When multiblock forms, represent that by red sparkles around the multiblock. If this is disabled a notification message will display on the action bar instead.
-		multiblockFormation = true
+		multiblockFormation = false
 		#Show particles when machines active.
-		machineEffects = true
+		machineEffects = false
 		#How far (in blocks) from the player radiation particles can spawn.
 		# Default: 30
 		# Range: 2 ~ 64
-		radiationParticleRadius = 30
+		radiationParticleRadius = 16
 		#How many particles spawn when rendering radiation effects (scaled by radiation level).
 		# Default: 100
 		# Range: 0 ~ 1000
-		radiationParticleCount = 100
+		radiationParticleCount = 20
 		#Show bolts between the player and items when the Magnetic Attraction Unit is pulling items towards a player.
 		magneticAttraction = true
 		#Show bolts for various AOE tool behaviors such as tilling, debarking, and vein mining.

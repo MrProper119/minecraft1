@@ -44,7 +44,7 @@ _version = 5
 	syncOnLoadRateLimit = 15
 	#
 	# If true, clients will receive real-time LOD updates for chunks outside the client's render distance.
-	enableRealTimeUpdates = true
+	enableRealTimeUpdates = false
 	#
 	# Maximum global speed for uploading LODs to the clients, in KB/s.
 	# Value of 0 disables the limit.
@@ -389,7 +389,7 @@ _version = 5
 			# F6 - enable/disable LOD rendering 
 			# F7 - enable/disable LOD only rendering 
 			# F8 - cycle through the different debug rendering modes
-			enableDebugKeybindings = false
+			enableDebugKeybindings = true
 
 			[client.advanced.debugging.debugWireframe]
 				#
@@ -716,24 +716,24 @@ _version = 5
 				dimensionEnabledCloudRenderingCsv = "minecraft:overworld"
 				#
 				# If true LOD clouds will be rendered.
-				enableCloudRendering = true
+				enableCloudRendering = false
 				#
 				# If true LOD beacon beams will be rendered wider at extreme distances, 
 				# making them easier to see. 
 				# If false all LOD beacon beams will only ever be 1 block wide.
-				expandDistantBeacons = true
+				expandDistantBeacons = false
 				#
 				# Sets the maximum height beacons will render up to. 
 				# 
 				# Requires a world re-load to take affect.
-				beaconRenderHeight = 6000
+				beaconRenderHeight = 512
 				#
 				# If true LOD beacon beams will be rendered.
-				enableBeaconRendering = true
+				enableBeaconRendering = false
 				#
 				# If true non terrain objects will be rendered by DH. 
 				# i.e. beacon beams and clouds.
-				enableGenericRendering = true
+				enableGenericRendering = false
 				#
 				# False = DH will render a single layer of clouds, like vanilla Minecraft. 
 				# True = DH will render 3 layers of clouds at different heights.
@@ -752,12 +752,12 @@ _version = 5
 				# 
 				# Fastest: CHUNK
 				# Fanciest: BLOCK
-				maxHorizontalResolution = "FOUR_BLOCKS"
+				maxHorizontalResolution = "HALF_CHUNK"
 				#
 				# If true LODs will fade away as you get closer to them. 
 				# If false LODs will cut off abruptly at a set distance from the camera. 
 				# This setting is affected by the vanilla overdraw prevention config.
-				ditherDhFade = true
+				ditherDhFade = false
 				#
 				# If true DH will try to use the camera position when 
 				# determining LOD quality drop-off. 
@@ -802,27 +802,27 @@ _version = 5
 				# 
 				# Lowest Quality: HEIGHT_MAP
 				# Highest Quality: PIXEL_ART
-				verticalQuality = "LOW"
+				verticalQuality = "HEIGHT_MAP"
 				#
 				# The radius of the mod's render distance. (measured in chunks)
 				# 
 				# Note: this is a best effort number. 
 				# The actual render distance may be above or below this number 
 				# depending on your other graphic settings.
-				lodChunkRenderDistanceRadius = 48
+				lodChunkRenderDistanceRadius = 32
 				#
 				# How should the sides and bottom of grass block LODs render? 
 				# 
 				# AS_GRASS: all sides of dirt LOD's render using the top (green) color. 
 				# FADE_TO_DIRT: sides fade from grass to dirt. 
 				# AS_DIRT: sides render entirely as dirt.
-				grassSideRendering = "FADE_TO_DIRT"
+				grassSideRendering = "AS_DIRT"
 				#
 				# This indicates how far apart drops in LOD quality are. 
 				# 
 				# Higher settings will increase the distance between drops 
 				# but will increase memory and GPU usage.
-				horizontalQuality = "MEDIUM"
+				horizontalQuality = "LOW"
 				#
 				# How should LOD transparency be handled. 
 				# 
@@ -843,7 +843,7 @@ _version = 5
 				# NONE: Fastest, there will be a pronounced border between DH and MC rendering. 
 				# SINGLE_PASS: Fades after MC's transparent pass, opaque blocks underwater won't be faded. 
 				# DOUBLE_PASS: Slowest, fades after both MC's opaque and transparent passes, provides the smoothest transition.
-				vanillaFadeMode = "SINGLE_PASS"
+				vanillaFadeMode = "NONE"
 				#
 				# If true LOD quality will increase when the camera is zoomed in, 
 				# IE when using a spyglass or zoom mod. 
