@@ -38,7 +38,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
-using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -47,59 +46,6 @@ using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace ModpackSync {
-    public static class WinCred {
-        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        private struct CREDENTIAL {
-            public uint Flags;
-            public uint Type;
-            public string TargetName;
-            public string Comment;
-            public System.Runtime.InteropServices.ComTypes.FILETIME LastWritten;
-            public uint CredentialBlobSize;
-            public IntPtr CredentialBlob;
-            public uint Persist;
-            public uint AttributeCount;
-            public IntPtr Attributes;
-            public string TargetAlias;
-            public string UserName;
-        }
-
-        [DllImport("advapi32.dll", EntryPoint = "CredReadW", CharSet = CharSet.Unicode, SetLastError = true)]
-        private static extern bool CredRead(string target, uint type, int reservedFlag, out IntPtr credentialPtr);
-
-        [DllImport("advapi32.dll", SetLastError = true)]
-        private static extern bool CredFree(IntPtr cred);
-
-        public static string GetGitHubToken() {
-            string[] targets = new string[] {
-                "git:https://github.com",
-                "git:https://MrProper119@github.com",
-                "git:https://kn253dis-cmyk@github.com"
-            };
-            foreach (string t in targets) {
-                IntPtr ptr;
-                if (CredRead(t, 1, 0, out ptr)) {
-                    try {
-                        CREDENTIAL c = (CREDENTIAL)Marshal.PtrToStructure(ptr, typeof(CREDENTIAL));
-                        if (c.CredentialBlob != IntPtr.Zero && c.CredentialBlobSize > 0) {
-                            byte[] bytes = new byte[c.CredentialBlobSize];
-                            Marshal.Copy(c.CredentialBlob, bytes, 0, (int)c.CredentialBlobSize);
-                            string s = Encoding.Unicode.GetString(bytes).Trim('\0', '\r', '\n', ' ');
-                            if (s.IndexOf('\0') >= 0 || (!s.StartsWith("gh") && !s.StartsWith("github_"))) {
-                                s = Encoding.UTF8.GetString(bytes).Replace("\0", "").Trim();
-                            }
-                            if (!string.IsNullOrEmpty(s)) return s;
-                        }
-                    } catch {
-                    } finally {
-                        CredFree(ptr);
-                    }
-                }
-            }
-            return null;
-        }
-    }
-
     public class BranchItem {
         public string Name { get; set; }
         public string Sha { get; set; }
@@ -172,7 +118,6 @@ namespace ModpackSync {
         private string versionsRoot;
         private string stateFilePath;
         private string metaGitDir;
-        private string gitToken;
 
         private ComboBox cmbFolders;
         private Button btnBrowseFolder;
@@ -207,7 +152,6 @@ namespace ModpackSync {
             versionsRoot = Path.Combine(minecraftRoot, "versions");
             stateFilePath = Path.Combine(minecraftRoot, "modpack_sync_state.json");
             metaGitDir = Path.Combine(minecraftRoot, ".modpack_meta_git");
-            gitToken = WinCred.GetGitHubToken();
 
             InitializeComponents();
             LoadFolders();
@@ -676,9 +620,6 @@ namespace ModpackSync {
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
             req.UserAgent = "MinecraftModpackDeltaSync/4.0";
             req.Timeout = 15000;
-            if (!string.IsNullOrEmpty(gitToken)) {
-                req.Headers.Add("Authorization", "Bearer " + gitToken);
-            }
             using (HttpWebResponse resp = (HttpWebResponse)req.GetResponse())
             using (StreamReader sr = new StreamReader(resp.GetResponseStream(), Encoding.UTF8)) {
                 return sr.ReadToEnd();
@@ -695,6 +636,19 @@ namespace ModpackSync {
                 List<BranchItem> branches = new List<BranchItem>();
                 try {
                     try {
+                        EnsureMetaGitUpdated();
+                        string refsOut = RunGitCommand(metaGitDir, "for-each-ref --sort=-committerdate \"refs/remotes/origin\" --format=\"%(refname:short)|%(objectname)\"");
+                        foreach (string line in refsOut.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
+                            string[] parts = line.Split('|');
+                            if (parts.Length < 2) continue;
+                            string bName = Regex.Replace(parts[0].Trim(), "^origin/", "");
+                            if (bName == "HEAD" || bName == "origin" || string.Equals(bName, "sync-script", StringComparison.OrdinalIgnoreCase)) continue;
+                            branches.Add(new BranchItem { Name = bName, Sha = parts[1].Trim() });
+                        }
+                    } catch {
+                    }
+
+                    if (branches.Count == 0) {
                         string json = HttpGetJson(ApiBase + "/branches?per_page=100");
                         JavaScriptSerializer js = new JavaScriptSerializer();
                         js.MaxJsonLength = int.MaxValue;
@@ -714,16 +668,6 @@ namespace ModpackSync {
                                 }
                                 branches.Add(new BranchItem { Name = name, Sha = sha });
                             }
-                        }
-                    } catch {
-                        EnsureMetaGitUpdated();
-                        string refsOut = RunGitCommand(metaGitDir, "for-each-ref --sort=-committerdate \"refs/remotes/origin\" --format=\"%(refname:short)|%(objectname)\"");
-                        foreach (string line in refsOut.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
-                            string[] parts = line.Split('|');
-                            if (parts.Length < 2) continue;
-                            string bName = Regex.Replace(parts[0].Trim(), "^origin/", "");
-                            if (bName == "HEAD" || bName == "origin" || string.Equals(bName, "sync-script", StringComparison.OrdinalIgnoreCase)) continue;
-                            branches.Add(new BranchItem { Name = bName, Sha = parts[1].Trim() });
                         }
                     }
 
@@ -772,6 +716,22 @@ namespace ModpackSync {
                 List<CommitItem> commits = new List<CommitItem>();
                 try {
                     try {
+                        EnsureMetaGitUpdated();
+                        string logOut = RunGitCommand(metaGitDir, "log \"origin/" + selectedBranch.Name + "\" --date=short --pretty=format:\"%H|%h|%ad|%s\" -n 25");
+                        foreach (string line in logOut.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
+                            string[] parts = line.Split(new char[] { '|' }, 4);
+                            if (parts.Length < 4) continue;
+                            commits.Add(new CommitItem {
+                                FullSha = parts[0].Trim(),
+                                ShortSha = parts[1].Trim(),
+                                Date = parts[2].Trim(),
+                                Message = parts[3].Trim()
+                            });
+                        }
+                    } catch {
+                    }
+
+                    if (commits.Count == 0) {
                         string url = ApiBase + "/commits?sha=" + Uri.EscapeDataString(selectedBranch.Name) + "&per_page=25";
                         string json = HttpGetJson(url);
                         JavaScriptSerializer js = new JavaScriptSerializer();
@@ -803,19 +763,6 @@ namespace ModpackSync {
                                     Message = msg
                                 });
                             }
-                        }
-                    } catch {
-                        EnsureMetaGitUpdated();
-                        string logOut = RunGitCommand(metaGitDir, "log \"origin/" + selectedBranch.Name + "\" --date=short --pretty=format:\"%H|%h|%ad|%s\" -n 25");
-                        foreach (string line in logOut.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
-                            string[] parts = line.Split(new char[] { '|' }, 4);
-                            if (parts.Length < 4) continue;
-                            commits.Add(new CommitItem {
-                                FullSha = parts[0].Trim(),
-                                ShortSha = parts[1].Trim(),
-                                Date = parts[2].Trim(),
-                                Message = parts[3].Trim()
-                            });
                         }
                     }
 
@@ -1291,10 +1238,6 @@ namespace ModpackSync {
 
                 string pushErr;
                 bool pushOk = RunGitPushWithProgress(targetDir, "push --progress origin " + newCommitSha + ":refs/heads/" + branchName, 670, 990, out pushErr);
-                if (!pushOk && !string.IsNullOrEmpty(gitToken)) {
-                    string authUrl = "https://x-access-token:" + gitToken + "@github.com/MrProper119/minecraft1.git";
-                    pushOk = RunGitPushWithProgress(targetDir, "push --progress \"" + authUrl + "\" " + newCommitSha + ":refs/heads/" + branchName, 670, 990, out pushErr);
-                }
                 if (!pushOk) {
                     throw new Exception("\u041f\u043e\u043c\u0438\u043b\u043a\u0430 git push \u0443 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "':\n" + pushErr);
                 }
@@ -1342,10 +1285,6 @@ namespace ModpackSync {
 
                 string pushErr;
                 bool pushOk = RunGitPushWithProgress(targetDir, "push --progress -f -u origin " + newCommitSha + ":refs/heads/" + branchName, 630, 990, out pushErr);
-                if (!pushOk && !string.IsNullOrEmpty(gitToken)) {
-                    string authUrl = "https://x-access-token:" + gitToken + "@github.com/MrProper119/minecraft1.git";
-                    pushOk = RunGitPushWithProgress(targetDir, "push --progress -f \"" + authUrl + "\" " + newCommitSha + ":refs/heads/" + branchName, 630, 990, out pushErr);
-                }
                 if (!pushOk) {
                     throw new Exception("\u041f\u043e\u043c\u0438\u043b\u043a\u0430 git push \u0443 \u043d\u043e\u0432\u0443 \u0433\u0456\u043b\u043a\u0443 '" + branchName + "':\n" + pushErr);
                 }
@@ -1439,9 +1378,40 @@ namespace ModpackSync {
             HashSet<string> remoteModsLower = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
             SetStatus("\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f \u0441\u043f\u0438\u0441\u043a\u0443 \u0444\u0430\u0439\u043b\u0456\u0432 \u043a\u043e\u043c\u0456\u0442\u0443...", 50);
-            bool treeLoadedViaApi = false;
-
             try {
+                EnsureMetaGitUpdated();
+                if (fullCommitSha.Length < 40) {
+                    string resolved = RunGitCommand(metaGitDir, "rev-parse \"" + commitShaOrRef + "\"").Trim();
+                    if (resolved.Length == 40) fullCommitSha = resolved;
+                }
+                string lsTreeOut = RunGitCommand(metaGitDir, "-c core.quotePath=false ls-tree -r -l \"" + fullCommitSha + "\"");
+                foreach (string line in lsTreeOut.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
+                    int tabIdx = line.IndexOf('\t');
+                    if (tabIdx <= 0) continue;
+                    string metaPart = line.Substring(0, tabIdx).Trim();
+                    string path = line.Substring(tabIdx + 1).Trim();
+                    string[] mParts = metaPart.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    if (mParts.Length < 3 || mParts[1] != "blob") continue;
+                    string sha = mParts[2];
+                    long sz = -1;
+                    if (mParts.Length >= 4) {
+                        long.TryParse(mParts[3], out sz);
+                    }
+
+                    if (string.Equals(path, "sync.ps1", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(path, "sync.bat", StringComparison.OrdinalIgnoreCase)) {
+                        continue;
+                    }
+
+                    remoteFiles.Add(new RemoteTreeEntry { Path = path, Sha = sha, Size = sz });
+                    if (path.StartsWith("mods/", StringComparison.OrdinalIgnoreCase) && path.EndsWith(".jar", StringComparison.OrdinalIgnoreCase)) {
+                        remoteModsLower.Add(Path.GetFileName(path));
+                    }
+                }
+            } catch {
+            }
+
+            if (remoteFiles.Count == 0) {
                 if (fullCommitSha.Length < 40) {
                     string commitJson = HttpGetJson(ApiBase + "/commits/" + Uri.EscapeDataString(commitShaOrRef));
                     var commitObj = js.Deserialize<Dictionary<string, object>>(commitJson);
@@ -1472,38 +1442,6 @@ namespace ModpackSync {
                         if (path.StartsWith("mods/", StringComparison.OrdinalIgnoreCase) && path.EndsWith(".jar", StringComparison.OrdinalIgnoreCase)) {
                             remoteModsLower.Add(Path.GetFileName(path));
                         }
-                    }
-                    treeLoadedViaApi = true;
-                }
-            } catch {
-                treeLoadedViaApi = false;
-            }
-
-            if (!treeLoadedViaApi) {
-                LogMessage("\u0412\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f \u0448\u0432\u0438\u0434\u043a\u043e\u0433\u043e \u043c\u0435\u0442\u0430-\u043a\u0435\u0448\u0443 Git (200 \u041a\u0411) \u0434\u043b\u044f \u0441\u043f\u0438\u0441\u043a\u0443 \u0444\u0430\u0439\u043b\u0456\u0432...");
-                EnsureMetaGitUpdated();
-                if (fullCommitSha.Length < 40) {
-                    string resolved = RunGitCommand(metaGitDir, "rev-parse \"" + commitShaOrRef + "\"").Trim();
-                    if (resolved.Length == 40) fullCommitSha = resolved;
-                }
-                string lsTreeOut = RunGitCommand(metaGitDir, "-c core.quotePath=false ls-tree -r \"" + fullCommitSha + "\"");
-                foreach (string line in lsTreeOut.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
-                    int tabIdx = line.IndexOf('\t');
-                    if (tabIdx <= 0) continue;
-                    string metaPart = line.Substring(0, tabIdx).Trim();
-                    string path = line.Substring(tabIdx + 1).Trim();
-                    string[] mParts = metaPart.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (mParts.Length < 3 || mParts[1] != "blob") continue;
-                    string sha = mParts[2];
-
-                    if (string.Equals(path, "sync.ps1", StringComparison.OrdinalIgnoreCase) ||
-                        string.Equals(path, "sync.bat", StringComparison.OrdinalIgnoreCase)) {
-                        continue;
-                    }
-
-                    remoteFiles.Add(new RemoteTreeEntry { Path = path, Sha = sha, Size = -1 });
-                    if (path.StartsWith("mods/", StringComparison.OrdinalIgnoreCase) && path.EndsWith(".jar", StringComparison.OrdinalIgnoreCase)) {
-                        remoteModsLower.Add(Path.GetFileName(path));
                     }
                 }
             }
@@ -1593,9 +1531,6 @@ namespace ModpackSync {
                 HttpWebRequest dlReq = (HttpWebRequest)WebRequest.Create(rawUrl);
                 dlReq.UserAgent = "MinecraftModpackDeltaSync/4.0";
                 dlReq.Timeout = 30000;
-                if (!string.IsNullOrEmpty(gitToken)) {
-                    dlReq.Headers.Add("Authorization", "Bearer " + gitToken);
-                }
                 using (HttpWebResponse dlResp = (HttpWebResponse)dlReq.GetResponse())
                 using (Stream respStream = dlResp.GetResponseStream())
                 using (FileStream fs = new FileStream(tempFile, FileMode.Create, FileAccess.Write, FileShare.None)) {
@@ -1738,33 +1673,32 @@ if (-not $csc) {
 
 if ($csc) {
     $tempCs = Join-Path $env:TEMP 'ModpackSyncApp_build.cs'
-    $tempExe = Join-Path $env:TEMP 'ModpackSyncGui_build.exe'
     Set-Content -LiteralPath $tempCs -Value $csSource -Encoding Ascii -Force
 
     $icoPath = Join-Path $mcRoot 'libraries\minecraft.ico'
-    $cscArgs = @(
+    $baseArgs = @(
         '/nologo',
         '/target:winexe',
         '/r:System.dll',
         '/r:System.Drawing.dll',
         '/r:System.Windows.Forms.dll',
-        '/r:System.Web.Extensions.dll',
-        "/out:$tempExe"
+        '/r:System.Web.Extensions.dll'
     )
     if (Test-Path -LiteralPath $icoPath) {
-        $cscArgs += "/win32icon:$icoPath"
+        $baseArgs += "/win32icon:$icoPath"
     }
-    $cscArgs += $tempCs
 
-    & $csc.FullName @cscArgs | Out-Null
-    if (Test-Path -LiteralPath $tempExe) {
-        Copy-Item -LiteralPath $tempExe -Destination $syncGuiExe -Force
-        if (Test-Path -LiteralPath $tlOrig) {
-            Copy-Item -LiteralPath $tempExe -Destination $tlExe -Force
-        }
-        Remove-Item -LiteralPath $tempExe -Force
+    Remove-Item -LiteralPath $syncGuiExe -Force -ErrorAction SilentlyContinue
+    $argsGui = $baseArgs + @("/out:$syncGuiExe", $tempCs)
+    & $csc.FullName @argsGui | Out-Null
+
+    if (Test-Path -LiteralPath $tlOrig) {
+        Remove-Item -LiteralPath $tlExe -Force -ErrorAction SilentlyContinue
+        $argsTl = $baseArgs + @("/out:$tlExe", $tempCs)
+        & $csc.FullName @argsTl | Out-Null
     }
-    Remove-Item -LiteralPath $tempCs -Force
+
+    Remove-Item -LiteralPath $tempCs -Force -ErrorAction SilentlyContinue
 }
 
 if (-not $InstallOnly) {
