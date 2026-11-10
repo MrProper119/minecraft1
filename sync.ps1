@@ -80,7 +80,9 @@ namespace ModpackSync {
             "saves",
             "world",
             "backups",
+            "backup",
             "mods_backup",
+            "mods_disabled_by_sync",
             "logs",
             "crash-reports",
             "debug",
@@ -89,7 +91,9 @@ namespace ModpackSync {
             ".fabric",
             ".mixin.out",
             ".pg-native",
+            ".probe",
             ".sable",
+            ".vscode",
             "natives",
             "dynamic-resource-pack-cache",
             "vista_web_content_cache",
@@ -97,21 +101,55 @@ namespace ModpackSync {
             "downloads",
             "local",
             "xaero",
+            "XaeroWaypoints",
+            "XaeroWaypoints_BACKUP240807",
+            "XaeroMinimap",
+            "XaeroWorldMap",
             "distant_horizons_server_data",
             "screenshots",
             "schematics",
             "telemetry",
-            "webcache2"
+            "webcache2",
+            "server-resource-packs",
+            "patchouli_books"
         };
 
         private static readonly HashSet<string> ExcludedUploadFiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
             ".synced_commit.txt",
             ".modpack_hash_cache.json",
+            ".qmenu_opened.marker",
+            "options.txt",
+            "optionsof.txt",
+            "optionsshaders.txt",
+            "servers.dat",
+            "servers.dat_old",
+            "TLauncherAdditional.json",
             "command_history.txt",
             "usercache.json",
             "usernamecache.json",
+            "patchouli_data.json",
+            "ponders_watched.json",
+            "ponders_watched_azimuth.json",
+            "imgui.ini",
+            "fabricloader.log",
+            "temp_image_dump.png",
+            "mods.zip",
+            "sync.ps1",
+            "sync.bat",
+            "add_mod.bat",
+            "push_changes.bat",
+            "update_modpack.bat",
             ".ds_store",
             "thumbs.db"
+        };
+
+        private static readonly HashSet<string> ExcludedUploadRelPaths = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+            "config/fzzy_config/keybinds.toml",
+            "config/xaerohud.txt",
+            "config/xaeropatreon.txt",
+            "config/xaerominimap.txt",
+            "config/xaeroworldmap.txt",
+            "config/create_submarine_client_state.json"
         };
 
         private string minecraftRoot;
@@ -848,10 +886,21 @@ namespace ModpackSync {
         private static bool ShouldExcludeFromUpload(string relPath) {
             if (string.IsNullOrEmpty(relPath)) return true;
             string norm = relPath.Replace('\\', '/').TrimStart('/');
+            if (ExcludedUploadRelPaths.Contains(norm)) {
+                return true;
+            }
             string[] parts = norm.Split('/');
             if (parts.Length == 0) return true;
 
-            if (ExcludedUploadRootDirs.Contains(parts[0])) {
+            string rootPart = parts[0];
+            if (ExcludedUploadRootDirs.Contains(rootPart) ||
+                rootPart.StartsWith("XaeroWaypoints", StringComparison.OrdinalIgnoreCase) ||
+                (parts.Length > 1 && rootPart.StartsWith(".", StringComparison.OrdinalIgnoreCase))) {
+                return true;
+            }
+            if (parts.Length >= 2 &&
+                string.Equals(parts[0], "config", StringComparison.OrdinalIgnoreCase) &&
+                string.Equals(parts[1], "xaero", StringComparison.OrdinalIgnoreCase)) {
                 return true;
             }
             for (int i = 0; i < parts.Length; i++) {
@@ -866,6 +915,17 @@ namespace ModpackSync {
             }
 
             string lowerFile = fileName.ToLowerInvariant();
+            if (parts.Length == 1) {
+                if (lowerFile.EndsWith(".jar") && !string.Equals(fileName, "Test.jar", StringComparison.OrdinalIgnoreCase)) {
+                    return true;
+                }
+                if (lowerFile.EndsWith(".json") &&
+                    !string.Equals(fileName, "Test.json", StringComparison.OrdinalIgnoreCase) &&
+                    !string.Equals(fileName, "vista_ffmpeg_sources.json", StringComparison.OrdinalIgnoreCase)) {
+                    return true;
+                }
+            }
+
             if (lowerFile.EndsWith(".downloading") ||
                 lowerFile.EndsWith(".deactivation") ||
                 lowerFile.EndsWith(".tmp") ||
@@ -1173,11 +1233,15 @@ namespace ModpackSync {
                 }
 
                 List<string> deletedFiles = new List<string>();
+                List<string> stalePersonalFilesInRemote = new List<string>();
                 foreach (var kv in remoteTree) {
                     string rPath = kv.Key;
-                    if (ShouldExcludeFromUpload(rPath)) continue;
                     if (string.Equals(rPath, "sync.ps1", StringComparison.OrdinalIgnoreCase) ||
                         string.Equals(rPath, "sync.bat", StringComparison.OrdinalIgnoreCase)) {
+                        continue;
+                    }
+                    if (ShouldExcludeFromUpload(rPath)) {
+                        stalePersonalFilesInRemote.Add(rPath);
                         continue;
                     }
                     if (!localRelSet.Contains(rPath)) {
@@ -1208,14 +1272,16 @@ namespace ModpackSync {
                     RunGitCommand(targetDir, "add -f -- \"" + rel + "\"");
                 }
 
-                if (deletedFiles.Count > 0) {
+                List<string> allToRemoveFromIndex = new List<string>(deletedFiles);
+                allToRemoveFromIndex.AddRange(stalePersonalFilesInRemote);
+                if (allToRemoveFromIndex.Count > 0) {
                     SetStatus("\u0412\u0438\u043b\u0443\u0447\u0435\u043d\u043d\u044f \u0432\u0438\u0434\u0430\u043b\u0435\u043d\u0438\u0445 \u0444\u0430\u0439\u043b\u0456\u0432 \u0437 \u0456\u043d\u0434\u0435\u043a\u0441\u0443...", 630);
-                    for (int i = 0; i < deletedFiles.Count; i += 10) {
+                    for (int i = 0; i < allToRemoveFromIndex.Count; i += 10) {
                         List<string> batch = new List<string>();
-                        for (int j = i; j < Math.Min(deletedFiles.Count, i + 10); j++) {
-                            batch.Add("\"" + deletedFiles[j] + "\"");
+                        for (int j = i; j < Math.Min(allToRemoveFromIndex.Count, i + 10); j++) {
+                            batch.Add("\"" + allToRemoveFromIndex[j] + "\"");
                         }
-                        RunGitCommand(targetDir, "rm --cached --ignore-unmatch -- " + string.Join(" ", batch.ToArray()));
+                        RunGitCommand(targetDir, "rm --cached -r --ignore-unmatch -- " + string.Join(" ", batch.ToArray()));
                     }
                 }
 
@@ -1398,8 +1464,7 @@ namespace ModpackSync {
                         long.TryParse(mParts[3], out sz);
                     }
 
-                    if (string.Equals(path, "sync.ps1", StringComparison.OrdinalIgnoreCase) ||
-                        string.Equals(path, "sync.bat", StringComparison.OrdinalIgnoreCase)) {
+                    if (ShouldExcludeFromUpload(path)) {
                         continue;
                     }
 
@@ -1433,8 +1498,7 @@ namespace ModpackSync {
                         string sha = item.ContainsKey("sha") ? Convert.ToString(item["sha"]) : "";
                         long size = item.ContainsKey("size") && item["size"] != null ? Convert.ToInt64(item["size"]) : -1;
 
-                        if (string.Equals(path, "sync.ps1", StringComparison.OrdinalIgnoreCase) ||
-                            string.Equals(path, "sync.bat", StringComparison.OrdinalIgnoreCase)) {
+                        if (ShouldExcludeFromUpload(path)) {
                             continue;
                         }
 
