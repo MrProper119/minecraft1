@@ -236,7 +236,7 @@
 			#Maximum height for generation placement. -65 to ignore
 			# Default: 100.0
 			# Range: -65.0 ~ 256.0
-			height_max = 100.0
+			height_max = -65.0
 			#Minimum height for generation placement. -65 to ignore
 			# Default: 50.0
 			# Range: -65.0 ~ 256.0
@@ -305,7 +305,7 @@
 			#Maximum height for generation placement. -65 to ignore
 			# Default: 100.0
 			# Range: -65.0 ~ 256.0
-			height_max = 100.0
+			height_max = -65.0
 			#Minimum height for generation placement. -65 to ignore
 			# Default: 50.0
 			# Range: -65.0 ~ 256.0
@@ -363,7 +363,7 @@
 			#Maximum height for generation placement. -65 to ignore
 			# Default: 50.0
 			# Range: -65.0 ~ 256.0
-			height_max = 50.0
+			height_max = 240.0
 			#Minimum height for generation placement. -65 to ignore
 			# Default: 20.0
 			# Range: -65.0 ~ 256.0
@@ -435,11 +435,11 @@
 			#Maximum height for generation placement. -65 to ignore
 			# Default: 200.0
 			# Range: -65.0 ~ 256.0
-			height_max = 200.0
+			height_max = -65.0
 			#Minimum height for generation placement. -65 to ignore
 			# Default: 120.0
 			# Range: -65.0 ~ 256.0
-			height_min = 120.0
+			height_min = 256.0
 			#Names of structures this mob/structure will avoid when generating.
 			#NO LONGER USED! USE DATAPACK INSTEAD
 			avoid_structures = []

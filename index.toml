@@ -25,10 +25,6 @@ file = "add_mod.bat"
 hash = "f9886a71077af30ea69ab27eee4d5d2475e91441758773a4d2072e3f1eade670"
 
 [[files]]
-file = "config/DistantHorizons.toml"
-hash = "0dd98471fcf45c1ae293b4831196c747d7f8c88696f22a6e41f870157ee9270e"
-
-[[files]]
 file = "config/EndRemastered-NeoForge/Eyes/black_eye.json"
 hash = "dfc602e54e6bb320ed1e4b2dde1c7a71a8b331aa1b51bff95115de2d847ba4da"
 
@@ -1182,7 +1178,7 @@ hash = "06947297f3c51ce24601dca44f19e89bc2aac5c0aadc2cb40eb30ade4f2194c5"
 
 [[files]]
 file = "config/mowziesmobs-common.toml"
-hash = "0bb285aebae71e1711258b0e80c49e9e23ea68b9c86386d192f2c9274aceff1e"
+hash = "d89be4cc12f63f217f86b568286992336f1bf5866c2b3f93e6b09125c949fd61"
 
 [[files]]
 file = "config/neoforge-client.toml"
@@ -4961,10 +4957,6 @@ file = "mods/CreateCyberGoggles-1.21.1-7.5.2-NeoForge.jar"
 hash = "904736b64069787618789d9b06a52b65386eb33499748d25877d3ba096a19920"
 
 [[files]]
-file = "mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
-hash = "864e70def5b0d54d619b940b66bb2784e91d3f3fc253064fdc1b3fc5786cbfab"
-
-[[files]]
 file = "mods/DnDesires-1.21.1-2.2d-BETA.jar"
 hash = "8718c117ba98e7fd92312a73b37f20fc8cbfac800963bc5ced4eb49ccdb11330"
 
@@ -5789,11 +5781,6 @@ hash = "a070046baccb45aa050275f8a651587d2314b4dfa77182446f5ea6f77e847f50"
 metafile = true
 
 [[files]]
-file = "mods/distanthorizons-3-3-3.pw.toml"
-hash = "ae4e450709e5973566a36f0e9a4416ab75d466bf8be0a8f0b89347bd8cb606d7"
-metafile = true
-
-[[files]]
 file = "mods/dynamiclights-v1.9.3-mc1.17-26.2.9-mod.jar"
 hash = "055b07436bc0c4f175345657e09e5375a529520aa1f9d06af557b413d7815fc6"
 
@@ -6577,7 +6564,7 @@ hash = "1c83afbd746f571d260a0ed26d852677f9ac7671111e46477feed6ab518c731a"
 
 [[files]]
 file = "mods/tallworld-1.21.1-1.0.0.jar"
-hash = "54504191acf6d90843daabe41c4bbe7963daf0104758862961e2854c318c348f"
+hash = "67aaa37bc00217390a15091990b6c4de0b3e5c2d5f21d7af15202f036f34b8ce"
 
 [[files]]
 file = "mods/terrablender-neoforge.pw.toml"
@@ -6771,11 +6758,11 @@ hash = "67cae48f81ac553d76aecc03db58fd1a6e43a6c6504d7071a2c458b8ea9f18b5"
 
 [[files]]
 file = "sync.bat"
-hash = "85a13111d352f9017bd99d0fe8cc5a8181fda5bd53bf6be21ec4f28410f14657"
+hash = "1cb961c0f90e327b7e2a82acbf7ae036d567f929ec4c9f456d1246cc90e1cf11"
 
 [[files]]
 file = "sync.ps1"
-hash = "391886a68e2fc1e00884fb695aee6cfb3572be66da18b7f904979ebbaee9cf4d"
+hash = "4d60e1c8c4f05ec2b20a8b6ab9db677f9b45ea616a5594c73b2784b13b5cc9c9"
 
 [[files]]
 file = "update_modpack.bat"
