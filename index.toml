@@ -6073,13 +6073,8 @@ file = "mods/lithium-neoforge-0.15.4+mc1.21.1.jar"
 hash = "488f33216030c1cb0baa33e59de3d657d08d5795a6c2080c8c8bbbc133fc8757"
 
 [[files]]
-file = "mods/lithostitched-1.6.8-neoforge-21.1.jar"
-hash = "7c18dc52ca773a3df0b70dba18c7519c7635cf6bae73b347b56f4ff10928a39a"
-
-[[files]]
-file = "mods/lithostitched.pw.toml"
-hash = "5914939e98302118ce5890611dbe1c9066086a288805bf5f7d2e11264e7cd47a"
-metafile = true
+file = "mods/lithostitched-1.8.1-neoforge-21.1.jar"
+hash = "e0da669fa5facc61a09b9b7bae21b322993de1fcd1eb05787adffb7309598cca"
 
 [[files]]
 file = "mods/lodestone-1.21.1-1.8.2.jar"
