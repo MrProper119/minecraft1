@@ -394,7 +394,7 @@ hash = "77ef014bd34c9f66bf40b3e6ae7a67bf7ec2a618b76eafff9f0921577d3ab1b9"
 
 [[files]]
 file = "config/bettermineshafts-neoforge-1_21.toml"
-hash = "37ee9275b9680c2d07d395cf41769c456c9b93adbf85ddf6514ee601977fa099"
+hash = "ef6fa1024e4cf4614060646634bfed4fb4d8504ee818cc3a25c005ef692be11c"
 
 [[files]]
 file = "config/betteroceanmonuments-neoforge-1_21.toml"
@@ -435,14 +435,6 @@ hash = "4a1c719050be1e9de36a902378e1ba2710ed62a25623b1f51f71180c48389f15"
 [[files]]
 file = "config/betterwitchhuts-neoforge-1_21.toml"
 hash = "0fa4f192f54dc1fc4f7ac7ab8be7cba88e324fe21571777cb8a6d404f6ce49a9"
-
-[[files]]
-file = "config/bigglobe/Big Globe.json5"
-hash = "45f937c7c39b35c9850f354fc33819e0cd07dcb1e19eed629865c8fb8a9c0e8c"
-
-[[files]]
-file = "config/bigglobe/mixins.properties"
-hash = "8bbdc2c9198850e32077d6815476676081b7dd97415794a24c12abd6453bf0cb"
 
 [[files]]
 file = "config/bits_n_bobs-common.toml"
@@ -799,58 +791,6 @@ hash = "f590d1303195e42062cba2f0c8dd6008086e7cc294abc8a9d906c237309509d0"
 [[files]]
 file = "config/cristellib/mowziesmobs/structure_toggle_config.json5"
 hash = "66c6746f220e779ea761c8b44e9c19f5df2a556f2a12e9bddcecfa007a460d4d"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterdeserttemplescompatibility/structure_placement_config.json5"
-hash = "8ef81d2b866fb95cb8168134167e289f1b8419b749d20a185566deb26dc59fa9"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterdeserttemplescompatibility/structure_toggle_config.json5"
-hash = "bfef04150d4f1da819387d2cc536863b74967ce76c01bc1503f1511c586e7b58"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterdungeonscompatibility/structure_placement_config.json5"
-hash = "c2ab5fe1201148b7b034580e92fb835ddbdb15151c31b797b55b214eefdd49b7"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterdungeonscompatibility/structure_toggle_config.json5"
-hash = "cded9f993f4b83cf367e5fbdee47c9845661b6883fbed54027ff1a3c7a15cbc7"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterjungletemplescompatibility/structure_placement_config.json5"
-hash = "37d0c0cd939396fced2a5af0f3139de89755fd259037abba9e34162eb53c6de8"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterjungletemplescompatibility/structure_toggle_config.json5"
-hash = "1452cfa984f691cd52f232d321f4ec336670113e8a03b72266a957179a33a763"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetternetherfortressescompatibility/structure_placement_config.json5"
-hash = "54506f089e64a3a3d022e0fa4bf8f09d9455101adfaf6d847009347453044018"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetternetherfortressescompatibility/structure_toggle_config.json5"
-hash = "3f5f53997606c5f627d1690779cbe34e619796f1c715f341a7908472408dd730"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetteroceanmonumentscompatibility/structure_placement_config.json5"
-hash = "82fb85c20bd34cf43291b7a106d4082afdbaf4c2021e07998ca167d9ad3fd11b"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetteroceanmonumentscompatibility/structure_toggle_config.json5"
-hash = "13ce03a1be71b3d7337ec6ed2452745385410497bbd25cd961ec783f491e547b"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterstrongholdscompatibility/structure_toggle_config.json5"
-hash = "ab2cc4ecf7420e36405adc95bed87da766d8a0fd5f32d78bc1c1a12801708b6e"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterwitchhutscompatibility/structure_placement_config.json5"
-hash = "b41f656c65b5c79e2c680b5c23016cdb0cfdda2f9d2c20ba1c8a64e9e4160b5b"
-
-[[files]]
-file = "config/cristellib/mr_big_globeyungsbetterwitchhutscompatibility/structure_toggle_config.json5"
-hash = "7571fd94fdb1cc5a61f63bbbbb9408f1639f5d981a115250d94dac2cd05191b1"
 
 [[files]]
 file = "config/cristellib/tf_dnv/structure_placement_config.json5"
@@ -1414,7 +1354,7 @@ hash = "07e7bbaa23c473e447e56fc0e241ca2b4316823c85fb6464d80e0d4c1012294f"
 
 [[files]]
 file = "config/sodium-extra-options.json"
-hash = "abe136aab0fc7f4b3e81ee25a4da03e2513d335f81a29ada79944e457403a04d"
+hash = "d51262de39a08c4b4c66032eb078b2fbc37ebc66fa00ad760b8670052dfa726c"
 
 [[files]]
 file = "config/sodium-extra.properties"
@@ -4945,62 +4885,6 @@ file = "kubejs/config/web_server.json"
 hash = "682a65ef840faa05ba36dd91d6ec3b1ef9813d14fe5d3459889aed6752e6196a"
 
 [[files]]
-file = "kubejs/data/bigglobe/tags/worldgen/configured_feature/overworld/ores.json"
-hash = "f9a70b8cc9d7ec713b3add6f724f5b437202cb8e7ac5dc9792db469d2402081b"
-
-[[files]]
-file = "kubejs/data/bigglobe/tags/worldgen/configured_feature/overworld/rock_layers.json"
-hash = "08ecf0e713e7957112e49e24a29f17b8ebd2e952c4a61e977c97653316d8e50d"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/bauxite.json"
-hash = "6d2c8511eb432b1728f61b2db8d30afa263e3cf5abf88cf6503b8baa2e274373"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/fluorite.json"
-hash = "d5847be61d132a27ab08ef422602a3b3e827c87b21b63ffa5630d8b32f0de01b"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/galena.json"
-hash = "675dc1d19b036693c7aaa2146f598913bf05bcdb745fca52776091aa5398ecf0"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/lead.json"
-hash = "de4280498dae81696a306c267e4c620b36deb99bd13e7a126cc266eaa0855a1b"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/lithium.json"
-hash = "38703777bd3e1cb118a871b4a9672e63b0dc5c2a9137462d74ce8c182ab2078a"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/naquadah.json"
-hash = "7ed0dd00397ab8364f998a4c4053fbd1898eff0d337624704270459d5958ab58"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/nickel.json"
-hash = "c1c29098fe1abb0486617d635bbcf76ff7146a1641011ef85ccdbb2994703c83"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/osmium.json"
-hash = "6da3e386d5b2621cfb111d97b875e97d97eb0c5b8a4b72eb8224b321d5808ccd"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/tin.json"
-hash = "f33b99ddd61c4ba7acf478b1bb41da01f71d61389dd75d72b9b0fc182c9659ea"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/uranium.json"
-hash = "25954bcf4805f191dcf2c54f2fd4baef2b845073c7a9f3016a4976989902df64"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/ores/zinc.json"
-hash = "837772f70e54641ca581dbbd6968ddc4132d339579498dd89a0baeee6ddae2db"
-
-[[files]]
-file = "kubejs/data/bigglobe/worldgen/configured_feature/overworld/rock_layers/create_rocks.json"
-hash = "66abaf35dedaaf90b39db7be5062e0f5078f8cb43c31c1a4cdc2e5fa9b3d6e8e"
-
-[[files]]
 file = "kubejs/data/c/tags/worldgen/biome/is_end.json"
 hash = "e76ea24e6fabe85ea4712a30b713053f5eaf6c575cc843082fe374c78cf801e2"
 
@@ -5011,18 +4895,6 @@ hash = "7093695e90034b72a067d5eec5188e6624ae2d4b46288a5f86bef76e8e9f57bd"
 [[files]]
 file = "kubejs/data/c/tags/worldgen/biome/is_overworld.json"
 hash = "bcb931a42319edb70b854ed6762d56e18a86941da9587cae5dc15f4d6debcf7f"
-
-[[files]]
-file = "kubejs/data/minecraft/tags/worldgen/biome/is_end.json"
-hash = "220b185370efc51411c2747f4a3a9c58611890720b9000f47397e872588299e5"
-
-[[files]]
-file = "kubejs/data/minecraft/tags/worldgen/biome/is_nether.json"
-hash = "cef3837d8bf0e0f8d72be0d8d13feeb5153c4d0bac080a5c0d4d3891c018766e"
-
-[[files]]
-file = "kubejs/data/minecraft/tags/worldgen/biome/is_overworld.json"
-hash = "70a5c4cf5d5bbe9fc7b50316e88b6df00ecb82e83962a2f60bfb6eb8b9dd9bd8"
 
 [[files]]
 file = "kubejs/data/neoforge/tags/worldgen/biome/is_end.json"
@@ -5071,10 +4943,6 @@ hash = "22e2467892d3706f43d1cf2aa637785bb8601c20b0098a82ab956e6a8fc4d2ba"
 [[files]]
 file = "mods/BetterFusionReactor-1.21.1-1.5.9rc1.jar"
 hash = "a819a5e42efffebe9418937e3e9de671fe973dc9e83e8caced756a668b0b85e3"
-
-[[files]]
-file = "mods/Big Globe-5.3.2-MC1.21.1.jar"
-hash = "13b7964db72841ed46de003d7ef3855495b9e10b3b8631e936127ee6025fb22c"
 
 [[files]]
 file = "mods/CBCmoreshells-1.1.6.jar"
@@ -5422,92 +5290,6 @@ hash = "d2b5cbad0070c977f5b5be973219481e9d0f56224eedca9c874be7c655890a3b"
 [[files]]
 file = "mods/big-cannons-aeronautics-fix.pw.toml"
 hash = "9e58eb19946efeb4a4c4180414558c06aad48f2f4575def5920f127923618aff"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-biome-tags-1-0-0.pw.toml"
-hash = "bea138fbe5e1f6823454f62c03040b26ea13103b2a11cd0c12f9081207b2ee5c"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-biome-tags-1.0.0.jar"
-hash = "90be8add50c7a392dfa953a3c402098f7e9170bf27256d87f60b94ab02449aa0"
-
-[[files]]
-file = "mods/big-globe-l-enders-cataclysm-compatibility-1-0-2.pw.toml"
-hash = "1161ff2bb9f69fa5f14ff6a398f6066fcd8117576be4f6adc970a7e584b4858b"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-l_enders-cataclysm-compatibility-1.0.2.jar"
-hash = "7c8e72ca2d88343af43d00ef26b844a1d98dcea71c4bd29224a706d2e0597671"
-
-[[files]]
-file = "mods/big-globe-yungs-better-desert-temples-compatibility-1-0.pw.toml"
-hash = "c491176cb999fec33091f36404638cf9490e806a044cb689512ed1bed3faef2b"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-yungs-better-desert-temples-compatibility-1.0.jar"
-hash = "01fb70d73c30e7e70623fb511445118d0bb8b225e002414353eb85b1a2b337a2"
-
-[[files]]
-file = "mods/big-globe-yungs-better-dungeons-compatibility-1-0.pw.toml"
-hash = "e8597b07b49b97876d2286cbbe6a22d64710d769b90e95aa77f0298ec00b4164"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-yungs-better-dungeons-compatibility-1.0.jar"
-hash = "8baf9f92e0b07e07738ab273486fbc3888876fc148c158a6e3d5d88960e245ab"
-
-[[files]]
-file = "mods/big-globe-yungs-better-jungle-temples-compatibility-1-0.pw.toml"
-hash = "0b59361c5d6225bf3be0bf4277a97daadd815b9e336697dc8c38a587ea873340"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-yungs-better-jungle-temples-compatibility-1.0.jar"
-hash = "98d1127bdf8f6d2ace7da864cc1bd11e26df9e999a89a160253dfb2a16d38454"
-
-[[files]]
-file = "mods/big-globe-yungs-better-nether-fortresses-compatibility-1-1.pw.toml"
-hash = "f3c63e1f2b849e56ef820194a7c942475b7f5457e776980fd635a09653a9cdcf"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-yungs-better-nether-fortresses-compatibility-1.1.jar"
-hash = "4ad4407b43eda8c32a3d17c071d39b9e2b07e7f1a3602eda8c4ddae70b942395"
-
-[[files]]
-file = "mods/big-globe-yungs-better-ocean-monuments-compatibility-1-0.pw.toml"
-hash = "6b4b8a6d2c18ceb6274a228265854c4e2f1ccb18ad36a2782a4918aa3b3ab2ba"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-yungs-better-ocean-monuments-compatibility-1.0.jar"
-hash = "fbed51514bd98c3138351f713e2558692c44792a077313b140c4b3687715983a"
-
-[[files]]
-file = "mods/big-globe-yungs-better-strongholds-compatibility-1-1.pw.toml"
-hash = "ceb98914f9d8739ed788f205a77e5d5cf9f9c1b80e6ab413702470babbc53446"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-yungs-better-strongholds-compatibility-1.1.jar"
-hash = "56d86a35e2d3e1630d6865d8c8c6c7786b5264341e56fc7c659bde8a03e1124d"
-
-[[files]]
-file = "mods/big-globe-yungs-better-witch-huts-compatibility-1-0.pw.toml"
-hash = "053f7a9289ee11fd22495173bff42b982c7dda50c796e94f716b928a30a30d4a"
-metafile = true
-
-[[files]]
-file = "mods/big-globe-yungs-better-witch-huts-compatibility-1.0.jar"
-hash = "88c50c02dbeca5c52d8894af2ebc4678e56c062740e253eb46c95bba844d5b03"
-
-[[files]]
-file = "mods/big-globe.pw.toml"
-hash = "f4a63261a286d425bc1c87784c6c832a24cfe36f2777be735a0fecf572397af8"
 metafile = true
 
 [[files]]
@@ -6800,6 +6582,10 @@ metafile = true
 [[files]]
 file = "mods/struts-1.2.5.jar"
 hash = "1c83afbd746f571d260a0ed26d852677f9ac7671111e46477feed6ab518c731a"
+
+[[files]]
+file = "mods/tallworld-1.21.1-1.0.0.jar"
+hash = "54504191acf6d90843daabe41c4bbe7963daf0104758862961e2854c318c348f"
 
 [[files]]
 file = "mods/terrablender-neoforge.pw.toml"

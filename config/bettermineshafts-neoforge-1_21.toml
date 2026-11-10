@@ -8,7 +8,7 @@
 	# The highest a mineshaft can spawn.
 	# Default: 30
 	#
-	"Maximum y-coordinate" = 30
+	"Maximum y-coordinate" = 240
 
 	###########################################################################################################
 	## Ore deposit settings.
