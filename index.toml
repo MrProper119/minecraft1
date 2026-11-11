@@ -6457,6 +6457,10 @@ file = "mods/sable_player_ragdoll-1.21.1-0.7.5.jar"
 hash = "69611deff1c2b18ae0ae7dbaea24cc14f4b69f0368297653933ae9b33adf2d2b"
 
 [[files]]
+file = "mods/sablefixes-1.21.1-1.0.0.jar"
+hash = "c0aaa42d18abd0f03dd6579f7b6ab79f30a3cf660de8feb63f43469724322321"
+
+[[files]]
 file = "mods/sablemassview-1.0.0.jar"
 hash = "8e5632e0ae6ce790b585dac2fd315c3ce58ae31441818f3adae3aa059b25d3af"
 
@@ -6563,7 +6567,7 @@ hash = "1c83afbd746f571d260a0ed26d852677f9ac7671111e46477feed6ab518c731a"
 
 [[files]]
 file = "mods/tallworld-1.21.1-1.0.0.jar"
-hash = "a464a47ed1a9edc9840c9482b7e1cfd28f20fb11801d516510ed08a0daecd64b"
+hash = "13a60c491c9be065f3b2d42e1055377b8acc993449dd0b96e24adf20a36ef1d0"
 
 [[files]]
 file = "mods/terrablender-neoforge.pw.toml"
