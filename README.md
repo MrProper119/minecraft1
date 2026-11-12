@@ -31,7 +31,7 @@ A custom Overworld height expansion engine:
 ### 2. ⚡ SableFixes (`sablefixes-1.21.1-1.0.0.jar`)
 A dedicated compatibility bridge between moving physical structures (**Sable / Aeronautics / Let It Walk**) and dimensional / spatial transport mods:
 * **Mekanism Teleporter Support on Mobile Structures:**
-  * **Unpins Player Position:** Fixes the entrapment bug where stepping onto a teleporter on a walking mech or airship froze the player in place. Clears structure plot pins (`EntityStickExtension.sable$setPlotPosition(null)`) so players can walk freely immediately after teleporting.
+  * **Multiplayer & Structure Tracking:** Fixed player synchronization so that other players standing on moving physical structures remain fully visible to each other and are not displaced into shipyard plots on the minimap.
   * **Precise World Coordinates (Zero Void Teleports):** Fixes double-projection calculations where teleporting back from the world onto a moving structure threw players into the void or below bedrock (`-20,000,000 X / -341 Y`). Teleports now deliver you directly to the teleporter pad on the moving structure.
   * **Client Rendering Crash Fix (`MekanismRenderTeleporterMixin`):** Prevents client crashes caused by `NullPointerException` when rendering teleporter frequency rings/colors while a physical mech or airship is moving.
 * **Iron's Spells and Spellbooks Portal Stabilization:**
@@ -157,7 +157,7 @@ The modpack includes an automated PowerShell-based synchronizer that hooks direc
 ### 2. ⚡ Мод SableFixes (`sablefixes-1.21.1-1.0.0.jar`)
 Спеціальний міст сумісності між рухомими фізичними структурами (**Sable / Aeronautics / Let It Walk**) та просторовими/портальними модами:
 * **Підтримка телепортів Mekanism на фізичних структурах:**
-  * **Розблокування гравця (анпін):** Виправлено критичний баг, через який гравець після телепортації на хутро або дирижабль застрягав у блоці телепорту і не міг рухатися. Скрипт очищує прив'язку до координат структури (`EntityStickExtension.sable$setPlotPosition(null)`), повертаючи вільний рух.
+  * **Видимість гравців у мультиплеєрі:** Виправлено відстеження та проекцію координат для інших гравців на рухомих структурах (усунуто зникнення друзів зі структури та їх відображення за мільйони блоків на мінікарті).
   * **Точні світові координати (без викидання в безодню):** Виправлено подвійну трансформацію координат, яка відкидала гравця на координати `-20,000,000 X / -341 Y` під бедрок при поверненні зі світу на рухому структуру. Тепер телепортація приземляє чітко на платформу.
   * **Виправлення крашу клієнта (`MekanismRenderTeleporterMixin`):** Усунуто виліт гри через помилку рендеру кольорового променя телепорту під час руху мехів або дирижаблів.
 * **Стабілізація порталів Iron's Spells and Spellbooks:**
