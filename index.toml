@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "e7085b60a79e8bdb7555cd86c652b2fab552cf80ddc32003426d0ae467cfe6db"
+hash = "fad87ae1ac14342889e70e2ffd93604457d28ce232cc1b808ed844b2aa00cc78"
 
 [[files]]
 file = "TLauncherAdditional.json"
@@ -6458,7 +6458,7 @@ hash = "69611deff1c2b18ae0ae7dbaea24cc14f4b69f0368297653933ae9b33adf2d2b"
 
 [[files]]
 file = "mods/sablefixes-1.21.1-1.0.0.jar"
-hash = "34f7807a0df875843293921c6341a1c306a16d5bd09ab0f9249a4a9b62019847"
+hash = "6a604f5e09ecb05bba1ba6ab57e2444cd692002a254cd366d2a946988d68fbf3"
 
 [[files]]
 file = "mods/sablemassview-1.0.0.jar"
