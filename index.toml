@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "fad87ae1ac14342889e70e2ffd93604457d28ce232cc1b808ed844b2aa00cc78"
+hash = "9211ef9c0cd3223141ba150de6853da3daf8e7a7b40b26bd632911d5b0c908b2"
 
 [[files]]
 file = "TLauncherAdditional.json"
@@ -6075,6 +6075,10 @@ hash = "488f33216030c1cb0baa33e59de3d657d08d5795a6c2080c8c8bbbc133fc8757"
 [[files]]
 file = "mods/lithostitched-1.8.1-neoforge-21.1.jar"
 hash = "e0da669fa5facc61a09b9b7bae21b322993de1fcd1eb05787adffb7309598cca"
+
+[[files]]
+file = "mods/loconautics-0.1.1BETA.jar"
+hash = "c4a9a8b4b3bd8cec201efa5082f314ee4be72665a871f1046566ef0ebfa09a0d"
 
 [[files]]
 file = "mods/lodestone-1.21.1-1.8.2.jar"

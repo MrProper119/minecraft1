@@ -47,6 +47,7 @@ A dedicated compatibility bridge between moving physical structures (**Sable / A
 
 ### 🏭 1. Physics, Mechanics & Aeronautics
 * **Create + The Factory Must Grow (TFMG):** Heavy industrial metallurgy, blast furnaces, distillation towers, rotational kinetics, and logistics networks.
+* **Create: Loconautics:** Integrates Create trains with the Sable physics engine, allowing trains to operate on dynamic contraptions.
 * **Create New Age & Crafts & Additions:** Electrical generation, dynamos, and electromechanical conversion.
 * **Sable & Let It Walk:** Assemble physical walking mechs, airships, mobile bases, and dynamic combat machines that move with real-time physics and collisions.
 
@@ -174,6 +175,7 @@ The modpack includes an automated PowerShell-based synchronizer that hooks direc
 
 ### 🏭 1. Інженерія, кінематика та аеронавтика
 * **Create + The Factory Must Grow (TFMG):** Важка металургія, доменні печі, дистиляційні колони, обертова механіка та логістика.
+* **Create: Loconautics:** Інтеграція потягів Create із фізичним рушієм Sable, що дозволяє рейковим механізмам працювати на рухомих конструкціях.
 * **Create New Age та Crafts & Additions:** Генерація електроенергії, електродвигуни та конвертація енергії.
 * **Sable та Let It Walk:** Створення повноцінних крокуючих бойових роботів, летючих крейсерів та мобільних баз із реальною фізикою зіткнень.
 
