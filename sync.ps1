@@ -193,7 +193,17 @@ namespace ModpackSync {
 
             InitializeComponents();
             LoadFolders();
-            this.Shown += (s, e) => FetchBranchesAsync(null);
+            string savedBranch = null;
+            if (File.Exists(stateFilePath)) {
+                try {
+                    JavaScriptSerializer js = new JavaScriptSerializer();
+                    var dict = js.Deserialize<Dictionary<string, object>>(File.ReadAllText(stateFilePath, Encoding.UTF8));
+                    if (dict != null && dict.ContainsKey("LastBranch") && dict["LastBranch"] != null) {
+                        savedBranch = dict["LastBranch"].ToString();
+                    }
+                } catch { }
+            }
+            this.Shown += (s, e) => FetchBranchesAsync(savedBranch);
         }
 
         private void InitializeComponents() {
@@ -710,8 +720,16 @@ namespace ModpackSync {
                     }
 
                     branches.Sort((a, b) => {
-                        int scoreA = a.Name.StartsWith("mekanism-realistic-fixed") ? 0 : (a.Name.StartsWith("mekanism-realistic") ? 1 : (a.Name == "main" ? 2 : 3));
-                        int scoreB = b.Name.StartsWith("mekanism-realistic-fixed") ? 0 : (b.Name.StartsWith("mekanism-realistic") ? 1 : (b.Name == "main" ? 2 : 3));
+                        Func<string, int> getScore = name => {
+                            if (name == "test2") return 0;
+                            if (name == "test") return 1;
+                            if (name == "main") return 2;
+                            if (name.StartsWith("mekanism-realistic-fixed")) return 3;
+                            if (name.StartsWith("mekanism-realistic")) return 4;
+                            return 5;
+                        };
+                        int scoreA = getScore(a.Name);
+                        int scoreB = getScore(b.Name);
                         if (scoreA != scoreB) return scoreA.CompareTo(scoreB);
                         return string.Compare(a.Name, b.Name, StringComparison.OrdinalIgnoreCase);
                     });
@@ -1415,11 +1433,14 @@ namespace ModpackSync {
             txtLog.Clear();
             LogMessage("\u041f\u043e\u0447\u0430\u0442\u043e\u043a \u0440\u043e\u0437\u0443\u043c\u043d\u043e\u0457 \u0441\u0438\u043d\u0445\u0440\u043e\u043d\u0456\u0437\u0430\u0446\u0456\u0457 (Delta Sync)...");
             LogMessage("\u0426\u0456\u043b\u044c\u043e\u0432\u0430 \u043f\u0430\u043f\u043a\u0430: " + targetDir);
+            BranchItem curBranch = cmbBranches.SelectedItem as BranchItem;
+            string selectedBranchName = curBranch != null ? curBranch.Name : "";
+            LogMessage("\u0413\u0456\u043b\u043a\u0430: " + selectedBranchName);
             LogMessage("\u041e\u0431\u0440\u0430\u043d\u0438\u0439 \u043a\u043e\u043c\u0456\u0442: " + targetCommitSha);
 
             ThreadPool.QueueUserWorkItem(_ => {
                 try {
-                    RunDeltaSync(targetDir, targetCommitSha, launchAfterSync);
+                    RunDeltaSync(targetDir, selectedBranchName, targetCommitSha, launchAfterSync);
                 } catch (Exception ex) {
                     this.BeginInvoke(new Action(() => {
                         SetBusy(false);
@@ -1431,7 +1452,7 @@ namespace ModpackSync {
             });
         }
 
-        private void RunDeltaSync(string targetDir, string commitShaOrRef, bool launchAfterSync) {
+        private void RunDeltaSync(string targetDir, string branchName, string commitShaOrRef, bool launchAfterSync) {
             if (!Directory.Exists(targetDir)) {
                 Directory.CreateDirectory(targetDir);
             }
@@ -1680,6 +1701,7 @@ namespace ModpackSync {
                 File.WriteAllText(Path.Combine(targetDir, ".synced_commit.txt"), fullCommitSha, Encoding.UTF8);
                 var stateObj = new Dictionary<string, string> {
                     { "LastTargetDir", targetDir },
+                    { "LastBranch", branchName },
                     { "LastCommit", fullCommitSha },
                     { "UpdatedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") }
                 };
