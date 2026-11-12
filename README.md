@@ -65,6 +65,28 @@ A dedicated compatibility bridge between moving physical structures (**Sable / A
 
 ---
 
+## 📥 Quick Start / How to Install & Play
+
+To set up the modpack from scratch, follow these simple steps:
+
+1. **Install TLauncher:**
+   * Download and install [TLauncher](https://tlauncher.org/) (if not already installed).
+2. **Create a Modpack/Version in TLauncher:**
+   * Open TLauncher and click the **TL MODS** button (bottom right) or go to version management.
+   * Create a new modpack/version profile (e.g. named `Test`, `Modpack`, or any name) with **Game Version:** `1.21.1` and **NeoForge**.
+3. **Download Repository & Launch Script:**
+   * Clone or download this repository (make sure `sync.bat` and `sync.ps1` are present).
+   * Double-click and run **`sync.bat`**.
+4. **Synchronization Window:**
+   * The synchronization GUI window will pop up.
+   * **Step 1:** Select the folder of your created version inside `.minecraft\versions\` (e.g. `Test`).
+   * **Step 2:** Select the active branch (`test2`, `main`, etc.) or desired commit.
+   * Click **"Завантажити та запустити TLauncher"** (Download and launch TLauncher).
+5. **Ready to Play:**
+   * The script automatically downloads all 230+ mods, configs, and engine patches, sets up the version files, and launches TLauncher ready for action!
+
+---
+
 ## ⚡ Automated Synchronization (`sync.bat` / `sync.ps1`)
 
 The modpack includes an automated PowerShell-based synchronizer that hooks directly into **TLauncher** or can be run standalone:
@@ -166,6 +188,28 @@ The modpack includes an automated PowerShell-based synchronizer that hooks direc
 * **Iron's Spells 'n Spellbooks:** Повноцінна магічна система зі створенням сувоїв, книгами заклинань, магічним спорядженням та школами магії.
 * **L_Ender's Cataclysm:** Складні епічні боси (Ігніс, Незеритова Монструозність, Провісник) в унікальних підземеллях.
 * **Farmer's Delight:** Розширена кулінарія, приготування поживних страв та фермерство.
+
+---
+
+## 📥 Швидкий старт / Як встановити збірку
+
+Щоб завантажити та налаштувати збірку з нуля для себе або друга:
+
+1. **Встановіть TLauncher:**
+   * Завантажте та встановіть [TLauncher](https://tlauncher.org/) (якщо ще не встановлено).
+2. **Створіть збірку/версію в TLauncher:**
+   * Відкрийте TLauncher і перейдіть у вкладку **TL MODS** (у правому нижньому кутку) або перейдіть до створення версії.
+   * Створіть нову збірку/версію (наприклад, з назвою `Test`, `Modpack` або будь-якою іншою), обравши версію гри **1.21.1** та завантажувач **NeoForge**.
+3. **Завантажте файли репозиторію та запустіть скрипт:**
+   * Завантажте або склонуйте цей репозиторій (переконайтеся, що є файли `sync.bat` та `sync.ps1`).
+   * Запустіть файл **`sync.bat`**.
+4. **Віконце синхронізації:**
+   * На екрані з'явиться віконце скрипта синхронізації.
+   * **Крок 1:** Оберіть створену в TLauncher папку збірки у списку `.minecraft\versions\` (наприклад, `Test`).
+   * **Крок 2:** Оберіть потрібну гілку (наприклад, `test2` або `main`) чи останній коміт зі списку.
+   * Натисніть **«Завантажити та запустити TLauncher»**.
+5. **Готово до гри:**
+   * Скрипт автоматично завантажить усі 230+ модів, конфігурації, файли версії (`.json`/`.jar`) та відкриє TLauncher із повністю налаштованою та готовою до запуску грою!
 
 ---
 
