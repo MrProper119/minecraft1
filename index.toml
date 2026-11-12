@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "de83310961813ea1bd9165382775d758d0b94ce3c341de9db8600585cf6982c7"
+hash = "e7085b60a79e8bdb7555cd86c652b2fab552cf80ddc32003426d0ae467cfe6db"
 
 [[files]]
 file = "TLauncherAdditional.json"
@@ -6458,7 +6458,7 @@ hash = "69611deff1c2b18ae0ae7dbaea24cc14f4b69f0368297653933ae9b33adf2d2b"
 
 [[files]]
 file = "mods/sablefixes-1.21.1-1.0.0.jar"
-hash = "c0aaa42d18abd0f03dd6579f7b6ab79f30a3cf660de8feb63f43469724322321"
+hash = "34f7807a0df875843293921c6341a1c306a16d5bd09ab0f9249a4a9b62019847"
 
 [[files]]
 file = "mods/sablemassview-1.0.0.jar"
@@ -6765,7 +6765,7 @@ hash = "1cb961c0f90e327b7e2a82acbf7ae036d567f929ec4c9f456d1246cc90e1cf11"
 
 [[files]]
 file = "sync.ps1"
-hash = "4d60e1c8c4f05ec2b20a8b6ab9db677f9b45ea616a5594c73b2784b13b5cc9c9"
+hash = "05303643c3f4ff56a722c172dc5fce25b50b8d23daf17d9bc65f224ab600b7cc"
 
 [[files]]
 file = "update_modpack.bat"
