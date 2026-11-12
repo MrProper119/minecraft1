@@ -33,6 +33,7 @@ A dedicated compatibility bridge between moving physical structures (**Sable / A
 * **Mekanism Teleporter Support on Mobile Structures:**
   * **Multiplayer & Structure Tracking:** Fixed player synchronization so that other players standing on moving physical structures remain fully visible to each other and are not displaced into shipyard plots on the minimap.
   * **Instant World Saving & Open to LAN (Empty Item Fix):** Fixes a severe freeze during world saving and "Open to LAN" caused by machine gun shell projectiles attempting to serialize empty ItemStacks (`Cannot encode empty ItemStack`).
+  * **Recipe Scanner & Custom Ingredient Crash Fix:** Fixes server startup crash (`IllegalStateException: Cannot retrieve values from custom ingredient!`) caused by Mekanism's recipe scanner trying to inspect NeoForge custom/intersection ingredients during incomplete recipe logging.
   * **Precise World Coordinates (Zero Void Teleports):** Fixes double-projection calculations where teleporting back from the world onto a moving structure threw players into the void or below bedrock (`-20,000,000 X / -341 Y`). Teleports now deliver you directly to the teleporter pad on the moving structure.
   * **Client Rendering Crash Fix (`MekanismRenderTeleporterMixin`):** Prevents client crashes caused by `NullPointerException` when rendering teleporter frequency rings/colors while a physical mech or airship is moving.
 * **Iron's Spells and Spellbooks Portal Stabilization:**
@@ -161,6 +162,7 @@ The modpack includes an automated PowerShell-based synchronizer that hooks direc
 * **Підтримка телепортів Mekanism на фізичних структурах:**
   * **Видимість гравців у мультиплеєрі:** Виправлено відстеження та проекцію координат для інших гравців на рухомих структурах (усунуто зникнення друзів зі структури та їх відображення за мільйони блоків на мінікарті).
   * **Миттєве збереження світу та Open to LAN:** Усунуто тривале зависання гри при виході («Збереження світу») та при відкритті світу для мережі, спричинене помилками збереження порожніх предметів у гільзах/снарядах (`Cannot encode empty ItemStack`).
+  * **Виправлення крашу при завантаженні світу (сканування рецептів Mekanism):** Усунуто виліт сервера (`IllegalStateException: Cannot retrieve values from custom ingredient!`), що виникав при спробі Mekanism перевірити кастомні або складені інгредієнти NeoForge під час діагностики незавершених рецептів.
   * **Точні світові координати (без викидання в безодню):** Виправлено подвійну трансформацію координат, яка відкидала гравця на координати `-20,000,000 X / -341 Y` під бедрок при поверненні зі світу на рухому структуру. Тепер телепортація приземляє чітко на платформу.
   * **Виправлення крашу клієнта (`MekanismRenderTeleporterMixin`):** Усунуто виліт гри через помилку рендеру кольорового променя телепорту під час руху мехів або дирижаблів.
 * **Стабілізація порталів Iron's Spells and Spellbooks:**
