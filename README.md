@@ -27,6 +27,7 @@ A custom Overworld height expansion engine:
   * **~400 blocks of sky & mountainous elevation** above sea level with cloud-piercing peaks and plateaus.
 * **Proportional Ore Re-balancing:** All vanilla and modded ores (Iron, Copper, Coal, Gold, Redstone, Lapis, Diamond, Zinc, Tin, Lead, Uranium, Fluorite, Osmium) are automatically redistributed across the 768-block depth so mining remains engaging, deep, and rewarding.
 * **Structure Re-anchoring:** Automatically re-anchors surface villages, towers, and dungeons to the new sea level and terrain height.
+* **Space Dimension Compatibility (Create: Cosmonautics):** Synchronizes space dimensions (`rocketnautics:deep_space` and `rocketnautics:moon`) to the 768-block height standard (`minY = -64`, `height = 768`). This eliminates the `ArrayIndexOutOfBoundsException: Index 24 out of bounds for length 24` crash that occurred when rockets or airships crossed the 20,000-block atmospheric transition altitude from the 768m Overworld into Deep Space.
 
 ### 2. ⚡ SableFixes (`sablefixes-1.21.1-1.0.0.jar`)
 A dedicated compatibility bridge between moving physical structures (**Sable / Aeronautics / Let It Walk**) and dimensional / spatial transport mods:
@@ -156,6 +157,7 @@ The modpack includes an automated PowerShell-based synchronizer that hooks direc
   * **~400 блоків висоти** над рівнем моря: величні гірські хребти, плато та небесні простори.
 * **Перерахунок генерації руд:** Усі ванільні та модифіковані руди (залізо, мідь, вугілля, золото, редстоун, лазурит, алмази, цинк, олово, свинець, уран, флюорит, осмій) збалансовано розподілені по всій висоті 768 блоків.
 * **Адаптація структур:** Села, фортеці та підземелля коректно генеруються з прив'язкою до нового рівня моря.
+* **Сумісність із космічними вимірами (Create: Cosmonautics):** Синхронізовано висоту космічних вимірів (`rocketnautics:deep_space` та `rocketnautics:moon`) під стандарт 768 блоків (`minY = -64`, `height = 768`). Це повністю усуває краш `ArrayIndexOutOfBoundsException: Index 24 out of bounds for length 24`, який виникав при переході ракети чи дирижабля на висоті 20,000 блоків з високого Верхнього світу у відкритий космос.
 
 ### 2. ⚡ Мод SableFixes (`sablefixes-1.21.1-1.0.0.jar`)
 Спеціальний міст сумісності між рухомими фізичними структурами (**Sable / Aeronautics / Let It Walk**) та просторовими/портальними модами:
