@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "2898f6fceb5e6e4d1b577fca5f05dfdfbdd46bcbef50465b3061da472b398d0c"
+hash = "e4e6437de8ea62a80b2c1822f918986fc673e95201f2a71c2e0b950519973bb0"
 
 [[files]]
 file = "TLauncherAdditional.json"
@@ -5476,6 +5476,10 @@ metafile = true
 file = "mods/create-chromaticreturn.pw.toml"
 hash = "2c991e69848c012f0faa80746a1f9f95a7c2935223c5f6933b583962be5f87d2"
 metafile = true
+
+[[files]]
+file = "mods/create-circuit-board-1.21.1.jar"
+hash = "c878480dd3608d10d05a17b7cc0de035c79635215649674c1397592e40b8c90c"
 
 [[files]]
 file = "mods/create-compressed.pw.toml"
