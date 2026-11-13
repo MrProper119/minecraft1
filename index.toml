@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "4636b65a7668296b50201337806c5fce8b89023ff9dfac974ad7bc7733408ae1"
+hash = "a5819f416033fb5c346d79be76e267bcfdb7ea62ae3f456f8f9951595bf18f9e"
 
 [[files]]
 file = "TLauncherAdditional.json"
@@ -5392,6 +5392,10 @@ hash = "8480e2a62eaa625f75776831c1d8a9ef3d77d2d816fa2e67566c6ec25ba745d1"
 file = "mods/copycats.pw.toml"
 hash = "8c6dcd47336005a60e5e547ddcc566aee808a82f4e585b238540b4a6090c2dbc"
 metafile = true
+
+[[files]]
+file = "mods/cosmonautics-26.08.307.jar"
+hash = "3fd9dac868400905a55164d2c9d74abc2080ae3269ca51e54e1899874945973e"
 
 [[files]]
 file = "mods/cr_aero_structures.jar"
