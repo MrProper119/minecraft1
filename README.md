@@ -53,6 +53,7 @@ A dedicated compatibility bridge between moving physical structures (**Sable / A
 * **Create: Circuit Board:** Compact programmable logic circuits, breadboards, and logic gates for automated Create and Aeronautics contraptions.
 * **Create New Age & Crafts & Additions:** Electrical generation, dynamos, and electromechanical conversion.
 * **Sable & Let It Walk:** Assemble physical walking mechs, airships, mobile bases, and dynamic combat machines that move with real-time physics and collisions.
+* **CC: Tweaked & CC: Sable:** Programmable Lua computers, turtles, monitors, networking, and direct telemetry/control integration for Sable physical contraptions and airships.
 
 ### ⚛️ 2. Advanced Technology & Nuclear Power
 * **Mekanism & Mekanism Generators:** 5-tier ore quadrupling/quintupling processing lines, digital mining, jetpacks, and MekaSuit armor.
@@ -184,6 +185,7 @@ The modpack includes an automated PowerShell-based synchronizer that hooks direc
 * **Create: Circuit Board:** Компактні друковані плати, програмовані логічні схеми та логічні вентилі для автоматизації машин Create та апаратів Aeronautics.
 * **Create New Age та Crafts & Additions:** Генерація електроенергії, електродвигуни та конвертація енергії.
 * **Sable та Let It Walk:** Створення повноцінних крокуючих бойових роботів, летючих крейсерів та мобільних баз із реальною фізикою зіткнень.
+* **CC: Tweaked та CC: Sable:** Програмовані комп'ютери та черепахи на базі Lua, монітори, мережеві плати та пряма інтеграція керування й телеметрії для фізичних апаратів Sable.
 
 ### ⚛️ 2. Високі технології та ядерна енергетика
 * **Mekanism + доповнення:** 5-рівнева переробка руди, цифрові шахтарі, джетпаки та броня MekaSuit.
