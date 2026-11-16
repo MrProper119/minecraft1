@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "bb3272c15ccdc9ba9bee8c9cce790b9958e36d315fbe81767efd8fd98c0feb42"
+hash = "439e75bcde8d1882b6eb2f21244e3039c387fa349df5d6421bfeb3ad3c628dae"
 
 [[files]]
 file = "TLauncherAdditional.json"
@@ -5737,8 +5737,8 @@ hash = "2fe38ffdc644de33906cb736db0490759850d802ae2be617da44c89867c91c6a"
 metafile = true
 
 [[files]]
-file = "mods/createbetterfps-1.21.1-1.1.3.jar"
-hash = "09e2ac0d3d1a9315691d958335dad956fa785871e19c3eae8b5672895fa54d2a"
+file = "mods/createbetterfps-1.21.1-1.1.5.jar"
+hash = "13fff8caa3fd6de652d12f8a989180c502bc11009e2a16bb0f89bb47fa57bac3"
 
 [[files]]
 file = "mods/createbigcannons-5.11.7+mc.1.21.1.jar"
@@ -5760,6 +5760,10 @@ hash = "f08ff14c72ff15de9b3c87200ad06115ff48c73ac21458e038d6e137e162a907"
 file = "mods/creategoggles.pw.toml"
 hash = "0b90a0967e81f307b32f3c4ef731631f053717ee4c462fb0a6366d1d791c5923"
 metafile = true
+
+[[files]]
+file = "mods/createnuclear-2.0.1-neoforge.jar"
+hash = "59f1be84e7a47ab44f0fb2f0260799fa348cec85b94cba3c7fc00ad3e35ea9db"
 
 [[files]]
 file = "mods/createpropulsion-0.3.6.jar"
@@ -6069,6 +6073,10 @@ metafile = true
 [[files]]
 file = "mods/libraryferret-neoforge-1.21.1-4.0.0.jar"
 hash = "b0e9aed25266ad91e66bda1067c0d5cd531c0853af2ade17d70f972751e74f63"
+
+[[files]]
+file = "mods/linearbearing-1.2.6.jar"
+hash = "0530c06045c17809a753869250ad1e426c56a531f5f243b771254bd4ad84e92f"
 
 [[files]]
 file = "mods/lionfish-api.pw.toml"
