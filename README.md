@@ -65,6 +65,7 @@ A dedicated compatibility bridge between moving physical structures (**Sable / A
 * **Terralith & Big Globe:** Spectacular terrain features, vast mountain ranges, and rich diverse biomes designed for 768m heights.
 * **Distant Horizons (DH):** Level-of-Detail (LOD) rendering allowing 128+ chunk render distance with high performance.
 * **Sodium / Embeddium / Veil:** Fully optimized GPU rendering pipeline delivering smooth framerates even around massive mechanical factories.
+* **Studious Keybinds:** Visual interactive keyboard editor (60%, 75%, 100% layouts) with animated keycaps, conflict indicators, and fast binding search.
 
 ### 🔮 4. Magic, Dungeons & Boss Combat
 * **Iron's Spells 'n Spellbooks:** Complete magic system featuring elemental spellbooks, customizable scrolls, mage gear, and boss encounters.
@@ -199,6 +200,7 @@ The modpack includes an automated PowerShell-based synchronizer that hooks direc
 * **Terralith + Big Globe:** Грандіозні ландшафти, масштабні гори та унікальні біоми під висоту 768м.
 * **Distant Horizons (DH):** Технологія LOD-рендеру, що забезпечує дальність промальовування понад 128 чанків без просідання FPS.
 * **Sodium / Embeddium / Veil:** Повний пакет графічної оптимізації для високого та стабільного фреймрейту навіть біля великих фабрик.
+* **Studious Keybinds:** Візуальний інтерактивний редактор клавіатури (розкладки 60%, 75%, 100%) з анімованими клавішами, пошуком прив'язок та індикацією конфліктів.
 
 ### 🔮 4. Магія, підземелля та боси
 * **Iron's Spells 'n Spellbooks:** Повноцінна магічна система зі створенням сувоїв, книгами заклинань, магічним спорядженням та школами магії.
