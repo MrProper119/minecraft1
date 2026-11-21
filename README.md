@@ -62,7 +62,8 @@ A dedicated compatibility bridge between moving physical structures (**Sable / A
 * **Realistic Nuclear & Fusion Reactors:** In-depth radiation mechanics, hazardous waste disposal, turbine cooling loops, and colossal power generation.
 
 ### 🌌 3. Colossal Worldgen & Visual Immersion
-* **Terralith & Big Globe:** Spectacular terrain features, vast mountain ranges, and rich diverse biomes designed for 768m heights.
+* **Terralith:** Spectacular terrain features, vast mountain ranges, and rich diverse biomes designed for 768m heights.
+* **Radiation Cross-Protection (SableFixes):** Bidirectional hazmat protection between Create Nuclear and Mekanism — Create Nuclear's Anti-Radiation Suit protects against Mekanism radiation, and Mekanism's Hazmat Suit protects against Create Nuclear radiation. All Mekanism uranium items/ores emit radiation consistently, with unified raw drops.
 * **Distant Horizons (DH):** Level-of-Detail (LOD) rendering allowing 128+ chunk render distance with high performance.
 * **Sodium / Embeddium / Veil:** Fully optimized GPU rendering pipeline delivering smooth framerates even around massive mechanical factories.
 * **Chunky:** High-speed chunk pre-generator that allows pregenerating world regions (`/chunky start`) to completely eliminate real-time worldgen lag and stabilize server TPS.
@@ -198,7 +199,8 @@ The modpack includes an automated PowerShell-based synchronizer that hooks direc
 * **Реалістичні ядерні та термоядерні реактори:** Справжня радіація, утилізація відходів, турбінні охолоджувальні контури та колосальні обсяги енергії.
 
 ### 🌌 3. Величний світ та візуальна складова
-* **Terralith + Big Globe:** Грандіозні ландшафти, масштабні гори та унікальні біоми під висоту 768м.
+* **Terralith:** Грандіозні ландшафти, масштабні гори та унікальні біоми під висоту 768м.
+* **Перехресний захист від радіації (SableFixes):** Повна двостороння сумісність захисних костюмів Create Nuclear та Mekanism — протирадіаційний костюм з Create захищає від радіації Mekanism, а костюм хімзахисту Mekanism захищає від радіації Create. Уся уранова руда та предмети Mekanism тепер радіоактивні, а видобуток уніфіковано до радіоактивного сирого урану.
 * **Distant Horizons (DH):** Технологія LOD-рендеру, що забезпечує дальність промальовування понад 128 чанків без просідання FPS.
 * **Sodium / Embeddium / Veil:** Повний пакет графічної оптимізації для високого та стабільного фреймрейту навіть біля великих фабрик.
 * **Chunky:** Швидкісний прегенератор чанків світу (`/chunky start`), що дозволяє згенерувати обраний радіус наперед та повністю усунути просідання TPS під час дослідження нових світів.

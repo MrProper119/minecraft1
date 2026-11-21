@@ -238,7 +238,7 @@ userWorldGenVersion = 0
 #Generation Settings for Uranium ore.
 [uranium]
 	#Determines if Uranium ore should be added to world generation.
-	shouldGenerate = true
+	shouldGenerate = false
 
 	#Small Uranium Vein Generation Settings.
 	[uranium.small]
